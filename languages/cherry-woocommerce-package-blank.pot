@@ -1,0 +1,197 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: blank\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-09-30 12:44+0200\n"
+"PO-Revision-Date: 2015-09-30 12:44+0200\n"
+"Last-Translator: Vladimir Anokhin <ano.vladimir@gmail.com>\n"
+"Language-Team: Cherry Team <support@cherryframework.com>\n"
+"Language: su\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _e;__;__;_x;esc_html_e;esc_html__;esc_attr_e;"
+"esc_attr__;_x:1,2c;_n:1,2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 1.7.6\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: init/statics/cherry-account-dropdown-static.php:38
+msgid "Shop Account Dropdown"
+msgstr ""
+
+#: init/statics/cherry-cart-dropdown-static.php:44
+msgid "Shop Cart Dropdown"
+msgstr ""
+
+#: modules/class-cherry-wc-account-dropdown.php:44
+#: modules/class-cherry-wc-account-dropdown.php:45
+#: public/includes/class-cherry-wc-options.php:65
+#: public/includes/class-cherry-wc-options.php:75
+msgid "My Account"
+msgstr ""
+
+#: modules/class-cherry-wc-account-dropdown.php:48
+#: public/includes/class-cherry-wc-options.php:106
+msgid "Log In/Register"
+msgstr ""
+
+#: modules/class-cherry-wc-account-dropdown.php:49
+#: public/includes/class-cherry-wc-options.php:116
+msgid "Logout"
+msgstr ""
+
+#: modules/class-cherry-wc-account-dropdown.php:139
+msgid "Orders"
+msgstr ""
+
+#: modules/class-cherry-wc-account-dropdown.php:146
+msgid "Compare"
+msgstr ""
+
+#: modules/class-cherry-wc-account-dropdown.php:161
+msgid "Wishlist"
+msgstr ""
+
+#: modules/class-cherry-wc-cart-dropdown.php:38
+msgid "Shopping cart"
+msgstr ""
+
+#: modules/class-cherry-wc-product-sharing.php:43
+msgid "Share this"
+msgstr ""
+
+#: modules/class-cherry-wc-product-video-tab.php:80
+msgid "Video"
+msgstr ""
+
+#: modules/class-cherry-wc-product-video-tab.php:134
+msgid "Product video"
+msgstr ""
+
+#: modules/class-cherry-wc-product-video-tab.php:163
+msgid "YouTube video link"
+msgstr ""
+
+#: modules/class-cherry-wc-product-video-tab.php:165
+msgid "Paste YouTube video URL"
+msgstr ""
+
+#: modules/class-cherry-wc-quick-view.php:60
+msgid "Quick view"
+msgstr ""
+
+#: public/includes/class-cherry-wc-assets.php:94
+msgid "Loading..."
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:39
+msgid "Select menu"
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:49
+msgid "Show account dropdown"
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:53
+msgid "Show/hide account dropdown static content"
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:59
+msgid "Guests account menu label"
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:63
+msgid "Set label for account dropdwon for not logged in users"
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:69
+msgid "Memebers account menu label"
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:73
+msgid "Set label for account dropdwon for logged in users"
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:79
+msgid "Menu to show in account dropdown"
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:83
+msgid "Select navigation menu to show it in account dropdown"
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:90
+msgid "Login/out links in account menu"
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:94
+msgid "Show/hide authentication links in account dropdown"
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:100
+msgid "Log in link label"
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:104
+msgid "Set label for log in/register link in account dropdwon"
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:110
+msgid "Logout link label"
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:114
+msgid "Set label for log out link in account dropdwon"
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:121
+msgid "Shop"
+msgstr ""
+
+#: templates/cart/cart-content.php:41
+msgid "Remove this item"
+msgstr ""
+
+#: templates/cart/cart-content.php:64
+msgid "No products in the cart."
+msgstr ""
+
+#: templates/cart/cart-content.php:72
+msgid "Subtotal"
+msgstr ""
+
+#: templates/cart/cart-content.php:77
+msgid "View Cart"
+msgstr ""
+
+#: templates/cart/cart-content.php:78
+msgid "Checkout"
+msgstr ""
+
+#: templates/product-gallery/image.php:75
+#: templates/quick-view/image.php:31
+msgid "Placeholder"
+msgstr ""
+
+#: templates/quick-view/rating.php:28
+#, php-format
+msgid "Rated %s out of 5"
+msgstr ""
+
+#: templates/quick-view/rating.php:30
+#, php-format
+msgid "out of %s5%s"
+msgstr ""
+
+#: templates/quick-view/rating.php:31
+#, php-format
+msgid "based on %s customer rating"
+msgid_plural "based on %s customer ratings"
+msgstr[0] ""
+
+#: templates/quick-view/read-more.php:21
+msgid "Read More"
+msgstr ""

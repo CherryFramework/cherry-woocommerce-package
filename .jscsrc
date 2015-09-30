@@ -1,7 +1,14 @@
 {
-    "preset": "wordpress",
-    "fileExtensions": [ ".js" ],
-    "excludeFiles": [
-    	"js/html5.js"
-    ]
+	"preset": "wordpress",
+	"fileExtensions": [ ".js" ],
+	"excludeFiles": [
+		"public/assets/js/jquery.cycle2.js",
+		"public/assets/js/jquery.elevatezoom.js",
+		"public/assets/js/jquery.magnific-popup.js",
+		"public/assets/js/min/jquery.cycle2.min.js",
+		"public/assets/js/min/jquery.elevatezoom.min.js",
+		"public/assets/js/min/jquery.magnific-popup.min.js",
+		"public/assets/js/min/cherry-woocommerce-script.min.js",
+		"public/assets/js/min/jquery.cycle2.carousel.min.js"
+	]
 }

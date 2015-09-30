@@ -83,32 +83,34 @@ jQuery( document ).ready(function( $ ) {
 		current_width = initial_width,
 		reinit        = false;
 
-	// init dropdowns
+	// Init dropdowns
 	$( '[data-dropdown="box"]' ).CherryWCDropdown();
 
-	// quick view
-	$(document).on( 'click', '.cherry-quick-view', function( event ) {
+	// Quick view
+	$( document ).on( 'click', '.cherry-quick-view', function( event ) {
+
+		var product_id, item, current_popup, send_ajax_request;
 
 		event.preventDefault();
 		event.stopPropagation();
 		event.stopImmediatePropagation();
 
-		var product_id = $( this ).data( 'product' ),
-			item = $( this ).parents( 'li.product' ),
-			current_popup = 'cherry-quick-view-popup-' + product_id;
+		product_id = $( this ).data( 'product' ),
+		item = $( this ).parents( 'li.product' ),
+		current_popup = 'cherry-quick-view-popup-' + product_id;
 
-		var send_ajax_request = function() {
+		send_ajax_request = function() {
 			jQuery.ajax({
-				type : 'post',
-				dataType : 'html',
-				url : window.cherry_woocommerce.ajaxurl,
-				data : {
+				type: 'post',
+				dataType: 'html',
+				url: window.cherry_woocommerce.ajaxurl,
+				data: {
 					action: 'cherry_wc_quick_view',
 					_wpnonce: window.cherry_woocommerce.nonce,
 					product: product_id
 				},
 				success: function( response ) {
-					$( '#'+current_popup ).find( '.cherry-quick-view-popup-content' ).html( response );
+					$( '#' + current_popup ).find( '.cherry-quick-view-popup-content' ).html( response );
 				}
 			});
 		};
@@ -131,7 +133,7 @@ jQuery( document ).ready(function( $ ) {
 
 	});
 
-	// zoom init
+	// Zoom init
 	function zoomInit() {
 
 		if ( ! $( '.product-large-image img' ).length ) {
@@ -151,14 +153,17 @@ jQuery( document ).ready(function( $ ) {
 
 	}
 
-	// single product page
+	// Single product page
 	$( document ).on( 'click', '.product-thumbnails_item', function( event ) {
 
+		var _this, _parent, _large_img, _orig_img;
+
 		event.preventDefault();
-		var _this      = $( this ),
-			_parent    = _this.parents( '.product-images' ),
-			_large_img = _this.attr( 'data-large-img' ),
-			_orig_img  = _this.attr( 'data-original-img' );
+
+		_this      = $( this ),
+		_parent    = _this.parents( '.product-images' ),
+		_large_img = _this.attr( 'data-large-img' ),
+		_orig_img  = _this.attr( 'data-original-img' );
 
 		if ( $( '.placeholder-thumb', _this ).length > 0 ) {
 			return;
@@ -177,7 +182,7 @@ jQuery( document ).ready(function( $ ) {
 		reinit        = false;
 		current_width = $( '#site-wrapper' ).width();
 
-		if ( initial_width > 979 && current_width <= 979) {
+		if ( initial_width > 979 && current_width <= 979 ) {
 			reinit = true;
 		} else if ( initial_width <= 979 && current_width > 979 ) {
 			reinit = true;
@@ -200,12 +205,16 @@ jQuery( document ).ready(function( $ ) {
 	$( window ).on( 'orientationchange debouncedresize', reinit_scripts );
 
 	//Change variation images on variation change
-	$( document ).on('found_variation', function( event, variation ) {
+	$( document ).on( 'found_variation', function( event, variation ) {
+
+		var thumb, large_img, item, image;
+
 		event.preventDefault();
-		var thumb     = variation.image_src,
-			large_img = variation.image_link,
-			item      = $( '.product-large-image' ),
-			image     = $( 'img', item );
+
+		thumb     = variation.image_src,
+		large_img = variation.image_link,
+		item      = $( '.product-large-image' ),
+		image     = $( 'img', item );
 
 		if ( '' === thumb || '' === large_img ) {
 			thumb     = image.data( 'initial-thumb' ),
@@ -221,11 +230,15 @@ jQuery( document ).ready(function( $ ) {
 	});
 
 	$(document).on( 'reset_data', function( event ) {
+
+		var item, image, initial_thmb, initial_lrg;
+
 		event.preventDefault();
-		var item         = $('.product-large-image'),
-			image        = $('img', item),
-			initial_thmb = image.data('initial-thumb'),
-			initial_lrg  = image.data('initial-thumb-large');
+
+		item         = $('.product-large-image'),
+		image        = $('img', item),
+		initial_thmb = image.data('initial-thumb'),
+		initial_lrg  = image.data('initial-thumb-large');
 
 		image.attr ('src', initial_thmb ).data( 'zoom-image', initial_lrg ).attr( 'data-zoom-image', initial_lrg );
 		zoomInit();
@@ -235,12 +248,15 @@ jQuery( document ).ready(function( $ ) {
 	 * Open sharing popup
 	 */
 	$(document).on( 'click', '.share-buttons_link', function( event ) {
-		event.preventDefault();
-		var width  = 816,
-			height = 400,
-			url    = $( this ).data( 'url' );
 
-		var leftPosition, topPosition;
+		var width, height, url, leftPosition, topPosition;
+
+		event.preventDefault();
+
+		width  = 816,
+		height = 400,
+		url    = $( this ).data( 'url' );
+
 		//Allow for borders.
 		leftPosition = ( window.screen.width / 2 ) - ( ( width / 2 ) + 10 );
 		//Allow for title and status bars.
