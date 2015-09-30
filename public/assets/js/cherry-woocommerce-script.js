@@ -79,8 +79,8 @@ jQuery( document ).ready(function( $ ) {
 
 	'use strict';
 
-	var initial_width = $( '#site-wrapper' ).width(),
-		current_width = initial_width,
+	var initialWidth = $( '#site-wrapper' ).width(),
+		currentWidth = initialWidth,
 		reinit        = false;
 
 	// Init dropdowns
@@ -89,17 +89,17 @@ jQuery( document ).ready(function( $ ) {
 	// Quick view
 	$( document ).on( 'click', '.cherry-quick-view', function( event ) {
 
-		var product_id, item, current_popup, send_ajax_request;
+		var productId, item, currentPopup;
 
 		event.preventDefault();
 		event.stopPropagation();
 		event.stopImmediatePropagation();
 
-		product_id = $( this ).data( 'product' ),
+		productId = $( this ).data( 'product' ),
 		item = $( this ).parents( 'li.product' ),
-		current_popup = 'cherry-quick-view-popup-' + product_id;
+		currentPopup = 'cherry-quick-view-popup-' + productId;
 
-		send_ajax_request = function() {
+		function send_ajax_request() {
 			jQuery.ajax({
 				type: 'post',
 				dataType: 'html',
@@ -107,23 +107,23 @@ jQuery( document ).ready(function( $ ) {
 				data: {
 					action: 'cherry_wc_quick_view',
 					_wpnonce: window.cherry_woocommerce.nonce,
-					product: product_id
+					product: productId
 				},
 				success: function( response ) {
-					$( '#' + current_popup ).find( '.cherry-quick-view-popup-content' ).html( response );
+					$( '#' + currentPopup ).find( '.cherry-quick-view-popup-content' ).html( response );
 				}
 			});
 		};
 
 		if ( ! item.find( '.cherry-quick-view-popup' ).length ) {
-			item.append( '<div id="' + current_popup + '" class="cherry-quick-view-popup mfp-hide"><span href="#" class="mfp-close">&times;</span><div class="cherry-quick-view-popup-content"><div class="cherry-quick-view-load">' + window.cherry_woocommerce.loading + '</div></div></div>' );
+			item.append( '<div id="' + currentPopup + '" class="cherry-quick-view-popup mfp-hide"><span href="#" class="mfp-close">&times;</span><div class="cherry-quick-view-popup-content"><div class="cherry-quick-view-load">' + window.cherry_woocommerce.loading + '</div></div></div>' );
 			send_ajax_request();
 		}
 
 		if ( $.isFunction( jQuery.fn.magnificPopup ) ) {
 			$.magnificPopup.open( {
 				items: {
-					src: '#' + current_popup
+					src: '#' + currentPopup
 				},
 				type: 'inline'
 			}, 0 );
@@ -156,22 +156,22 @@ jQuery( document ).ready(function( $ ) {
 	// Single product page
 	$( document ).on( 'click', '.product-thumbnails_item', function( event ) {
 
-		var _this, _parent, _large_img, _orig_img;
+		var _this, _parent, _largeImg, _origImg;
 
 		event.preventDefault();
 
-		_this      = $( this ),
-		_parent    = _this.parents( '.product-images' ),
-		_large_img = _this.attr( 'data-large-img' ),
-		_orig_img  = _this.attr( 'data-original-img' );
+		_this     = $( this ),
+		_parent   = _this.parents( '.product-images' ),
+		_largeImg = _this.attr( 'data-large-img' ),
+		_origImg  = _this.attr( 'data-original-img' );
 
 		if ( $( '.placeholder-thumb', _this ).length > 0 ) {
 			return;
 		}
 
 		_this.addClass( 'active' ).siblings().removeClass( 'active' );
-		_parent.find( '.product-large-image img' ).attr( 'src', _large_img );
-		_parent.find( '.product-large-image img' ).attr( 'data-zoom-image', _orig_img );
+		_parent.find( '.product-large-image img' ).attr( 'src', _largeImg );
+		_parent.find( '.product-large-image img' ).attr( 'data-zoom-image', _origImg );
 		zoomInit();
 	});
 
@@ -180,20 +180,20 @@ jQuery( document ).ready(function( $ ) {
 	function reinit_scripts() {
 
 		reinit        = false;
-		current_width = $( '#site-wrapper' ).width();
+		currentWidth = $( '#site-wrapper' ).width();
 
-		if ( initial_width > 979 && current_width <= 979 ) {
+		if ( initialWidth > 979 && currentWidth <= 979 ) {
 			reinit = true;
-		} else if ( initial_width <= 979 && current_width > 979 ) {
+		} else if ( initialWidth <= 979 && currentWidth > 979 ) {
 			reinit = true;
-		} else if ( initial_width > 450 && current_width <= 450 ) {
+		} else if ( initialWidth > 450 && currentWidth <= 450 ) {
 			reinit = true;
-		} else if ( initial_width <= 450 && current_width > 450 ) {
+		} else if ( initialWidth <= 450 && currentWidth > 450 ) {
 			reinit = true;
 		}
 
 		if ( true === reinit ) {
-			initial_width = current_width;
+			initialWidth = currentWidth;
 			zoomInit();
 			if ( $.isFunction( jQuery.fn.cycle ) ) {
 				$( '.cycle-slideshow' ).cycle( 'reinit' );
@@ -207,40 +207,40 @@ jQuery( document ).ready(function( $ ) {
 	//Change variation images on variation change
 	$( document ).on( 'found_variation', function( event, variation ) {
 
-		var thumb, large_img, item, image;
+		var thumb, largeImg, item, image;
 
 		event.preventDefault();
 
-		thumb     = variation.image_src,
-		large_img = variation.image_link,
-		item      = $( '.product-large-image' ),
-		image     = $( 'img', item );
+		thumb    = variation.image_src,
+		largeImg = variation.image_link,
+		item     = $( '.product-large-image' ),
+		image    = $( 'img', item );
 
-		if ( '' === thumb || '' === large_img ) {
-			thumb     = image.data( 'initial-thumb' ),
-			large_img = image.data( 'initial-thumb-large' );
+		if ( '' === thumb || '' === largeImg ) {
+			thumb    = image.data( 'initial-thumb' ),
+			largeImg = image.data( 'initial-thumb-large' );
 		} else if ( $( '.product-thumbnails_item.active-image' ).length > 0 ) {
 			$( '.product-thumbnails_item.active-image' ).removeClass( 'active-image' );
 		} else if ( $('.owl-item.active-image').length > 0 ) {
 			$( '.owl-item.active-image' ).removeClass( 'active-image' );
 		}
 
-		image.attr( 'src', thumb ).data( 'zoom-image', large_img ).attr( 'data-zoom-image', large_img );
+		image.attr( 'src', thumb ).data( 'zoom-image', largeImg ).attr( 'data-zoom-image', largeImg );
 		zoomInit();
 	});
 
-	$(document).on( 'reset_data', function( event ) {
+	$( document ).on( 'reset_data', function( event ) {
 
-		var item, image, initial_thmb, initial_lrg;
+		var item, image, initialThmb, initialLrg;
 
 		event.preventDefault();
 
-		item         = $('.product-large-image'),
-		image        = $('img', item),
-		initial_thmb = image.data('initial-thumb'),
-		initial_lrg  = image.data('initial-thumb-large');
+		item        = $('.product-large-image'),
+		image       = $('img', item),
+		initialThmb = image.data('initial-thumb'),
+		initialLrg  = image.data('initial-thumb-large');
 
-		image.attr ('src', initial_thmb ).data( 'zoom-image', initial_lrg ).attr( 'data-zoom-image', initial_lrg );
+		image.attr ('src', initialThmb ).data( 'zoom-image', initialLrg ).attr( 'data-zoom-image', initialLrg );
 		zoomInit();
 	});
 
