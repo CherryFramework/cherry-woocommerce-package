@@ -4,6 +4,8 @@
  * Copyright 2012 @louis_remi
  * Licensed under the MIT license.
  */
+"use strict";
+
 (function($) {
 
 	var $event = $.event,
@@ -12,10 +14,10 @@
 
 	$special = $event.special.debouncedresize = {
 		setup: function() {
-			$( this ).on( "resize", $special.handler );
+			$( this ).on( 'resize', $special.handler );
 		},
 		teardown: function() {
-			$( this ).off( "resize", $special.handler );
+			$( this ).off( 'resize', $special.handler );
 		},
 		handler: function( event, execAsap ) {
 			// Save the context
@@ -23,7 +25,7 @@
 				args = arguments,
 				dispatch = function() {
 					// set correct event type
-					event.type = "debouncedresize";
+					event.type = 'debouncedresize';
 					$event.dispatch.apply( context, args );
 				};
 
@@ -56,13 +58,13 @@
 				event.stopPropagation();
 				event.stopImmediatePropagation();
 
-				$this.attr('data-dropdown-active', 'true');
+				$this.attr( 'data-dropdown-active', 'true' );
 
 			});
 
 			$(document).mouseup( function(e) {
 				if ( ! $this.is(e.target) && $this.has(e.target).length === 0) {
-					$this.attr('data-dropdown-active', 'false');
+					$this.attr( 'data-dropdown-active', 'false' );
 				}
 			});
 		});
@@ -72,11 +74,15 @@
 
 jQuery(document).ready(function($) {
 
+	var initial_width = $('#site-wrapper').width(),
+		current_width = initial_width,
+		reinit        = false;
+
 	// init dropdowns
 	$('[data-dropdown="box"]').CherryWCDropdown();
 
 	// quick view
-	$(document).on('click', '.cherry-quick-view', function(event) {
+	$(document).on( 'click', '.cherry-quick-view', function(event) {
 
 		event.preventDefault();
 		event.stopPropagation();
@@ -99,7 +105,7 @@ jQuery(document).ready(function($) {
 				success: function(response) {
 					$('#'+current_popup).find('.cherry-quick-view-popup-content').html(response);
 				}
-			})
+			});
 		}
 
 		if ( ! item.find('.cherry-quick-view-popup').length ) {
@@ -114,7 +120,7 @@ jQuery(document).ready(function($) {
 				},
 				type: 'inline'
 			}, 0);
-		}
+		};
 
 		return false;
 
@@ -144,7 +150,7 @@ jQuery(document).ready(function($) {
 	$(document).on('click', '.product-thumbnails_item', function(event) {
 
 		event.preventDefault();
-		var _this      = $(this);
+		var _this      = $(this),
 			_parent    = _this.parents('.product-images'),
 			_large_img = _this.attr('data-large-img'),
 			_orig_img  = _this.attr('data-original-img');
@@ -161,10 +167,8 @@ jQuery(document).ready(function($) {
 
 	zoomInit();
 
-	var initial_width = current_width = $('#site-wrapper').width(),
-		reinit        = false;
-
 	function reinit_scripts() {
+
 		reinit        = false;
 		current_width = $('#site-wrapper').width();
 
@@ -178,7 +182,7 @@ jQuery(document).ready(function($) {
 			reinit = true;
 		}
 
-		if ( true == reinit ) {
+		if ( true === reinit ) {
 			initial_width = current_width;
 			zoomInit();
 			if ( $.isFunction( jQuery.fn.cycle ) ) {
@@ -188,7 +192,7 @@ jQuery(document).ready(function($) {
 
 	}
 
-	$(window).on( "orientationchange debouncedresize", reinit_scripts );
+	$(window).on( 'orientationchange debouncedresize', reinit_scripts );
 
 	//Change variation images on variation change
 	$(document).on('found_variation', function(event, variation) {
@@ -199,7 +203,7 @@ jQuery(document).ready(function($) {
 			item      = $('.product-large-image'),
 			image     = $('img', item);
 
-		if ( '' == thumb || '' == large_img ) {
+		if ( '' === thumb || '' === large_img ) {
 			thumb     = image.data('initial-thumb'),
 			large_img = image.data('initial-thumb-large');
 		} else if ( $('.product-thumbnails_item.active-image').length > 0 ) {
@@ -238,7 +242,7 @@ jQuery(document).ready(function($) {
 		//Allow for title and status bars.
 		topPosition = (window.screen.height / 2) - ((height / 2) + 50);
 		//Open the window.
-		window.open( url, "Share this", "status=no,height=" + height + ",width=" + width + ",resizable=yes,left=" + leftPosition + ",top=" + topPosition + ",screenX=" + leftPosition + ",screenY=" + topPosition + ",toolbar=no,menubar=no,scrollbars=no,location=no,directories=no" );
+		window.open( url, 'Share this', 'status=no,height=' + height + ',width=' + width + ',resizable=yes,left=' + leftPosition + ',top=' + topPosition + ',screenX=' + leftPosition + ',screenY=' + topPosition + ',toolbar=no,menubar=no,scrollbars=no,location=no,directories=no' );
 	});
 
 });
