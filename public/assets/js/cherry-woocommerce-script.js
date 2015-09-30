@@ -101,10 +101,10 @@ jQuery(document).ready(function($) {
 			jQuery.ajax({
 				type : 'post',
 				dataType : 'html',
-				url : cherry_woocommerce.ajaxurl,
+				url : window.cherry_woocommerce.ajaxurl,
 				data : {
 					action: 'cherry_wc_quick_view',
-					_wpnonce: cherry_woocommerce.nonce,
+					_wpnonce: window.cherry_woocommerce.nonce,
 					product: product_id
 				},
 				success: function(response) {
@@ -114,7 +114,7 @@ jQuery(document).ready(function($) {
 		};
 
 		if ( ! item.find('.cherry-quick-view-popup').length ) {
-			item.append('<div id="' + current_popup + '" class="cherry-quick-view-popup mfp-hide"><span href="#" class="mfp-close">&times;</span><div class="cherry-quick-view-popup-content"><div class="cherry-quick-view-load">' + cherry_woocommerce.loading + '</div></div></div>');
+			item.append('<div id="' + current_popup + '" class="cherry-quick-view-popup mfp-hide"><span href="#" class="mfp-close">&times;</span><div class="cherry-quick-view-popup-content"><div class="cherry-quick-view-load">' + window.cherry_woocommerce.loading + '</div></div></div>');
 			send_ajax_request();
 		}
 
