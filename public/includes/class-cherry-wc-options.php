@@ -143,8 +143,8 @@ if ( ! class_exists( 'Cherry_WC_Options' ) ) {
 		 *
 		 * @since 1.0.0
 		 * @uses cherry_get_option()
-		 * @param string  $option option name.
-		 * @param mixed   $default default option value.
+		 * @param string $option option name.
+		 * @param mixed  $default default option value.
 		 * @return mixed
 		 */
 		public function get_option( $option, $default = false ) {
