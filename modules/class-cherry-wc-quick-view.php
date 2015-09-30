@@ -14,6 +14,9 @@ if ( ! defined( 'WPINC' ) ) {
 
 if ( ! class_exists( 'Cherry_WC_Quick_View' ) ) {
 
+	/**
+	 * Product quick view
+	 */
 	class Cherry_WC_Quick_View {
 
 		/**
@@ -24,6 +27,9 @@ if ( ! class_exists( 'Cherry_WC_Quick_View' ) ) {
 		 */
 		private static $instance = null;
 
+		/**
+		 * Constructor for the class
+		 */
 		function __construct() {
 			add_action( 'woocommerce_before_shop_loop_item_title', array( $this, 'append_open_wrap' ), 0 );
 			add_action( 'woocommerce_before_shop_loop_item_title', array( $this, 'append_close_wrap' ), 100 );
@@ -111,12 +117,13 @@ if ( ! class_exists( 'Cherry_WC_Quick_View' ) ) {
 		 * @return object
 		 */
 		public static function get_instance() {
+
 			// If the single instance hasn't been set, set it now.
-			if ( null == self::$instance )
+			if ( null == self::$instance ) {
 				self::$instance = new self;
+			}
 			return self::$instance;
 		}
-
 	}
 
 }

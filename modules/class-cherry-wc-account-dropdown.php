@@ -35,6 +35,9 @@ class Cherry_WC_Account_Dropdown {
 	 */
 	public $account_options = array();
 
+	/**
+	 * Constructor for the class
+	 */
 	function __construct() {
 
 		add_action( 'init', array( $this, 'register_static' ) );
@@ -46,7 +49,7 @@ class Cherry_WC_Account_Dropdown {
 			'shop-acc-menu'         => '',
 			'shop-show-auth'        => 'true',
 			'shop-login-label'      => __( 'Log In/Register', 'cherry-woocommerce-package' ),
-			'shop-logout-label'     => __( 'Logout', 'cherry-woocommerce-package' )
+			'shop-logout-label'     => __( 'Logout', 'cherry-woocommerce-package' ),
 		);
 
 		add_action( 'cherry_wc_account_dropdown', array( $this, 'dropdown_frontend' ) );
@@ -62,9 +65,9 @@ class Cherry_WC_Account_Dropdown {
 	}
 
 	/**
-	 * show dropdown account content
-	 * @since 1.0.0
+	 * Show dropdown account content
 	 *
+	 * @since 1.0.0
 	 * @return void
 	 */
 	public function dropdown_frontend() {
@@ -79,27 +82,27 @@ class Cherry_WC_Account_Dropdown {
 	}
 
 	/**
-	 * prepare account dropdown options
-	 * @since 1.0.0
+	 * Prepare account dropdown options
 	 *
+	 * @since 1.0.0
 	 * @return void
 	 */
 	public function prepare_options() {
 
 		foreach ( $this->account_options as $option_name => $option_val ) {
-			$this->account_options[$option_name] = cherry_wc_options()->get_option( $option_name, $option_val );
+			$this->account_options[ $option_name ] = cherry_wc_options()->get_option( $option_name, $option_val );
 		}
 
 	}
 
 	/**
-	 * show account items list
-	 * @since 1.0.0
+	 * Show account items list
 	 *
+	 * @since 1.0.0
 	 * @return void
 	 */
 	public function show_account_list() {
-		if ( !$this->account_options['shop-acc-menu'] ) {
+		if ( ! $this->account_options['shop-acc-menu'] ) {
 			$this->default_account_list();
 			return;
 		}
@@ -112,7 +115,7 @@ class Cherry_WC_Account_Dropdown {
 		$args = apply_filters( 'cherry_wc_account_menu_args', array(
 			'menu'       => $this->account_options['shop-acc-menu'],
 			'menu_class' => 'cherry-wc-account_list',
-			'depth'      => -1
+			'depth'      => -1,
 		) );
 
 		wp_nav_menu( $args );
@@ -120,9 +123,9 @@ class Cherry_WC_Account_Dropdown {
 	}
 
 	/**
-	 * show default account list (if menu in options not selected)
-	 * @since 1.0.0
+	 * Show default account list (if menu in options not selected)
 	 *
+	 * @since 1.0.0
 	 * @return void
 	 */
 	public function default_account_list() {
@@ -136,14 +139,14 @@ class Cherry_WC_Account_Dropdown {
 		$items = array(
 			'orders' => array(
 				'link'  => esc_url( $orders_link ),
-				'label' => __( 'Orders', 'cherry-woocommerce-package' )
-			)
+				'label' => __( 'Orders', 'cherry-woocommerce-package' ),
+			),
 		);
 
 		if ( defined( 'YITH_WOOCOMPARE' ) ) {
 			$items['cherry-compare'] = array(
 				'link'  => '#',
-				'label' => __( 'Compare', 'cherry-woocommerce-package' )
+				'label' => __( 'Compare', 'cherry-woocommerce-package' ),
 			);
 		}
 
@@ -158,21 +161,22 @@ class Cherry_WC_Account_Dropdown {
 
 			$items['cherry-wishlist'] = array(
 				'link'  => $wishlist_link,
-				'label' => __( 'Wishlist', 'cherry-woocommerce-package' )
+				'label' => __( 'Wishlist', 'cherry-woocommerce-package' ),
 			);
 		}
 
-		if ( !$items ) {
+		if ( ! $items ) {
 			return;
 		}
 		?>
 		<ul class="cherry-wc-account_list">
 		<?php
 		foreach ( $items as $item_class => $item_data ) {
-			if ( empty($item_data) ) {
+
+			if ( empty( $item_data ) ) {
 				continue;
 			}
-			echo '<li class="cherry-wc-account_list_item ' . $item_class . '"><a href="' . $item_data["link"] . '">' . $item_data["label"] . '</a></li>';
+			echo '<li class="cherry-wc-account_list_item ' . $item_class . '"><a href="' . $item_data['link'] . '">' . $item_data['label'] . '</a></li>';
 		}
 		?>
 		</ul>
@@ -180,9 +184,9 @@ class Cherry_WC_Account_Dropdown {
 	}
 
 	/**
-	 * show default account auth links
-	 * @since 1.0.0
+	 * Show default account auth links
 	 *
+	 * @since 1.0.0
 	 * @return void
 	 */
 	public function show_account_auth() {
@@ -193,20 +197,28 @@ class Cherry_WC_Account_Dropdown {
 
 		$account_page = get_option( 'woocommerce_myaccount_page_id' );
 
-		if ( !$account_page ) {
+		if ( ! $account_page ) {
 			return;
 		}
 
 		echo '<div class="cherry-wc-account_auth">';
+
 			$link_url   = get_permalink( $account_page );
 			$link_text  = $this->account_options['shop-login-label'];
 			$link_class = 'not-logged';
+
 			if ( is_user_logged_in() ) {
 				$link_url   = wp_logout_url( get_permalink( $account_page ) );
 				$link_text  = $this->account_options['shop-logout-label'];
 				$link_class = 'logged';
 			}
-			echo apply_filters( "cherry_wc_account_auth_html", "<a href='$link_url' class='$link_class'>$link_text</a>", $link_url, $link_text, $link_class );
+
+			echo apply_filters(
+				'cherry_wc_account_auth_html',
+				'<a href="' . $link_url .'" class="' . $link_class . '">' . $link_text . '</a>',
+				$link_url, $link_text, $link_class
+			);
+
 		echo '</div>';
 
 	}
@@ -218,10 +230,11 @@ class Cherry_WC_Account_Dropdown {
 	 * @return object
 	 */
 	public static function get_instance() {
+
 		// If the single instance hasn't been set, set it now.
-		if ( null == self::$instance )
+		if ( null == self::$instance ) {
 			self::$instance = new self;
+		}
 		return self::$instance;
 	}
-
 }

@@ -12,9 +12,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Menu badges management class
- *
- * @since 1.0.0
+ * Add product video tab
  */
 class Cherry_WC_Product_Video {
 
@@ -26,6 +24,12 @@ class Cherry_WC_Product_Video {
 	 */
 	private static $instance = null;
 
+	/**
+	 * Meta field name
+	 *
+	 * @since 1.0.0
+	 * @var string
+	 */
 	public $key = '_cherry_wc_video_url';
 
 	/**
@@ -65,8 +69,9 @@ class Cherry_WC_Product_Video {
 	/**
 	 * Add frontend Product Videotab
 	 *
-	 * @since  1.0.0
-	 * @param  array  $tabs  existing tabs
+	 * @since 1.0.0
+	 * @param array $tabs existing tabs.
+	 * @return array
 	 */
 	public function add_frontend_tab( $tabs ) {
 
@@ -98,7 +103,7 @@ class Cherry_WC_Product_Video {
 		global $product, $post;
 		$video = get_post_meta( $post->ID, $this->key, true );
 
-		if ( !$video ) {
+		if ( ! $video ) {
 			return $tabs;
 		}
 
@@ -125,8 +130,9 @@ class Cherry_WC_Product_Video {
 	/**
 	 * Add video tab to admin product metabox
 	 *
-	 * @since  1.0.0
-	 * @param  array $tabs existing tabs
+	 * @since 1.0.0
+	 * @param array $tabs existing tabs.
+	 * @return array
 	 */
 	public function add_admin_tab( $tabs ) {
 
@@ -155,7 +161,6 @@ class Cherry_WC_Product_Video {
 
 			echo '<div class="options_group">';
 
-				// menu_order
 				if ( function_exists( 'woocommerce_wp_text_input' ) ) {
 					woocommerce_wp_text_input(
 						array(
@@ -180,7 +185,7 @@ class Cherry_WC_Product_Video {
 	 * Save video tab meta data to data base
 	 *
 	 * @since  1.0.0
-	 * @param  int  $post_id saved post ID
+	 * @param  int  $post_id saved post ID.
 	 */
 	public function save_video_meta( $post_id ) {
 
@@ -201,10 +206,11 @@ class Cherry_WC_Product_Video {
 	 * @return object
 	 */
 	public static function get_instance() {
+
 		// If the single instance hasn't been set, set it now.
-		if ( null == self::$instance )
+		if ( null == self::$instance ) {
 			self::$instance = new self;
+		}
 		return self::$instance;
 	}
-
 }

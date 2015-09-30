@@ -14,6 +14,9 @@ if ( ! defined( 'WPINC' ) ) {
 
 if ( ! class_exists( 'Cherry_WC_Templater' ) ) {
 
+	/**
+	 * Plugin templates management
+	 */
 	class Cherry_WC_Templater {
 
 		/**
@@ -24,12 +27,11 @@ if ( ! class_exists( 'Cherry_WC_Templater' ) ) {
 		 */
 		private static $instance = null;
 
-
 		/**
 		 * Get template part (for templates like the shop-loop).
 		 *
 		 * @since 1.0.0
-		 * @param  string  $name  template name
+		 * @param  string  $name  template name.
 		 * @return void
 		 */
 		public function get_template_part( $name, $from_wc = false ) {
@@ -65,7 +67,7 @@ if ( ! class_exists( 'Cherry_WC_Templater' ) ) {
 		 * Register new static by name
 		 *
 		 * @since 1.0.0
-		 * @param string $filename static filname to register
+		 * @param string $filename static filname to register.
 		 * @return void
 		 */
 		public function register_static( $filename = null ) {

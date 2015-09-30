@@ -14,6 +14,9 @@ if ( ! defined( 'WPINC' ) ) {
 
 if ( !class_exists( 'Cherry_WC_Options' ) ) {
 
+	/**
+	 * OPtions management class
+	 */
 	class Cherry_WC_Options {
 
 		/**
@@ -31,6 +34,13 @@ if ( !class_exists( 'Cherry_WC_Options' ) ) {
 			add_filter( 'cherry_defaults_settings', array( $this, 'add_options' ) );
 		}
 
+		/**
+		 * Add plugin options to Cherry options page
+		 *
+		 * @since 1.0.0
+		 * @param array $sections existing section array.
+		 * @return array
+		 */
 		public function add_options( $sections ) {
 
 			$menus = wp_get_nav_menus( array( 'orderby' => 'name' ) );
@@ -133,8 +143,8 @@ if ( !class_exists( 'Cherry_WC_Options' ) ) {
 		 *
 		 * @since  1.0.0
 		 * @uses   cherry_get_option()
-		 * @param  string $option  option name
-		 * @param  mixed  $default default option value
+		 * @param  string $option  option name.
+		 * @param  mixed  $default default option value.
 		 * @return mixed
 		 */
 		public function get_option( $option, $default = false ) {
@@ -154,9 +164,11 @@ if ( !class_exists( 'Cherry_WC_Options' ) ) {
 		 * @return object
 		 */
 		public static function get_instance() {
+
 			// If the single instance hasn't been set, set it now.
-			if ( null == self::$instance )
+			if ( null == self::$instance ) {
 				self::$instance = new self;
+			}
 			return self::$instance;
 		}
 

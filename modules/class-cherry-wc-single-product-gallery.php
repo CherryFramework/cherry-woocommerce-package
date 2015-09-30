@@ -12,8 +12,11 @@ if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 
-if ( !class_exists( 'Cherry_WC_Single_Product_Gallery' ) ) {
+if ( ! class_exists( 'Cherry_WC_Single_Product_Gallery' ) ) {
 
+	/**
+	 * Product single page gallery
+	 */
 	class Cherry_WC_Single_Product_Gallery {
 
 		/**

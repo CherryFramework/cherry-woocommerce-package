@@ -14,6 +14,9 @@ if ( ! defined( 'WPINC' ) ) {
 
 if ( ! class_exists( 'Cherry_WC_Cart_Dropdown' ) ) {
 
+	/**
+	 * Cart Drodown class
+	 */
 	class Cherry_WC_Cart_Dropdown {
 
 		/**

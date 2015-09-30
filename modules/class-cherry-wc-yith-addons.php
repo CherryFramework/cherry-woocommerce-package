@@ -14,6 +14,9 @@ if ( ! defined( 'WPINC' ) ) {
 
 if ( ! class_exists( 'Cherry_WC_YITH_Addons' ) ) {
 
+	/**
+	 * YITH addons extra options
+	 */
 	class Cherry_WC_YITH_Addons {
 
 		/**
@@ -24,6 +27,9 @@ if ( ! class_exists( 'Cherry_WC_YITH_Addons' ) ) {
 		 */
 		private static $instance = null;
 
+		/**
+		 * Constructor for the class
+		 */
 		function __construct() {
 			add_action( 'wp_head', array( $this, 'compare_css' ), 99 );
 			add_action( 'woocommerce_after_shop_loop_item', array( $this, 'add_wishlist_to_loop' ), 25 );
@@ -73,12 +79,13 @@ if ( ! class_exists( 'Cherry_WC_YITH_Addons' ) ) {
 		 * @return object
 		 */
 		public static function get_instance() {
+
 			// If the single instance hasn't been set, set it now.
-			if ( null == self::$instance )
+			if ( null == self::$instance ) {
 				self::$instance = new self;
+			}
 			return self::$instance;
 		}
-
 	}
 
 }

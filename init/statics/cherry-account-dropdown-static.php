@@ -12,11 +12,14 @@ if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 
-if ( ! class_exists( 'cherry_register_static' ) ) {
+if ( ! class_exists( 'Cherry_WC_Account_Static' ) ) {
 	return;
 }
 
-class cherry_wc_account_static extends cherry_register_static {
+/**
+ * Account dropdown static class
+ */
+class Cherry_WC_Account_Static extends cherry_register_static {
 
 	/**
 	 * Callback-method for registered static.
@@ -26,13 +29,12 @@ class cherry_wc_account_static extends cherry_register_static {
 	public function callback() {
 		do_action( 'cherry_wc_account_dropdown' );
 	}
-
 }
 
 /**
  * Register for Account dropdown static for editor
  */
-new cherry_wc_account_static(
+new Cherry_WC_Account_Static(
 	array(
 		'id'      => 'shop-account-dropdown',
 		'name'    => __( 'Shop Account Dropdown', 'cherry-woocommerce-package' ),
@@ -44,6 +46,6 @@ new cherry_wc_account_static(
 			'class'    => '',
 			'position' => 3,
 			'area'     => 'available-statics',
-		)
+		),
 	)
 );

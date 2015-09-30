@@ -12,11 +12,14 @@ if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 
-if ( ! class_exists( 'cherry_register_static' ) ) {
+if ( ! class_exists( 'Cherry_WC_Cart_Static' ) ) {
 	return;
 }
 
-class cherry_wc_cart_static extends cherry_register_static {
+/**
+ * Cart dropdown class
+ */
+class Cherry_WC_Cart_Static extends cherry_register_static {
 
 	/**
 	 * Callback-method for registered static.
@@ -32,13 +35,12 @@ class cherry_wc_cart_static extends cherry_register_static {
 		</div>
 		<?php
 	}
-
 }
 
 /**
  * Register Cart dropdown static for editor
  */
-new cherry_wc_cart_static(
+new Cherry_WC_Cart_Static(
 	array(
 		'id'      => 'shop-cart-dropdown',
 		'name'    => __( 'Shop Cart Dropdown', 'cherry-woocommerce-package' ),
@@ -50,6 +52,6 @@ new cherry_wc_cart_static(
 			'class'    => '',
 			'position' => 3,
 			'area'     => 'available-statics',
-		)
+		),
 	)
 );

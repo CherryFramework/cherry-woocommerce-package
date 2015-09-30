@@ -12,8 +12,11 @@ if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 
-if ( !class_exists( 'Cherry_WC_Product_Sharing' ) ) {
+if ( ! class_exists( 'Cherry_WC_Product_Sharing' ) ) {
 
+	/**
+	 * Product sharing class
+	 */
 	class Cherry_WC_Product_Sharing {
 
 		/**
@@ -56,7 +59,7 @@ if ( !class_exists( 'Cherry_WC_Product_Sharing' ) ) {
 					'facebook'    => 'https://www.facebook.com/sharer/sharer.php?u=%1$s',
 					'twitter'     => 'https://twitter.com/intent/tweet?url=%1$s&status=%2$s',
 					'google-plus' => 'https://plus.google.com/share?url=%1$s',
-					'pinterest'   => 'https://pinterest.com/pin/create/bookmarklet/?media=%3$s&url=%1$s&is_video=false&description=%2$s'
+					'pinterest'   => 'https://pinterest.com/pin/create/bookmarklet/?media=%3$s&url=%1$s&is_video=false&description=%2$s',
 				)
 			);
 

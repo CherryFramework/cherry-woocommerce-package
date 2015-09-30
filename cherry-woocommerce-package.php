@@ -10,6 +10,11 @@
  * License:     GPL-2.0+
  * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
  * Domain Path: /languages
+ *
+ * @package  Cherry Rank
+ * @category Core
+ * @author   Cherry Team
+ * @license  GPL-2.0+
  */
 
 // If this file is called directly, abort.
@@ -19,6 +24,9 @@ if ( ! defined( 'WPINC' ) ) {
 
 if ( ! class_exists( 'Cherry_Woocommerce_Package' ) ) {
 
+	/**
+	 * Main plugin class
+	 */
 	class Cherry_Woocommerce_Package {
 
 		/**
@@ -61,6 +69,9 @@ if ( ! class_exists( 'Cherry_Woocommerce_Package' ) ) {
 		 */
 		public $version = '1.0.0';
 
+		/**
+		 * Class constructor
+		 */
 		function __construct() {
 
 			$this->load_core();
@@ -87,7 +98,6 @@ if ( ! class_exists( 'Cherry_Woocommerce_Package' ) ) {
 		 * @return void
 		 */
 		private function load_admin() {
-			//$this->plugin_dir();
 		}
 
 		/**
@@ -107,7 +117,7 @@ if ( ! class_exists( 'Cherry_Woocommerce_Package' ) ) {
 		 * Get plugin URL (or some plugin dir/file URL)
 		 *
 		 * @since  1.0.0
-		 * @param  string $path dir or file inside plugin dir
+		 * @param  string $path dir or file inside plugin dir.
 		 * @return string
 		 */
 		public function plugin_url( $path = null ) {
@@ -128,7 +138,7 @@ if ( ! class_exists( 'Cherry_Woocommerce_Package' ) ) {
 		 * Get plugin dir path (or some plugin dir/file path)
 		 *
 		 * @since  1.0.0
-		 * @param  string $path dir or file inside plugin dir
+		 * @param  string $path dir or file inside plugin dir.
 		 * @return string
 		 */
 		public function plugin_dir( $path ) {
@@ -172,11 +182,11 @@ if ( ! class_exists( 'Cherry_Woocommerce_Package' ) ) {
 		 */
 		public static function get_instance() {
 			// If the single instance hasn't been set, set it now.
-			if ( null == self::$instance )
+			if ( null == self::$instance ) {
 				self::$instance = new self;
+			}
 			return self::$instance;
 		}
-
 	}
 
 	/**

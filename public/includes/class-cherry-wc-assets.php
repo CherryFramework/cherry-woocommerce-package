@@ -14,6 +14,9 @@ if ( ! defined( 'WPINC' ) ) {
 
 if ( ! class_exists( 'Cherry_WC_Assets' ) ) {
 
+	/**
+	 * Assets manager
+	 */
 	class Cherry_WC_Assets {
 
 		/**
@@ -32,6 +35,9 @@ if ( ! class_exists( 'Cherry_WC_Assets' ) ) {
 		 */
 		public static $localized = array();
 
+		/**
+		 * Constructor for the class
+		 */
 		function __construct() {
 
 			add_action( 'wp_enqueue_scripts', array( $this, 'register_assets' ), 15 );

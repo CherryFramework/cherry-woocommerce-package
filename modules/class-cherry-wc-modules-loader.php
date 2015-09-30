@@ -14,6 +14,9 @@ if ( ! defined( 'WPINC' ) ) {
 
 if ( ! class_exists( 'Cherry_WC_Modules_Loader' ) ) {
 
+	/**
+	 * Existing modules loader class
+	 */
 	class Cherry_WC_Modules_Loader {
 
 		/**
@@ -25,7 +28,7 @@ if ( ! class_exists( 'Cherry_WC_Modules_Loader' ) ) {
 		private static $instance = null;
 
 		/**
-		 * existing modules
+		 * Existing modules
 		 * @var array
 		 */
 		private $modules = array();
@@ -36,6 +39,9 @@ if ( ! class_exists( 'Cherry_WC_Modules_Loader' ) ) {
 		 */
 		private $queue = array();
 
+		/**
+		 * Constructor for the class
+		 */
 		function __construct() {
 
 			// register existing modules
@@ -103,8 +109,8 @@ if ( ! class_exists( 'Cherry_WC_Modules_Loader' ) ) {
 				if ( empty( $data['ajax'] ) ) {
 					continue;
 				}
-
 				if ( $this->is_ajax_action( $data['ajax']['action'] ) ) {
+
 					include_once $data['file'];
 					$callback = $data['class']::get_instance();
 
@@ -117,7 +123,6 @@ if ( ! class_exists( 'Cherry_WC_Modules_Loader' ) ) {
 						array( $callback, $data['ajax']['callback'] )
 					);
 				}
-
 			}
 
 		}
@@ -154,8 +159,8 @@ if ( ! class_exists( 'Cherry_WC_Modules_Loader' ) ) {
 		/**
 		 * Check if is specific AJAX action
 		 *
-		 * @since  1.0.0
-		 * @param  string  $action  action name
+		 * @since 1.0.0
+		 * @param string  $action  action name/
 		 * @return boolean
 		 */
 		public function is_ajax_action( $action = null ) {
@@ -182,7 +187,7 @@ if ( ! class_exists( 'Cherry_WC_Modules_Loader' ) ) {
 		/**
 		 * Load all modules
 		 *
-		 * @since  1.0.0
+		 * @since 1.0.0
 		 * @return void
 		 */
 		private function load_modules() {
@@ -220,11 +225,11 @@ if ( ! class_exists( 'Cherry_WC_Modules_Loader' ) ) {
 		 */
 		public static function get_instance() {
 			// If the single instance hasn't been set, set it now.
-			if ( null == self::$instance )
+			if ( null == self::$instance ) {
 				self::$instance = new self;
+			}
 			return self::$instance;
 		}
-
 	}
 
 	/**
