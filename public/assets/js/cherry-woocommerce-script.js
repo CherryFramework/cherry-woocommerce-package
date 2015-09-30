@@ -99,25 +99,25 @@ jQuery( document ).ready(function( $ ) {
 		item = $( this ).parents( 'li.product' ),
 		currentPopup = 'cherry-quick-view-popup-' + productId;
 
-		function send_ajax_request() {
+		function sendAjaxRequest() {
 			jQuery.ajax({
 				type: 'post',
 				dataType: 'html',
-				url: window.cherry_woocommerce.ajaxurl,
+				url: window.CherryWoocommerce.ajaxurl,
 				data: {
 					action: 'cherry_wc_quick_view',
-					_wpnonce: window.cherry_woocommerce.nonce,
+					_wpnonce: window.CherryWoocommerce.nonce,
 					product: productId
 				},
 				success: function( response ) {
 					$( '#' + currentPopup ).find( '.cherry-quick-view-popup-content' ).html( response );
 				}
 			});
-		};
+		}
 
 		if ( ! item.find( '.cherry-quick-view-popup' ).length ) {
-			item.append( '<div id="' + currentPopup + '" class="cherry-quick-view-popup mfp-hide"><span href="#" class="mfp-close">&times;</span><div class="cherry-quick-view-popup-content"><div class="cherry-quick-view-load">' + window.cherry_woocommerce.loading + '</div></div></div>' );
-			send_ajax_request();
+			item.append( '<div id="' + currentPopup + '" class="cherry-quick-view-popup mfp-hide"><span href="#" class="mfp-close">&times;</span><div class="cherry-quick-view-popup-content"><div class="cherry-quick-view-load">' + window.CherryWoocommerce.loading + '</div></div></div>' );
+			sendAjaxRequest();
 		}
 
 		if ( $.isFunction( jQuery.fn.magnificPopup ) ) {
@@ -177,7 +177,7 @@ jQuery( document ).ready(function( $ ) {
 
 	zoomInit();
 
-	function reinit_scripts() {
+	function reinitScripts() {
 
 		reinit        = false;
 		currentWidth = $( '#site-wrapper' ).width();
@@ -202,7 +202,7 @@ jQuery( document ).ready(function( $ ) {
 
 	}
 
-	$( window ).on( 'orientationchange debouncedresize', reinit_scripts );
+	$( window ).on( 'orientationchange debouncedresize', reinitScripts );
 
 	//Change variation images on variation change
 	$( document ).on( 'found_variation', function( event, variation ) {
@@ -211,8 +211,11 @@ jQuery( document ).ready(function( $ ) {
 
 		event.preventDefault();
 
+		// jscs:disable
 		thumb    = variation.image_src,
 		largeImg = variation.image_link,
+		// jscs:enable
+
 		item     = $( '.product-large-image' ),
 		image    = $( 'img', item );
 
@@ -221,7 +224,7 @@ jQuery( document ).ready(function( $ ) {
 			largeImg = image.data( 'initial-thumb-large' );
 		} else if ( $( '.product-thumbnails_item.active-image' ).length > 0 ) {
 			$( '.product-thumbnails_item.active-image' ).removeClass( 'active-image' );
-		} else if ( $('.owl-item.active-image').length > 0 ) {
+		} else if ( $( '.owl-item.active-image' ).length > 0 ) {
 			$( '.owl-item.active-image' ).removeClass( 'active-image' );
 		}
 
@@ -235,19 +238,19 @@ jQuery( document ).ready(function( $ ) {
 
 		event.preventDefault();
 
-		item        = $('.product-large-image'),
-		image       = $('img', item),
-		initialThmb = image.data('initial-thumb'),
-		initialLrg  = image.data('initial-thumb-large');
+		item        = $( '.product-large-image' ),
+		image       = $( 'img', item ),
+		initialThmb = image.data( 'initial-thumb' ),
+		initialLrg  = image.data( 'initial-thumb-large' );
 
-		image.attr ('src', initialThmb ).data( 'zoom-image', initialLrg ).attr( 'data-zoom-image', initialLrg );
+		image.attr( 'src', initialThmb ).data( 'zoom-image', initialLrg ).attr( 'data-zoom-image', initialLrg );
 		zoomInit();
 	});
 
 	/**
 	 * Open sharing popup
 	 */
-	$(document).on( 'click', '.share-buttons_link', function( event ) {
+	$( document ).on( 'click', '.share-buttons_link', function( event ) {
 
 		var width, height, url, leftPosition, topPosition;
 
@@ -259,8 +262,10 @@ jQuery( document ).ready(function( $ ) {
 
 		//Allow for borders.
 		leftPosition = ( window.screen.width / 2 ) - ( ( width / 2 ) + 10 );
+
 		//Allow for title and status bars.
 		topPosition = ( window.screen.height / 2 ) - ( ( height / 2 ) + 50 );
+
 		//Open the window.
 		window.open( url, 'Share this', 'status=no,height=' + height + ',width=' + width + ',resizable=yes,left=' + leftPosition + ',top=' + topPosition + ',screenX=' + leftPosition + ',screenY=' + topPosition + ',toolbar=no,menubar=no,scrollbars=no,location=no,directories=no' );
 	});

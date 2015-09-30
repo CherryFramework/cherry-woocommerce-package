@@ -214,7 +214,7 @@ if ( ! class_exists( 'Cherry_WC_Assets' ) ) {
 				if ( array_key_exists( $handle, self::$localized ) ) {
 					wp_localize_script(
 						$handle,
-						str_replace( '-', '_', $handle ),
+						str_replace( ' ', '', ucwords( str_replace( '-', ' ', $handle ) ) ),
 						self::$localized[ $handle ]
 					);
 				}
