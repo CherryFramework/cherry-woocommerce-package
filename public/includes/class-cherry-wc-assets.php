@@ -230,8 +230,8 @@ if ( ! class_exists( 'Cherry_WC_Assets' ) ) {
 		/**
 		 * Pass chart style handle to CSS compiler
 		 *
-		 * @since  1.0.0
-		 * @param  array $handles CSS handles to compile
+		 * @since 1.0.0
+		 * @param array $handles CSS handles to compile.
 		 */
 		public function add_style_to_compiler( $handles ) {
 
