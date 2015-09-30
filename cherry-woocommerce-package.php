@@ -98,6 +98,21 @@ if ( ! class_exists( 'Cherry_Woocommerce_Package' ) ) {
 		 * @return void
 		 */
 		private function load_admin() {
+
+			if ( ! is_admin() ) {
+				return;
+			}
+
+			require_once $this->plugin_dir( 'admin/includes/class-cherry-update/class-cherry-plugin-update.php' );
+
+			$Cherry_Plugin_Update = new Cherry_Plugin_Update();
+			$Cherry_Plugin_Update->init(
+				array(
+					'version'         => $this->version,
+					'slug'            => 'cherry-woocommerce-package',
+					'repository_name' => 'cherry-woocommerce-package',
+				)
+			);
 		}
 
 		/**
@@ -107,6 +122,7 @@ if ( ! class_exists( 'Cherry_Woocommerce_Package' ) ) {
 		 * @return void
 		 */
 		private function load_public() {
+
 			require_once $this->plugin_dir( 'public/includes/class-cherry-wc-options.php' );
 			require_once $this->plugin_dir( 'public/includes/class-cherry-wc-assets.php' );
 			require_once $this->plugin_dir( 'public/includes/class-cherry-wc-templater.php' );
