@@ -4,9 +4,9 @@
  * Copyright 2012 @louis_remi
  * Licensed under the MIT license.
  */
-"use strict";
-
 (function($) {
+
+	'use strict';
 
 	var $event = $.event,
 		$special,
@@ -46,6 +46,9 @@
  * Dropdowns handle plugin
  */
 (function( $ ) {
+
+	'use strict';
+
 	$.fn.CherryWCDropdown = function( options ) {
 
 		return this.each(function(index, el) {
@@ -74,6 +77,8 @@
 
 jQuery(document).ready(function($) {
 
+	'use strict';
+
 	var initial_width = $('#site-wrapper').width(),
 		current_width = initial_width,
 		reinit        = false;
@@ -94,8 +99,8 @@ jQuery(document).ready(function($) {
 
 		var send_ajax_request = function() {
 			jQuery.ajax({
-				type : "post",
-				dataType : "html",
+				type : 'post',
+				dataType : 'html',
 				url : cherry_woocommerce.ajaxurl,
 				data : {
 					action: 'cherry_wc_quick_view',
@@ -106,7 +111,7 @@ jQuery(document).ready(function($) {
 					$('#'+current_popup).find('.cherry-quick-view-popup-content').html(response);
 				}
 			});
-		}
+		};
 
 		if ( ! item.find('.cherry-quick-view-popup').length ) {
 			item.append('<div id="' + current_popup + '" class="cherry-quick-view-popup mfp-hide"><span href="#" class="mfp-close">&times;</span><div class="cherry-quick-view-popup-content"><div class="cherry-quick-view-load">' + cherry_woocommerce.loading + '</div></div></div>');
@@ -120,7 +125,7 @@ jQuery(document).ready(function($) {
 				},
 				type: 'inline'
 			}, 0);
-		};
+		}
 
 		return false;
 
@@ -137,8 +142,8 @@ jQuery(document).ready(function($) {
 
 		if ( $.isFunction( jQuery.fn.elevateZoom ) ) {
 			$('.product-large-image img').elevateZoom({
-				zoomType: "inner",
-				cursor: "crosshair",
+				zoomType: 'inner',
+				cursor: 'crosshair',
 				zoomWindowFadeIn: 500,
 				zoomWindowFadeOut: 750
 			});
