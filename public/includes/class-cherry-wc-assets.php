@@ -75,12 +75,12 @@ if ( ! class_exists( 'Cherry_WC_Assets' ) ) {
 		 */
 		public function register_assets() {
 
-			// styles
+			// Styles
 			foreach ( $this->get_styles() as $style ) {
 				wp_register_style( $style['handle'], $style['url'], $style['deps'], $style['ver'] );
 			}
 
-			// scripts
+			// Scripts
 			foreach ( $this->get_scripts() as $script ) {
 
 				if ( wp_script_is( $script['handle'], 'registered' ) ) {
@@ -89,7 +89,6 @@ if ( ! class_exists( 'Cherry_WC_Assets' ) ) {
 
 				wp_register_script( $script['handle'], $script['url'], $script['deps'], $script['ver'], true );
 			}
-
 
 			self::$localized = array(
 				'cherry-woocommerce' => apply_filters(
@@ -205,7 +204,7 @@ if ( ! class_exists( 'Cherry_WC_Assets' ) ) {
 		/**
 		 * Enqueue scripts by call
 		 *
-		 * @param  array  $handles required scripts to enqueue
+		 * @param array $handles required scripts to enqueue.
 		 * @return void
 		 */
 		public static function enqueue_local_js( $handles = array() ) {
@@ -254,12 +253,13 @@ if ( ! class_exists( 'Cherry_WC_Assets' ) ) {
 		 * @return object
 		 */
 		public static function get_instance() {
+
 			// If the single instance hasn't been set, set it now.
-			if ( null == self::$instance )
+			if ( null == self::$instance ) {
 				self::$instance = new self;
+			}
 			return self::$instance;
 		}
-
 	}
 
 	Cherry_WC_Assets::get_instance();

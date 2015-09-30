@@ -4,8 +4,7 @@
  *
  * Contains the markup for the mini-cart, used by the cart widget
  *
- * @author   WooThemes
- * @author   Cherry Team
+ * @author   WooThemes, Cherry Team
  * @package  cherry_woocommerce_package/Templates
  * @version  1.0.0
  */

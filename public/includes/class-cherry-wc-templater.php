@@ -31,12 +31,12 @@ if ( ! class_exists( 'Cherry_WC_Templater' ) ) {
 		 * Get template part (for templates like the shop-loop).
 		 *
 		 * @since 1.0.0
-		 * @param  string  $name  template name.
-		 * @return void
+		 * @param string $name template name.
+		 * @return void|bool false
 		 */
 		public function get_template_part( $name, $from_wc = false ) {
 
-			if ( !$name ) {
+			if ( ! $name ) {
 				return false;
 			}
 
@@ -117,11 +117,11 @@ if ( ! class_exists( 'Cherry_WC_Templater' ) ) {
 		 */
 		public static function get_instance() {
 			// If the single instance hasn't been set, set it now.
-			if ( null == self::$instance )
+			if ( null == self::$instance ) {
 				self::$instance = new self;
+			}
 			return self::$instance;
 		}
-
 	}
 
 	/**

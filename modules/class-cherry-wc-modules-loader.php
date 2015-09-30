@@ -131,7 +131,7 @@ if ( ! class_exists( 'Cherry_WC_Modules_Loader' ) ) {
 		 * Load selected modue
 		 *
 		 * @since  1.0.0
-		 * @param  string $module module name to load
+		 * @param string $module module name to load.
 		 * @return object         module class instance
 		 */
 		public function load( $module = null ) {
@@ -144,7 +144,7 @@ if ( ! class_exists( 'Cherry_WC_Modules_Loader' ) ) {
 				return;
 			}
 
-			$data = $this->modules[$module];
+			$data = $this->modules[ $module ];
 
 			if ( ! file_exists( $data['file'] ) ) {
 				return;
@@ -160,7 +160,7 @@ if ( ! class_exists( 'Cherry_WC_Modules_Loader' ) ) {
 		 * Check if is specific AJAX action
 		 *
 		 * @since 1.0.0
-		 * @param string  $action  action name/
+		 * @param string $action action name.
 		 * @return boolean
 		 */
 		public function is_ajax_action( $action = null ) {

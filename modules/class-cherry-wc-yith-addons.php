@@ -58,7 +58,7 @@ if ( ! class_exists( 'Cherry_WC_YITH_Addons' ) ) {
 		 */
 		public function compare_css() {
 
-			if ( !isset($_GET['action']) || 'yith-woocompare-view-table' != $_GET['action'] ) {
+			if ( ! isset( $_GET['action'] ) || 'yith-woocompare-view-table' != $_GET['action'] ) {
 				return;
 			}
 			$css_compiler = cherry_css_compiler::get_instance();

@@ -39,11 +39,13 @@ if ( ! class_exists( 'Cherry_WC_Product_Sharing' ) ) {
 		 * Loacalize sharing-related strings
 		 *
 		 * @since 1.0.0
-		 * @param array $strings localized strings
+		 * @param array $strings localized strings.
 		 * @return array
 		 */
 		public function localize_js( $strings ) {
+
 			$strings['sharing_title'] = __( 'Share this', 'cherry-woocommerce-package' );
+			return $strings;
 		}
 
 		/**

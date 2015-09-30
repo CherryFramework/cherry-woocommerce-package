@@ -89,7 +89,7 @@ if ( ! class_exists( 'Cherry_WC_Quick_View' ) ) {
 				die( 'Product not found' );
 			}
 
-			if ( !class_exists( 'WC_Product_Factory' ) ) {
+			if ( ! class_exists( 'WC_Product_Factory' ) ) {
 				die( 'Product not found' );
 			}
 

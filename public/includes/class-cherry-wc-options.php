@@ -12,10 +12,10 @@ if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 
-if ( !class_exists( 'Cherry_WC_Options' ) ) {
+if ( ! class_exists( 'Cherry_WC_Options' ) ) {
 
 	/**
-	 * OPtions management class
+	 * Options management class
 	 */
 	class Cherry_WC_Options {
 
@@ -49,8 +49,8 @@ if ( !class_exists( 'Cherry_WC_Options' ) ) {
 				'0' => __( 'Select menu', 'cherry-woocommerce-package' ),
 			);
 
-			foreach ($menus as $menu) {
-				$options_menus[$menu->term_id] = $menu->name;
+			foreach ( $menus as $menu ) {
+				$options_menus[ $menu->term_id ] = $menu->name;
 			}
 
 			$shop_options = array(
@@ -86,11 +86,11 @@ if ( !class_exists( 'Cherry_WC_Options' ) ) {
 				),
 				'shop-acc-menu' => array(
 					'type'    => 'select',
-					'title'   => __('Menu to show in account dropdown', 'cherry'),
+					'title'   => __( 'Menu to show in account dropdown', 'cherry' ),
 					'label'   => '',
 					'hint'    => array(
 						'type'    => 'text',
-						'content' => __('Select navigation menu to show it in account dropdown', 'cherry-woocommerce-package'),
+						'content' => __( 'Select navigation menu to show it in account dropdown', 'cherry-woocommerce-package' ),
 					),
 					'value'   => '',
 					'options' => $options_menus,
@@ -143,8 +143,8 @@ if ( !class_exists( 'Cherry_WC_Options' ) ) {
 		 *
 		 * @since  1.0.0
 		 * @uses   cherry_get_option()
-		 * @param  string $option  option name.
-		 * @param  mixed  $default default option value.
+		 * @param  string $option option name.
+		 * @param  mixed $default default option value.
 		 * @return mixed
 		 */
 		public function get_option( $option, $default = false ) {
@@ -171,7 +171,6 @@ if ( !class_exists( 'Cherry_WC_Options' ) ) {
 			}
 			return self::$instance;
 		}
-
 	}
 
 	/**

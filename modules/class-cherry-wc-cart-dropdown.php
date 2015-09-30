@@ -35,6 +35,9 @@ if ( ! class_exists( 'Cherry_WC_Cart_Dropdown' ) ) {
 		 */
 		public $cart_options = array();
 
+		/**
+		 * Class constructor
+		 */
 		function __construct() {
 
 			$this->cart_options = array(
@@ -55,7 +58,7 @@ if ( ! class_exists( 'Cherry_WC_Cart_Dropdown' ) ) {
 		public function prepare_options() {
 
 			foreach ( $this->cart_options as $option_name => $option_val ) {
-				$this->cart_options[$option_name] = cherry_wc_options()->get_option( $option_name, $option_val );
+				$this->cart_options[ $option_name ] = cherry_wc_options()->get_option( $option_name, $option_val );
 			}
 
 		}
@@ -84,7 +87,7 @@ if ( ! class_exists( 'Cherry_WC_Cart_Dropdown' ) ) {
 		 * AJAX callback for add to cart action
 		 *
 		 * @since 1.0.0
-		 * @param array $fragments array of DOM fragments to replace
+		 * @param array $fragments array of DOM fragments to replace.
 		 * @return array
 		 */
 		function add_to_cart_fragment( $fragments ) {

@@ -1,6 +1,6 @@
 <?php
 /**
- * account dropdown template
+ * Account dropdown template
  *
  * @author      Cherry Team
  * @category    Core

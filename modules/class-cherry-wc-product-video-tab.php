@@ -78,7 +78,7 @@ class Cherry_WC_Product_Video {
 		global $product, $post;
 		$video = get_post_meta( $post->ID, $this->key, true );
 
-		if ( !$video ) {
+		if ( ! $video ) {
 			return $tabs;
 		}
 
@@ -87,7 +87,7 @@ class Cherry_WC_Product_Video {
 		$tabs['cherry_wc_video'] = array(
 			'title'    => $label,
 			'priority' => 90,
-			'callback' => array( $this, 'frontend_tab_callback' )
+			'callback' => array( $this, 'frontend_tab_callback' ),
 		);
 
 		return $tabs;
@@ -184,8 +184,8 @@ class Cherry_WC_Product_Video {
 	/**
 	 * Save video tab meta data to data base
 	 *
-	 * @since  1.0.0
-	 * @param  int  $post_id saved post ID.
+	 * @since 1.0.0
+	 * @param int $post_id saved post ID.
 	 */
 	public function save_video_meta( $post_id ) {
 
