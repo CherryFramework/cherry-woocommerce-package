@@ -49,9 +49,9 @@
 
 	'use strict';
 
-	$.fn.CherryWCDropdown = function( options ) {
+	$.fn.CherryWCDropdown = function() {
 
-		return this.each(function(index, el) {
+		return this.each(function() {
 			var $this    = $(this),
 				$trigger = $( '[data-dropdown="trigger"]', $this );
 
@@ -204,7 +204,6 @@ jQuery(document).ready(function($) {
 		event.preventDefault();
 		var thumb     = variation.image_src,
 			large_img = variation.image_link,
-			alt       = variation.image_alt,
 			item      = $('.product-large-image'),
 			image     = $('img', item);
 
