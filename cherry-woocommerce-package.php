@@ -126,6 +126,7 @@ if ( ! class_exists( 'Cherry_Woocommerce_Package' ) ) {
 			require_once $this->plugin_dir( 'public/includes/class-cherry-wc-options.php' );
 			require_once $this->plugin_dir( 'public/includes/class-cherry-wc-assets.php' );
 			require_once $this->plugin_dir( 'public/includes/class-cherry-wc-templater.php' );
+			require_once $this->plugin_dir( 'public/includes/class-cherry-wc-shortcodes.php' );
 			require_once $this->plugin_dir( 'modules/class-cherry-wc-modules-loader.php' );
 		}
 
@@ -157,7 +158,7 @@ if ( ! class_exists( 'Cherry_Woocommerce_Package' ) ) {
 		 * @param  string $path dir or file inside plugin dir.
 		 * @return string
 		 */
-		public function plugin_dir( $path ) {
+		public function plugin_dir( $path = null ) {
 
 			if ( ! $this->plugin_dir ) {
 				$this->plugin_dir = trailingslashit( plugin_dir_path( __FILE__ ) );

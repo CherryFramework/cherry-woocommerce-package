@@ -64,6 +64,83 @@ if ( ! class_exists( 'Cherry_WC_Templater' ) ) {
 		}
 
 		/**
+		 * Get template file by name
+		 *
+		 * @since 1.0.0
+		 * @param string $template template name.
+		 * @param string $shortcode shortcode name.
+		 * @return string|bool false
+		 */
+		public function get_tmpl_content( $template = 'default.tmpl', $shortcode = null ) {
+
+			if ( ! $shortcode ) {
+				return false;
+			}
+
+			$file       = '';
+			$subdir     = 'templates/shortcodes/' . $shortcode . '/' . $template;
+			$default    = cherry_wc_package()->plugin_dir( 'templates/shortcodes/' . $shortcode . '/default.tmpl' );
+			$upload_dir = wp_upload_dir();
+			$basedir    = $upload_dir['basedir'];
+
+			$content = apply_filters(
+				'cherry_woocommerce_fallback_template',
+				__( 'Template file not found', 'cherry-woocommerce-package' ),
+				$template,
+				$shortcode
+			);
+
+			if ( file_exists( trailingslashit( $basedir ) . $subdir ) ) {
+
+				// First of all search called template in generated templates
+				$file = trailingslashit( $basedir ) . $subdir;
+			} elseif ( file_exists( cherry_wc_package()->plugin_dir( $subdir ) ) ) {
+
+				// Then search it in plugin folder
+				$file = cherry_wc_package()->plugin_dir( $subdir );
+			} else {
+
+				// If all fails - include default
+				$file = $default;
+			}
+
+			if ( ! empty( $file ) ) {
+				$content = $this->get_contents( $file );
+			}
+
+			return $content;
+		}
+
+		/**
+		 * Read template
+		 *
+		 * @since 1.0.0
+		 * @param string $template template path to get content for.
+		 * @return bool|WP_Error|string - false on failure, stored text on success.
+		 */
+		public function get_contents( $template ) {
+
+			if ( ! function_exists( 'WP_Filesystem' ) ) {
+				include_once( ABSPATH . '/wp-admin/includes/file.php' );
+			}
+
+			WP_Filesystem();
+			global $wp_filesystem;
+
+			if ( ! $wp_filesystem->exists( $template ) ) {
+				return false;
+			}
+
+			$content = $wp_filesystem->get_contents( $template );
+
+			if ( ! $content ) {
+				return new WP_Error( 'reading_error', 'Error when reading file' );
+			}
+
+			return $content;
+		}
+
+		/**
 		 * Register new static by name
 		 *
 		 * @since 1.0.0
