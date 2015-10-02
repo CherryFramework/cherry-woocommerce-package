@@ -179,7 +179,7 @@ if ( ! class_exists( 'Cherry_WC_Shortcodes' ) ) {
 		 * Add shortcods macros buttons to templater
 		 *
 		 * @since 1.0.0
-		 * @param array $macros_buttons current buttons array.
+		 * @param array  $macros_buttons current buttons array.
 		 * @param string $shortcode shortcode name.
 		 * @return array
 		 */
