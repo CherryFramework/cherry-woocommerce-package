@@ -46,7 +46,7 @@ if ( ! class_exists( 'Cherry_WC_Template_Callbacks' ) ) {
 		 * Set current processed object data
 		 *
 		 * @since 1.0.0
-		 * @param object $obj processed object
+		 * @param object $obj processed object.
 		 * @return void
 		 */
 		public function set_object( $obj ) {
@@ -114,7 +114,7 @@ if ( ! class_exists( 'Cherry_WC_Template_Callbacks' ) ) {
 		 * Get category products count
 		 *
 		 * @since 1.0.0
-		 * @param string $wrpper info about description HTML wrapper. Must be in follow format - html_tag.css_class
+		 * @param string $wrapper info about description HTML wrapper. Must be in follow format - html_tag.css_class.
 		 * @return string
 		 */
 		public function get_cat_desc( $wrapper = 'div.cat-list_desc' ) {
@@ -150,7 +150,7 @@ if ( ! class_exists( 'Cherry_WC_Template_Callbacks' ) ) {
 		 * Get category name
 		 *
 		 * @since 1.0.0
-		 * @param  string $size image size.
+		 * @param  string $linked image size.
 		 * @return string
 		 */
 		public function get_cat_name( $linked = 'linked' ) {
@@ -179,7 +179,6 @@ if ( ! class_exists( 'Cherry_WC_Template_Callbacks' ) ) {
 			return $this->object->link;
 
 		}
-
 	}
 
 }

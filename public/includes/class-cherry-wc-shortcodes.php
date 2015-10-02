@@ -153,7 +153,7 @@ if ( ! class_exists( 'Cherry_WC_Shortcodes' ) ) {
 					),
 					'desc'     => __( 'Show product categories list', 'cherry-woocommerce-package' ),
 					'icon'     => 'folder-open',
-					'function' => array( $this, 'categories' )
+					'function' => array( $this, 'categories' ),
 				),
 			);
 
@@ -179,7 +179,7 @@ if ( ! class_exists( 'Cherry_WC_Shortcodes' ) ) {
 		 * Add shortcods macros buttons to templater
 		 *
 		 * @since 1.0.0
-		 * @param array  $macros current buttons array.
+		 * @param array $macros_buttons current buttons array.
 		 * @param string $shortcode shortcode name.
 		 * @return array
 		 */
@@ -293,6 +293,13 @@ if ( ! class_exists( 'Cherry_WC_Shortcodes' ) ) {
 			$callbacks = $this->setup_template_data( $atts );
 			$template  = cherry_wc_templater()->get_tmpl_content( esc_attr( $atts['template'] ), 'shop_categories' );
 
+			/**
+			 * Fires before start main categories shortcode output
+			 */
+			do_action( 'cherry_wc_before_categories_list' );
+
+			echo '<div class="cat-list">';
+
 			foreach ( $product_categories as $cat ) {
 				$callbacks->set_object( $cat );
 				$content = preg_replace_callback( $macros, array( $this, 'replace_callback' ), $template );
@@ -300,6 +307,13 @@ if ( ! class_exists( 'Cherry_WC_Shortcodes' ) ) {
 
 				echo $content;
 			}
+
+			echo '</div>';
+
+			/**
+			 * Fires immediately after main categories shortcode output ended
+			 */
+			do_action( 'cherry_wc_after_categories_list' );
 
 			return ob_get_clean();
 
@@ -325,11 +339,11 @@ if ( ! class_exists( 'Cherry_WC_Shortcodes' ) ) {
 			$key = strtolower( $matches[1] );
 
 			// If key not found in data -return nothing
-			if ( ! isset( $this->macros_data[$key] ) ) {
+			if ( ! isset( $this->macros_data[ $key ] ) ) {
 				return '';
 			}
 
-			$callback = $this->macros_data[$key];
+			$callback = $this->macros_data[ $key ];
 
 			if ( ! is_callable( $callback ) ) {
 				return;
