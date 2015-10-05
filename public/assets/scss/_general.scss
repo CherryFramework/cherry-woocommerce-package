@@ -430,79 +430,14 @@ p.demo_store {
 		}
 	}
 
-	ul.products {
-		li.product {
-			.onsale {
-				top: 0;
-				right: 0;
-				left: auto;
-				margin: -.5em -.5em 0 0;
-			}
-
-			h3 {
-				padding: .5em 0;
-				margin: 0;
-				font-size: 1em;
-			}
-
-			a {
-				text-decoration: none;
-			}
-
-			a img {
-				width: 100%;
-				height: auto;
-				display: block;
-				margin: 0 0 1em;
-				box-shadow: none;
-			}
-
-			strong {
-				display: block;
-			}
-
-			.star-rating {
-				font-size: .857em;
-			}
-
-			.button {
-				margin-top: 1em;
-			}
-
-			.price {
-				color: $highlight;
-				display: block;
-				font-weight: normal;
-				margin-bottom: .5em;
-				font-size: .857em;
-
-				del {
-					color: inherit;
-					opacity: 0.5;
-					display: block;
-				}
-
-				ins {
-					background: none;
-					font-weight: 700;
-				}
-
-				.from {
-					font-size: 0.67em;
-					margin: -2px 0 0 0;
-					text-transform: uppercase;
-					color: rgba(desaturate($highlight, 75%), 0.5);
-				}
-			}
-		}
-	}
-
 	.woocommerce-result-count {
-		margin: 0 0 1em;
+		margin: 0 0 30px;
+		padding: 0;
 	}
 
 	.woocommerce-ordering {
-		margin: 0 0 1em;
+		margin: 0 0 30px;
+		padding: 0;
 
 		select {
 			vertical-align: top;

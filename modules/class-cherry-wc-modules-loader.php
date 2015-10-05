@@ -47,7 +47,7 @@ if ( ! class_exists( 'Cherry_WC_Modules_Loader' ) ) {
 			// register existing modules
 			$this->modules = array(
 				'quick-view' => array(
-					'load_on' => 'woocommerce_before_shop_loop',
+					'load_on' => 'woocommerce_before_shop_loop_item',
 					'file'    => cherry_wc_package()->plugin_dir( 'modules/class-cherry-wc-quick-view.php' ),
 					'class'   => 'Cherry_WC_Quick_View',
 					'ajax'    => array(
@@ -214,6 +214,9 @@ if ( ! class_exists( 'Cherry_WC_Modules_Loader' ) ) {
 			foreach ( $this->queue[ $current ] as $module ) {
 				$instance = $this->load( $module );
 			}
+
+			// Prevent from fires the same action couple times
+			remove_filter( $current, array( $this, 'load_current' ) );
 
 		}
 

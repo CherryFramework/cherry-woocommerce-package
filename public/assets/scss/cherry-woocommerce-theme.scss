@@ -6,6 +6,64 @@
 @import "fonts";
 
 /**
+ * Shop categoreis shortcode
+ */
+.cat-list {
+	margin: 0 -15px;
+
+	&:after {
+		clear: both;
+		content: "";
+		width: 100%;
+		display: block;
+	}
+
+	&_item {
+		float: left;
+		box-sizing: border-box;
+		padding: 0 15px 30px;
+		text-align: center;
+		.col-1 > & {
+			width: 100%;
+			clear: both;
+		}
+		.col-2 > & {
+			width: 50%;
+			&:nth-child(2n+1) {
+				clear: both;
+			}
+		}
+		.col-3 > & {
+			width: 33.3333%;
+			&:nth-child(3n+1) {
+				clear: both;
+			}
+		}
+		.col-4 > & {
+			width: 25%;
+			&:nth-child(4n+1) {
+				clear: both;
+			}
+		}
+		.col-5 > & {
+			width: 20%;
+			&:nth-child(5n+1) {
+				clear: both;
+			}
+		}
+		.col-6 > & {
+			width: 16.6666%;
+			&:nth-child(6n+1) {
+				clear: both;
+			}
+		}
+	}
+	&_img {
+		padding: 0 0 30px 0;
+	}
+}
+
+/**
  * Buttons
  */
 a.button,
@@ -175,4 +233,139 @@ span.onsale {
 	color: $highlightext;
 	font-size: .857em;
 	-webkit-font-smoothing: antialiased;
+}
+
+.woocommerce, .woocommerce-page {
+
+	/**
+	 * Product loops
+	 */
+	ul.products {
+		clear: both;
+		margin: 0 -15px;
+		@include clearfix();
+
+		li.product {
+			float: left;
+			margin: 0 0 30px 0;
+			padding: 0 15px;
+			position: relative;
+			width: 25%;
+			box-sizing: border-box;
+		}
+
+		li.first {
+			clear: both;
+		}
+
+	}
+
+	&.columns-1 {
+		ul.products {
+			li.product {
+				width: 100%;
+			}
+		}
+	}
+
+	&.columns-2 {
+		ul.products {
+			li.product {
+				width: 50%;
+			}
+		}
+	}
+
+	&.columns-3 {
+		ul.products {
+			li.product {
+				width: 33.33333%;
+			}
+		}
+	}
+
+	&.columns-5 {
+		ul.products {
+			li.product {
+				width: 20%;
+			}
+		}
+	}
+
+	&.columns-6 {
+		ul.products {
+			li.product {
+				width: 16.66666%;
+			}
+		}
+	}
+
+	ul.products {
+		li.product {
+			.onsale {
+				top: 0;
+				right: 0;
+				left: auto;
+				margin: -.5em -.5em 0 0;
+			}
+
+			h3 {
+				padding: 15px 0;
+				margin: 0;
+			}
+
+			a {
+				text-decoration: none;
+			}
+
+			a img {
+				width: 100%;
+				height: auto;
+				display: block;
+				margin: 0;
+				box-shadow: none;
+			}
+
+			strong {
+				display: block;
+			}
+
+			.star-rating {
+				font-size: .857em;
+			}
+
+			.button {
+				margin-top: 1em;
+			}
+
+			.price {
+				display: block;
+				font-weight: normal;
+				margin-bottom: 0 0 20px 0;
+				font-size: 1em;
+
+				del {
+					color: inherit;
+					display: inline-block;
+					vertical-align: baseline;
+					font-size: 0.8em;
+					margin: 0 5px 0 0;
+				}
+
+				ins {
+					display: inline-block;
+					background: none;
+					vertical-align: baseline;
+					text-decoration: none;
+				}
+
+				.from {
+					font-size: 0.67em;
+					margin: -2px 0 0 0;
+					text-transform: uppercase;
+				}
+			}
+		}
+	}
+
 }

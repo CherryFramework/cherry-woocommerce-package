@@ -289,18 +289,26 @@ if ( ! class_exists( 'Cherry_WC_Shortcodes' ) ) {
 
 			ob_start();
 
-			$macros    = '/%%([a-zA-Z_]+[^%]{2})(=[\'\"]([a-zA-Z0-9-_\s]+)[\'\"])?%%/';
+			$macros    = '/%%([a-zA-Z_]+[^%]{2})(=[\'\"]([a-zA-Z0-9-_\.\s]+)[\'\"])?%%/';
 			$callbacks = $this->setup_template_data( $atts );
 			$template  = cherry_wc_templater()->get_tmpl_content( esc_attr( $atts['template'] ), 'shop_categories' );
+
+			$classes = array(
+				'cat-list',
+				'col-' . absint( $atts['columns'] ),
+			);
+
+			$class = implode( ' ', $classes );
 
 			/**
 			 * Fires before start main categories shortcode output
 			 */
 			do_action( 'cherry_wc_before_categories_list' );
 
-			echo '<div class="cat-list">';
+			echo '<div class="' . esc_attr( $class ) . '">';
 
 			foreach ( $product_categories as $cat ) {
+
 				$callbacks->set_object( $cat );
 				$content = preg_replace_callback( $macros, array( $this, 'replace_callback' ), $template );
 				$callbacks->clear_object();
