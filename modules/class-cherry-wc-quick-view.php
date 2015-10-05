@@ -28,12 +28,87 @@ if ( ! class_exists( 'Cherry_WC_Quick_View' ) ) {
 		private static $instance = null;
 
 		/**
+		 * Module init arguments array
+		 *
+		 * @since 1.0.0
+		 * @var   array
+		 */
+		private $args = array();
+
+		/**
 		 * Constructor for the class
 		 */
 		function __construct() {
-			add_action( 'woocommerce_before_shop_loop_item_title', array( $this, 'append_open_wrap' ), 0 );
-			add_action( 'woocommerce_before_shop_loop_item_title', array( $this, 'append_close_wrap' ), 100 );
-			add_action( 'woocommerce_before_shop_loop_item_title', array( $this, 'append_button' ), 99 );
+
+			$this->args = apply_filters(
+				'cherry_wc_quick_view_args',
+				array(
+					'before' => array(
+						'hook'     => 'woocommerce_before_shop_loop_item_title',
+						'priority' => 0,
+						'format'   => '<div class="cherry-thumb-wrap">',
+					),
+					'after' => array(
+						'hook'     => 'woocommerce_before_shop_loop_item_title',
+						'priority' => 100,
+						'format'   => '</div>',
+					),
+					'button' => array(
+						'hook'     => 'woocommerce_before_shop_loop_item_title',
+						'priority' => 99,
+						'format'   => '<span class="btn %3$s" data-product="%1$s">%2$s</span>',
+					),
+				)
+			);
+
+			$this->append_wrapper();
+			$this->append_button();
+
+		}
+
+		/**
+		 * Add open and close wrapper functions to related hooks
+		 *
+		 * @since  1.0.0
+		 * @return void
+		 */
+		private function append_wrapper() {
+
+			if ( ! empty( $this->args['before'] ) ) {
+				add_action(
+					$this->args['before']['hook'],
+					array( $this, 'print_open_wrap' ),
+					$this->args['before']['priority']
+				);
+			}
+
+			if ( ! empty( $this->args['after'] ) ) {
+				add_action(
+					$this->args['after']['hook'],
+					array( $this, 'print_close_wrap' ),
+					$this->args['after']['priority']
+				);
+			}
+		}
+
+		/**
+		 * Add show button function to related hook
+		 *
+		 * @since  1.0.0
+		 * @return void
+		 */
+		private function append_button() {
+
+			if ( empty( $this->args['button'] ) ) {
+				return;
+			}
+
+			add_action(
+				$this->args['button']['hook'],
+				array( $this, 'print_button' ),
+				$this->args['button']['priority']
+			);
+
 		}
 
 		/**
@@ -41,8 +116,8 @@ if ( ! class_exists( 'Cherry_WC_Quick_View' ) ) {
 		 *
 		 * @since 1.0.0
 		 */
-		function append_open_wrap() {
-			echo '<div class="cherry-thumb-wrap">';
+		public function print_open_wrap() {
+			echo $this->args['before']['format'];
 		}
 
 		/**
@@ -50,8 +125,8 @@ if ( ! class_exists( 'Cherry_WC_Quick_View' ) ) {
 		 *
 		 * @since 1.0.0
 		 */
-		function append_close_wrap() {
-			echo '</div>';
+		public function print_close_wrap() {
+			echo $this->args['after']['format'];
 		}
 
 		/**
@@ -59,13 +134,14 @@ if ( ! class_exists( 'Cherry_WC_Quick_View' ) ) {
 		 *
 		 * @since 1.0.0
 		 */
-		function append_button() {
+		public function print_button() {
 
 			global $post, $product;
 
-			$btn_tex = apply_filters( 'cherry_wc_quick_view_text', __( 'Quick view', 'cherry-woocommerce-package' ) );
+			$btn_txt = apply_filters( 'cherry_wc_quick_view_text', __( 'Quick view', 'cherry-woocommerce-package' ) );
+			$trigger = 'cherry-quick-view';
 
-			echo '<span class="btn cherry-quick-view" data-product="' . $product->id . '">' . $btn_tex . '</span>';
+			printf( $this->args['button']['format'], $product->id, $btn_txt, $trigger );
 
 			Cherry_WC_Assets::enqueue_local_js( array( 'cherry-woocommerce', 'magnific-popup' ) );
 		}
@@ -75,7 +151,7 @@ if ( ! class_exists( 'Cherry_WC_Quick_View' ) ) {
 		 *
 		 * @since 1.0.0
 		 */
-		function ajax_callback() {
+		public function ajax_callback() {
 
 			$nonce = isset( $_REQUEST['_wpnonce'] ) ? esc_attr( $_REQUEST['_wpnonce'] ) : false;
 
