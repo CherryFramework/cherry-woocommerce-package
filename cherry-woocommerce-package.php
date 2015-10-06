@@ -74,6 +74,10 @@ if ( ! class_exists( 'Cherry_Woocommerce_Package' ) ) {
 		 */
 		function __construct() {
 
+			if ( ! $this->has_woocommerce() ) {
+				return false;
+			}
+
 			$this->load_core();
 
 		}

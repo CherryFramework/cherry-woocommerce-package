@@ -557,56 +557,6 @@ p.demo_store {
 		}
 	}
 
-	/**
-	 * Star ratings
-	 */
-	.star-rating {
-		float: right;
-		overflow: hidden;
-		position: relative;
-		height: 1em;
-		line-height: 1;
-		font-size: 1em;
-		width: 5.4em;
-		font-family: 'star';
-
-		&:before {
-			content: "\73\73\73\73\73";
-			color: darken( $secondary, 10% );
-			float: left;
-			top: 0;
-			left: 0;
-			position: absolute;
-		}
-
-		span {
-			overflow: hidden;
-			float: left;
-			top: 0;
-			left: 0;
-			position: absolute;
-			padding-top: 1.5em;
-		}
-
-		span:before {
-			content: "\53\53\53\53\53";
-			top: 0;
-			position: absolute;
-			left: 0;
-		}
-	}
-
-	.woocommerce-product-rating {
-		@include clearfix();
-		line-height: 2;
-		display: block;
-
-		.star-rating {
-			margin: .5em 4px 0 0;
-			float: left;
-		}
-	}
-
 	.products {
 		.star-rating {
 			display: block;

@@ -62,7 +62,7 @@ if ( ! class_exists( 'Cherry_WC_Modules_Loader' ) ) {
 					'ajax'    => false,
 				),
 				'yith-addons' => array(
-					'load_on' => 'init',
+					'load_on' => 'after_setup_theme',
 					'file'    => cherry_wc_package()->plugin_dir( 'modules/class-cherry-wc-yith-addons.php' ),
 					'class'   => 'Cherry_WC_YITH_Addons',
 					'ajax'    => false,
