@@ -74,7 +74,7 @@ if ( ! class_exists( 'Cherry_WC_YITH_Addons' ) ) {
 					'after' => array(
 						'hook'     => 'woocommerce_after_shop_loop_item',
 						'priority' => 26,
-						'format'   => '<div class="product-addons">',
+						'format'   => '</div>',
 					),
 					'wishlist' => array(
 						'hook'     => 'woocommerce_after_shop_loop_item',
