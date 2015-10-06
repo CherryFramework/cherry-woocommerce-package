@@ -242,7 +242,7 @@ if ( ! class_exists( 'Cherry_WC_YITH_Addons' ) ) {
 
 			$is_button = get_option( 'yith_woocompare_is_button', 'button' );
 
-			if ( ! isset( $button_text ) || $button_text == 'default' ) {
+			if ( ! isset( $button_text ) || 'default' == $button_text ) {
 
 				$button_text = get_option(
 					'yith_woocompare_button_text',
@@ -298,16 +298,16 @@ if ( ! class_exists( 'Cherry_WC_YITH_Addons' ) ) {
 		 * Remove attached filter from hook if function passed as method
 		 *
 		 * @since 1.0.0
-		 * @param string $tag hook name
-		 * @param string $class class name
-		 * @param string $method method name
+		 * @param string $tag hook name.
+		 * @param string $class class name.
+		 * @param string $method method name.
 		 * @return bool
 		 */
 		public function _remove_filter( $tag, $class, $method ) {
 
 			$filters = $GLOBALS['wp_filter'][ $tag ];
 
-			if ( empty ( $filters ) ) {
+			if ( empty( $filters ) ) {
 				return true;
 			}
 
@@ -328,7 +328,6 @@ if ( ! class_exists( 'Cherry_WC_YITH_Addons' ) ) {
 						return true;
 					}
 				}
-
 			}
 
 			return false;
