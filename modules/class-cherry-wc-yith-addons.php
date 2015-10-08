@@ -200,7 +200,9 @@ if ( ! class_exists( 'Cherry_WC_YITH_Addons' ) ) {
 				return false;
 			}
 
-			$content = do_shortcode( '[yith_wcwl_add_to_wishlist]' );
+			$content = do_shortcode(
+				apply_filters( 'cherry_wc_wishlist_shortcode', '[yith_wcwl_add_to_wishlist]' )
+			);
 
 			printf( $this->loop_args['wishlist']['format'], $content );
 
@@ -265,10 +267,17 @@ if ( ! class_exists( 'Cherry_WC_YITH_Addons' ) ) {
 				wp_nonce_url( esc_url_raw( add_query_arg( $url_args ) ), $action_add )
 			);
 
-			printf(
-				'<a href="%s" class="%s" data-product_id="%d">%s</a>',
-				$url, 'compare ' . $is_button, $product_id, $button_text
+			global $wp_query;
+
+			$wp_query->query_vars['cherry_wc_compare_button'] = array(
+				'url'         => $url,
+				'is_button'   => $is_button,
+				'product_id'  => $product_id,
+				'button_text' => $button_text,
 			);
+
+			cherry_wc_templater()->get_template_part( 'compare-button' );
+			unset( $wp_query->query_vars['cherry_wc_compare_button'] );
 
 		}
 
