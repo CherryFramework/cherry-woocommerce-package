@@ -12,7 +12,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 $cart_dropdown = Cherry_WC_Cart_Dropdown::get_instance();
 ?>
-<div class="cherry-wc-cart cart-content" data-dropdown="box" data-dropdown-active="false">
+<div class="cart-content">
 	<a class="cherry-wc-cart_link" href="#" data-dropdown="trigger"><?php
 
 		// print cart title

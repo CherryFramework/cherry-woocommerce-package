@@ -181,16 +181,6 @@
 	}
 
 	/**
-	 * Cart sidebar
-	 */
-	ul.cart_list,
-	ul.product_list_widget {
-		li {
-			@include mediaright();
-		}
-	}
-
-	/**
 	 * Forms
 	 */
 	form {

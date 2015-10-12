@@ -80,7 +80,11 @@ if ( ! class_exists( 'Cherry_WC_Cart_Dropdown' ) ) {
 		 */
 		public function dropdown_frontend() {
 			$this->prepare_options();
-			cherry_wc_templater()->get_template_part( 'cart-dropdown' );
+			?>
+			<div class="cherry-wc-cart" data-dropdown="box" data-dropdown-active="false">
+				<?php cherry_wc_templater()->get_template_part( 'cart-dropdown' ); ?>
+			</div>
+			<?php
 		}
 
 		/**

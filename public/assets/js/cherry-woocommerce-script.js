@@ -52,10 +52,10 @@
 	$.fn.CherryWCDropdown = function() {
 
 		return this.each( function() {
-			var $this    = $( this ),
-				$trigger = $( '[data-dropdown="trigger"]', $this );
 
-			$trigger.on( 'click', function( event ) {
+			var $this = $( this );
+
+			$this.on( 'click', '[data-dropdown="trigger"]', function( event ) {
 
 				event.preventDefault();
 				event.stopPropagation();

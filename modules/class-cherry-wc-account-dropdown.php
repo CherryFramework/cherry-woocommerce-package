@@ -77,8 +77,11 @@ class Cherry_WC_Account_Dropdown {
 		if ( 'true' !== $this->account_options['shop-show-acc'] ) {
 			return;
 		}
-
-		cherry_wc_templater()->get_template_part( 'account-dropdown' );
+		?>
+		<div class="cherry-wc-account" data-dropdown="box" data-dropdown-active="false">
+			<?php cherry_wc_templater()->get_template_part( 'account-dropdown' ); ?>
+		</div>
+		<?php
 	}
 
 	/**
