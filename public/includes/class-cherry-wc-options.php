@@ -56,9 +56,9 @@ if ( ! class_exists( 'Cherry_WC_Options' ) ) {
 			$shop_options = array(
 				'shop-per-page' => array(
 					'type'        => 'stepper',
-					'title'       => __('Products per page', 'cherry-woocommerce-package'),
+					'title'       => __( 'Products per page', 'cherry-woocommerce-package' ),
 					'label'       => '',
-					'description' => __('Set a number of products per shop page.', 'cherry-woocommerce-package'),
+					'description' => __( 'Set a number of products per shop page.', 'cherry-woocommerce-package' ),
 					'value'       => '8',
 					'step_value'  => '1',
 					'max_value'   => '40',
