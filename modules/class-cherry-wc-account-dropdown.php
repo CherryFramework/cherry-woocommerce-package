@@ -82,6 +82,7 @@ class Cherry_WC_Account_Dropdown {
 			<?php cherry_wc_templater()->get_template_part( 'account-dropdown' ); ?>
 		</div>
 		<?php
+		Cherry_WC_Assets::enqueue_local_js( array( 'cherry-woocommerce' ) );
 	}
 
 	/**

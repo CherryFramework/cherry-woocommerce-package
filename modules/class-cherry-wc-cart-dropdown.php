@@ -85,6 +85,7 @@ if ( ! class_exists( 'Cherry_WC_Cart_Dropdown' ) ) {
 				<?php cherry_wc_templater()->get_template_part( 'cart-dropdown' ); ?>
 			</div>
 			<?php
+			Cherry_WC_Assets::enqueue_local_js( array( 'cherry-woocommerce' ) );
 		}
 
 		/**

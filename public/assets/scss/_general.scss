@@ -72,8 +72,6 @@ p.demo_store {
 		margin: 0 0 2em !important;
 		position: relative;
 		background-color: lighten($secondary,5%);
-		color: $secondarytext;
-		border-top: 3px solid $primary;
 		list-style: none outside !important;
 		@include clearfix();
 		width: auto;
@@ -100,28 +98,14 @@ p.demo_store {
 	}
 
 	.woocommerce-message {
-		border-top-color: #8fae1b;
-
 		&:before {
 			content: "\e015";
-			color: #8fae1b;
-		}
-	}
-
-	.woocommerce-info {
-		border-top-color: #1e85be;
-
-		&:before {
-			color: #1e85be;
 		}
 	}
 
 	.woocommerce-error {
-		border-top-color: #b81c23;
-
 		&:before {
 			content: "\e016";
-			color: #b81c23;
 		}
 	}
 

@@ -1,0 +1,18 @@
+.woocommerce .woocommerce-message {
+	border-top: 3px solid $color-primary;
+}
+.woocommerce .woocommerce-message:before {
+	color: $color-primary;
+}
+.woocommerce .woocommerce-info {
+	border-top: 3px solid $color-info;
+}
+.woocommerce .woocommerce-info:before {
+	color: $color-info;
+}
+.woocommerce .woocommerce-error {
+	border-top: 3px solid $color-danger;
+}
+.woocommerce .woocommerce-error:before {
+	color: $color-danger;
+}

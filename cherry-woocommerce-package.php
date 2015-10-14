@@ -131,6 +131,7 @@ if ( ! class_exists( 'Cherry_Woocommerce_Package' ) ) {
 			require_once $this->plugin_dir( 'public/includes/class-cherry-wc-assets.php' );
 			require_once $this->plugin_dir( 'public/includes/class-cherry-wc-templater.php' );
 			require_once $this->plugin_dir( 'public/includes/class-cherry-wc-shortcodes.php' );
+			require_once $this->plugin_dir( 'public/includes/class-cherry-wc-frontend-hooks.php' );
 			require_once $this->plugin_dir( 'modules/class-cherry-wc-modules-loader.php' );
 		}
 
