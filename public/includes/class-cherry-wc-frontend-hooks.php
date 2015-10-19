@@ -85,7 +85,7 @@ if ( ! class_exists( 'Cherry_WC_Frontend_Hooks' ) ) {
 		 * Set columns number per shop loop page
 		 *
 		 * @since  1.0.0
-		 * @param  int $cols current columns number
+		 * @param  int $cols current columns number.
 		 * @return int
 		 */
 		public function loop_columns( $cols ) {
@@ -103,7 +103,7 @@ if ( ! class_exists( 'Cherry_WC_Frontend_Hooks' ) ) {
 		 *
 		 * @since  1.0.0
 		 * @param  array $args current related products arguments array.
-		 * @return void
+		 * @return array
 		 */
 		function related_products_args( $args ) {
 
@@ -150,7 +150,7 @@ if ( ! class_exists( 'Cherry_WC_Frontend_Hooks' ) ) {
 		 * Set shop page id from options as current page object for shop and product categories
 		 *
 		 * @since  1.0.0
-		 * @param  int $id current object id
+		 * @param  int $id current object id.
 		 * @return int
 		 */
 		public function set_shop_page_id( $id ) {

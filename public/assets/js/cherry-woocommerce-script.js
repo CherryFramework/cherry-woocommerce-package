@@ -274,9 +274,12 @@ jQuery( document ).ready(function( $ ) {
 	 * Open comapare popup
 	 */
 	$( document ).on( 'click', '.cherry-compare', function( event ) {
-		event.preventDefault();
+
 		var button = $( this );
-		$( 'body' ).trigger( 'yith_woocompare_open_popup', { response: window.CherryWoocommerce.compare_table_url, button: button } )
+
+		event.preventDefault();
+
+		$( 'body' ).trigger( 'yith_woocompare_open_popup', { response: window.CherryWoocommerce.compare_table_url, button: button } );
 	});
 
 });
