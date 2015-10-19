@@ -16,3 +16,62 @@
 .woocommerce .woocommerce-error:before {
 	color: $color-danger;
 }
+.summary .price {
+	color: $color-primary;
+}
+.woocommerce-tabs ul.tabs li {
+	border-top: 1px solid $color-gray-variations;
+	border-bottom: 1px solid $color-gray-variations;
+}
+.woocommerce-tabs ul.tabs li a {
+	border-left: 1px solid $color-gray-variations;
+	color: $typography-body[color];
+}
+.woocommerce-tabs ul.tabs li a:before {
+	background: $color-primary;
+}
+.woocommerce-tabs ul.tabs li.active a,
+.woocommerce-tabs ul.tabs li a:hover {
+	color: $color-primary;
+}
+
+.woocommerce-tabs .panel {
+	border-top: 1px solid $color-gray-variations;
+	border-left: 1px solid $color-gray-variations;
+}
+
+.woocommerce-tabs .panel ol.commentlist li img.avatar {
+	border: 1px solid $color-primary;
+}
+
+.woocommerce-tabs .panel ol.commentlist li .comment-text {
+	border-left: 5px solid $color-primary;
+}
+.woocommerce-tabs .panel ol.commentlist li .comment-text:before {
+	border-color: transparent $color-primary transparent transparent;
+}
+
+.woocommerce table.shop_table {
+	border: 1px solid $color-gray-variations;
+}
+
+.woocommerce-checkout #payment {
+	background: $color-gray-variations;
+}
+.woocommerce-checkout #payment ul.payment_methods {
+	border-bottom: 1px solid @darken( $color-gray-variations, 10% );
+}
+.woocommerce-checkout #payment ul.payment_methods li.payment_method_paypal img {
+	border: 1px solid @darken( $color-gray-variations, 10% );
+}
+
+.woocommerce-checkout #payment div.payment_box {
+	background: $color-secondary;
+	color: @contrast( $color-secondary, #fff, #333 );
+}
+.woocommerce-checkout #payment div.payment_box:after {
+	border: 8px solid $color-secondary;
+}
+.woocommerce ul.order_details {
+	background: $color-gray-variations;
+}

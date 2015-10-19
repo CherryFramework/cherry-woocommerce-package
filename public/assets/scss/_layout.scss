@@ -80,16 +80,7 @@
 		}
 
 		div.summary {
-			float: right;
-			width: 48%;
-		}
-
-		.woocommerce-tabs {
-			clear: both;
-
-			ul.tabs {
-				@include menu();
-			}
+			overflow: hidden;
 		}
 
 		#reviews {
@@ -106,12 +97,6 @@
 		float: right;
 	}
 
-	.woocommerce-pagination {
-		ul.page-numbers {
-			@include menu();
-		}
-	}
-
 	/**
 	 * Cart page
 	 */
@@ -123,9 +108,10 @@
 
 		td.actions {
 			text-align: right;
+			vertical-align: middle;
 
 			.input-text {
-				width: 80px;
+				max-width: 200px;
 			}
 
 			.coupon {
@@ -208,7 +194,7 @@
 		.form-row-first,
 		.form-row-last {
 			float: left;
-			width: 47%;
+			width: 48.5%;
 			overflow: visible;
 		}
 

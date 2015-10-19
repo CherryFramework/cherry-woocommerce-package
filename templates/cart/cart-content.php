@@ -42,16 +42,22 @@ if ( ! defined( 'ABSPATH' ) ) {
 							esc_attr( $_product->get_sku() )
 						), $cart_item_key );
 						?>
-						<?php if ( ! $_product->is_visible() ) : ?>
-							<?php echo str_replace( array( 'http:', 'https:' ), '', $thumbnail ) . $product_name . '&nbsp;'; ?>
-						<?php else : ?>
-							<a href="<?php echo esc_url( $_product->get_permalink( $cart_item ) ); ?>">
-								<?php echo str_replace( array( 'http:', 'https:' ), '', $thumbnail ) . $product_name . '&nbsp;'; ?>
-							</a>
-						<?php endif; ?>
-						<?php echo WC()->cart->get_item_data( $cart_item ); ?>
+						<?php
+							if ( ! $_product->is_visible() ) {
+								$wrap_open  = '';
+								$wrap_close = '';
+							} else {
+								$wrap_open  = '<a href="' . esc_url( $_product->get_permalink( $cart_item ) ) . '">';
+								$wrap_close = '</a>';
+							}
 
-						<?php echo apply_filters( 'woocommerce_widget_cart_item_quantity', '<span class="quantity">' . sprintf( '%s &times; %s', $cart_item['quantity'], $product_price ) . '</span>', $cart_item, $cart_item_key ); ?>
+						?>
+						<?php echo $wrap_open . str_replace( array( 'http:', 'https:' ), '', $thumbnail ) . $wrap_close; ?>
+						<div class="product_cart_content">
+							<?php echo $wrap_open . $product_name . $wrap_close; ?>
+							<?php echo WC()->cart->get_item_data( $cart_item ); ?>
+							<?php echo apply_filters( 'woocommerce_widget_cart_item_quantity', '<span class="quantity">' . sprintf( '%s &times; %s', $cart_item['quantity'], $product_price ) . '</span>', $cart_item, $cart_item_key ); ?>
+						</div>
 					</li>
 					<?php
 				}

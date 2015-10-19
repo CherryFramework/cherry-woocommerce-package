@@ -270,4 +270,13 @@ jQuery( document ).ready(function( $ ) {
 		window.open( url, 'Share this', 'status=no,height=' + height + ',width=' + width + ',resizable=yes,left=' + leftPosition + ',top=' + topPosition + ',screenX=' + leftPosition + ',screenY=' + topPosition + ',toolbar=no,menubar=no,scrollbars=no,location=no,directories=no' );
 	});
 
+	/**
+	 * Open comapare popup
+	 */
+	$( document ).on( 'click', '.cherry-compare', function( event ) {
+		event.preventDefault();
+		var button = $( this );
+		$( 'body' ).trigger( 'yith_woocompare_open_popup', { response: window.CherryWoocommerce.compare_table_url, button: button } )
+	});
+
 });

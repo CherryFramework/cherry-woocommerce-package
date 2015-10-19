@@ -116,6 +116,26 @@ if ( ! class_exists( 'Cherry_WC_YITH_Addons' ) ) {
 			);
 
 			add_action( 'init', array( $this, 'attach_loop_hooks' ) );
+			add_filter( 'body_class', array( $this, 'add_table_classes' ) );
+		}
+
+		/**
+		 * Add table trigger classes to body
+		 *
+		 * @since  1.0.0
+		 * @param  array $classes current classes array.
+		 * @return array
+		 */
+		public function add_table_classes( $classes ) {
+
+			if ( ! $this->is_comapre_table() ) {
+				return $classes;
+			}
+
+			$classes[] = 'compare-table-page';
+
+			return $classes;
+
 		}
 
 		/**
@@ -289,9 +309,16 @@ if ( ! class_exists( 'Cherry_WC_YITH_Addons' ) ) {
 		 */
 		public function compare_css() {
 
-			if ( ! isset( $_GET['action'] ) || 'yith-woocompare-view-table' != $_GET['action'] ) {
+			if ( ! $this->is_comapre_table() ) {
 				return;
 			}
+
+			do_action( 'cherry_wc_comapre_css' );
+
+			if ( ! class_exists( 'cherry_css_compiler' ) ) {
+				return;
+			}
+
 			$css_compiler = cherry_css_compiler::get_instance();
 			$dynamic_css  = $css_compiler->prepare_dynamic_css();
 
@@ -301,6 +328,16 @@ if ( ! class_exists( 'Cherry_WC_YITH_Addons' ) ) {
 			</style>
 			<?php
 
+		}
+
+		/**
+		 * Check if we currently on comapre table view
+		 *
+		 * @since  1.0.0
+		 * @return boolean
+		 */
+		public function is_comapre_table() {
+			return ( isset( $_GET['action'] ) && 'yith-woocompare-view-table' == $_GET['action'] );
 		}
 
 		/**

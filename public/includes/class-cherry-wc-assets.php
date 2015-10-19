@@ -43,6 +43,8 @@ if ( ! class_exists( 'Cherry_WC_Assets' ) ) {
 			add_action( 'wp_enqueue_scripts', array( $this, 'register_assets' ), 15 );
 			add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_global_assets' ), 20 );
 
+			add_action( 'cherry_wc_comapre_css', array( $this, 'compare_page_styles' ) );
+
 			add_filter( 'cherry_compiler_static_css', array( $this, 'add_style_to_compiler' ) );
 			add_action( 'cherry_dynamic_styles_before', array( $this, 'add_dynamic_styles' ) );
 
@@ -68,6 +70,29 @@ if ( ! class_exists( 'Cherry_WC_Assets' ) ) {
 		}
 
 		/**
+		 * Run specific action for compare page
+		 *
+		 * @since  1.0.0
+		 * @return void
+		 */
+		public function compare_page_styles() {
+
+			$styles = $this->get_styles();
+
+			if ( ! is_array( $styles ) ) {
+				return;
+			}
+
+			foreach ( $styles as $style ) {
+				printf(
+					'<link id="%1$s-css" media="all" type="text/css" href="%2$s?ver=%3$s" rel="stylesheet">',
+					esc_attr( $style['handle'] ), esc_url( $style['url'] ), esc_attr( $style['ver'] )
+				);
+			}
+
+		}
+
+		/**
 		 * Register reauired assets to include when needed
 		 *
 		 * @since  1.0.0
@@ -90,13 +115,28 @@ if ( ! class_exists( 'Cherry_WC_Assets' ) ) {
 				wp_register_script( $script['handle'], $script['url'], $script['deps'], $script['ver'], true );
 			}
 
+			global $yith_woocompare;
+
+			if ( ! $yith_woocompare ) {
+				$action = false;
+			} else {
+				$action = $yith_woocompare->obj->action_view;
+			}
+
 			self::$localized = array(
 				'cherry-woocommerce' => apply_filters(
 					'cherry_woocommerce_localized_strings',
 					array(
-						'ajaxurl' => admin_url( 'admin-ajax.php' ),
-						'nonce'   => wp_create_nonce( 'cherry_woocommerce' ),
-						'loading' => __( 'Loading...', 'cherry-woocommerce-package' ),
+						'ajaxurl'           => admin_url( 'admin-ajax.php' ),
+						'nonce'             => wp_create_nonce( 'cherry_woocommerce' ),
+						'loading'           => __( 'Loading...', 'cherry-woocommerce-package' ),
+						'compare_table_url' => add_query_arg(
+							array(
+								'action' => $action,
+								'iframe' => 'true',
+								'ver'    => time(),
+							)
+						),
 					)
 				),
 			);
