@@ -61,6 +61,7 @@ if ( ! class_exists( 'Cherry_WC_YITH_Addons' ) ) {
 				'single' => get_option( 'yith_woocompare_compare_button_in_product_page' ),
 			);
 
+			add_action( 'wp_head', array( $this, 'enqueue_fonts' ), 99 );
 			add_action( 'wp_head', array( $this, 'compare_css' ), 99 );
 
 			$this->loop_args = apply_filters(
@@ -327,6 +328,26 @@ if ( ! class_exists( 'Cherry_WC_YITH_Addons' ) ) {
 				<?php echo $dynamic_css; ?>
 			</style>
 			<?php
+
+		}
+
+		/**
+		 * Enqueue Google fonts pased from options
+		 *
+		 * @return void
+		 */
+		public function enqueue_fonts() {
+
+			if ( ! class_exists( 'cherry_enqueue_fonts' ) ) {
+				return;
+			}
+
+			$fonts_controller = cherry_enqueue_fonts::get_instance();
+
+			printf(
+				'<link id="google-fonts-css" media="all" type="text/css" href="%s" rel="stylesheet">',
+				$fonts_controller->get_fonts_url()
+			);
 
 		}
 

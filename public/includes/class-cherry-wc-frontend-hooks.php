@@ -137,12 +137,13 @@ if ( ! class_exists( 'Cherry_WC_Frontend_Hooks' ) ) {
 			}
 
 			if ( in_array( $layout, array( "$s-$c-$s", "$s-$s-$c", "%c-$s-$s" ) ) ) {
+				$this->loop_cols = 2;
 				return $this->loop_cols;
 			}
 
 			$this->loop_cols = $cols;
 
-			return $cols;
+			return $this->loop_cols;
 
 		}
 
