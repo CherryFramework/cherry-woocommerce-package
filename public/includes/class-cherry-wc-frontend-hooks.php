@@ -47,6 +47,7 @@ if ( ! class_exists( 'Cherry_WC_Frontend_Hooks' ) ) {
 			add_filter( 'woocommerce_after_single_product_summary', array( $this, 'loop_wrapper_close' ), 21 );
 			add_filter( 'cherry_current_object_id', array( $this, 'set_shop_page_id' ) );
 			add_filter( 'woocommerce_output_related_products_args', array( $this, 'related_products_args' ) );
+			add_filter( 'cherry_wc_product_gallery_layout', array( $this, 'product_gallery_layout' ) );
 		}
 
 		/**
@@ -144,6 +145,33 @@ if ( ! class_exists( 'Cherry_WC_Frontend_Hooks' ) ) {
 			$this->loop_cols = $cols;
 
 			return $this->loop_cols;
+
+		}
+
+		/**
+		 * Get product gallery layout class
+		 *
+		 * @since  1.0.0
+		 * @param  string $layout current layout.
+		 * @return string
+		 */
+		public function product_gallery_layout( $layout ) {
+
+			$cols = $this->get_shop_columns( 4 );
+
+			switch ( $cols ) {
+				case 2:
+					return 'two-sidebars';
+
+				case 3:
+					return 'single-sidebar';
+
+				case 4:
+					return 'fullwidth';
+
+				default:
+					return $layout;
+			}
 
 		}
 

@@ -13,8 +13,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 global $post, $woocommerce, $product;
 
+$layout_class = apply_filters( 'cherry_wc_product_gallery_layout', 'fullwidth' );
+
 ?>
-<div class="product-images">
+<div class="product-images <?php printf( 'product-%s', esc_attr( $layout_class ) ); ?>">
 	<?php
 
 		$thumbnails = $product->get_gallery_attachment_ids();
@@ -28,29 +30,13 @@ global $post, $woocommerce, $product;
 		$controls    = '';
 
 		if ( $thumb_count > 4 ) {
-			$thumb_class = ' cycle-slideshow vertical';
+			$thumb_class = ' cycle-slideshow';
 			$controls = '<a href="#" class="product-thumbnails_prev"><i class="fa fa-caret-up"></i></a><a href="#" class="product-thumbnails_next"><i class="fa fa-caret-down"></i></a>';
 
 		}
 
 		if ( $thumb_count > 0 ) {
 	?>
-		<div class="product-thumbnails">
-			<div class="product-thumbnails_list<?php echo $thumb_class; ?>" data-cycle-fx="carousel" data-cycle-timeout="0" data-cycle-next=".product-thumbnails_next" data-cycle-prev=".product-thumbnails_prev" data-cycle-carousel-visible="4" data-cycle-carousel-vertical="true" data-allow-wrap=false>
-			<?php
-				foreach ( $thumbnails as $thumb_id ) {
-					$image_link = wp_get_attachment_url( $thumb_id );
-					if ( ! $image_link ) {
-						continue;
-					}
-					$image_large = wp_get_attachment_image_src( $thumb_id, 'shop_single' );
-					$image = wp_get_attachment_image( $thumb_id, 'shop_thumbnail' );
-					echo '<div class="product-thumbnails_item" data-original-img="' . esc_url( $image_link ) . '" data-large-img="' . esc_url( $image_large[0] ) . '">' . $image . '</div>';
-				}
-			?>
-			</div>
-			<?php echo $controls; ?>
-		</div>
 		<div class="product-large-image">
 		<?php
 			if ( has_post_thumbnail() ) {
@@ -72,10 +58,33 @@ global $post, $woocommerce, $product;
 
 			} else {
 
-				echo apply_filters( 'woocommerce_single_product_image_html', sprintf( '<img src="%s" alt="%s" />', wc_placeholder_img_src(), __( 'Placeholder', 'woocommerce' ) ), $post->ID );
+				echo apply_filters(
+					'woocommerce_single_product_image_html',
+					sprintf(
+						'<img src="%s" alt="%s" />',
+						wc_placeholder_img_src(), __( 'Placeholder', 'woocommerce' )
+					),
+					$post->ID
+				);
 
 			}
 		?>
+		</div>
+		<div class="product-thumbnails">
+			<div class="product-thumbnails_list<?php echo $thumb_class; ?>" data-cycle-fx="carousel" data-cycle-timeout="0" data-cycle-next=".product-thumbnails_next" data-cycle-prev=".product-thumbnails_prev" data-cycle-carousel-visible="4" data-cycle-carousel-vertical="true" data-allow-wrap=false>
+			<?php
+				foreach ( $thumbnails as $thumb_id ) {
+					$image_link = wp_get_attachment_url( $thumb_id );
+					if ( ! $image_link ) {
+						continue;
+					}
+					$image_large = wp_get_attachment_image_src( $thumb_id, 'shop_single' );
+					$image = wp_get_attachment_image( $thumb_id, 'shop_thumbnail' );
+					echo '<div class="product-thumbnails_item" data-original-img="' . esc_url( $image_link ) . '" data-large-img="' . esc_url( $image_large[0] ) . '">' . $image . '</div>';
+				}
+			?>
+			</div>
+			<?php echo $controls; ?>
 		</div>
 	<?php } else {
 		cherry_wc_placeholder();

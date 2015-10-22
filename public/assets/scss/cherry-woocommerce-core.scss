@@ -74,18 +74,28 @@
  */
 .product-images {
 	float: left;
-	max-width: 470px;
+	max-width: 550px;
 	margin: 0 30px 30px 0;
-	@media (max-width: 979px) {
-		max-width: 395px;
-		margin: 0 20px 20px 0;
+	@media (max-width: 992px) {
+		max-width: 430px;
 	}
-	@media (max-width: 700px) {
-		float: none;
-		margin: 0 auto 20px;
+	@media (max-width: 768px) {
+		width: 320px;
 	}
 	@media (max-width: 450px) {
 		max-width: 300px;
+	}
+	@media (max-width: 600px) {
+		float: none;
+		margin: 0 auto 30px;
+	}
+	&.product-single-sidebar {
+		@media (max-width: 1200px) {
+			max-width: 430px;
+		}
+	}
+	&.product-two-sidebars {
+		max-width: 430px;
 	}
 	&:after {
 		clear: both;
@@ -97,42 +107,38 @@
 
 .product-thumbnails {
 	position: relative;
-	width: 85px;
-	margin: 0 10px 0 0;
-	float: left;
-	@media (max-width: 979px) {
-		width: 75px;
-		margin: 0 5px 0 0;
-	}
-	@media (max-width: 450px) {
-		width: 60px;
-		margin: 0;
+	margin: 10px 0 0;
+	@media (max-width: 768px) {
+		margin: 1px 0 0 0;
 	}
 	&_list {
-		height: 370px !important;
 		overflow: hidden;
-		@media (max-width: 979px) {
-			height: 315px !important;
-		}
-		@media (max-width: 450px) {
-			height: 240px !important;
-		}
 	}
 	&_item {
-		margin: 0 0 10px 0;
+		margin: 0 10px 0 0;
+		width: 130px;
+		float: left;
 		cursor: pointer;
-		-webkit-box-sizing: border-box;
-		-moz-box-sizing: border-box;
 		box-sizing: border-box;
+		@media (max-width: 992px) {
+			width: 100px;
+		}
+		.product-single-sidebar & {
+			@media (max-width: 1200px) {
+				max-width: 100px;
+			}
+		}
+		.product-two-sidebars & {
+			max-width: 100px;
+		}
+		@media (max-width: 768px) {
+			width: 80px;
+			margin: 0;
+			padding: 1px 1px 0 0;
+		}
 		img {
 			width: 100%;
 			height: auto;
-		}
-		@media (max-width: 979px) {
-			margin: 0 0 5px 0;
-		}
-		@media (max-width: 450px) {
-			margin: 0;
 		}
 	}
 	&_prev,
@@ -185,46 +191,17 @@
 			line-height: 26px;
 			margin: -13px 0 0 -13px;
 		}
-		@media (max-width: 979px) {
+		@media (max-width: 992px) {
 			height: 75px;
 		}
 		@media (max-width: 450px) {
 			height: 60px;
 		}
 	}
-	&.placeholder-large {
-		font-size: 50px;
-		width: 370px;
-		height: 370px;
-		i {
-			width: 60px;
-			height: 60px;
-			line-height: 60px;
-			margin: -30px 0 0 -30px;
-		}
-		@media (max-width: 979px) {
-			width: 315px;
-			height: 315px;
-		}
-		@media (max-width: 979px) {
-			width: 240px;
-			height: 240px;
-		}
-	}
 }
 
 .product-large-image {
-	float: left;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-	max-width: 370px;
-	@media (max-width: 979px) {
-		width: 315px;
-	}
-	@media (max-width: 450px) {
-		width: 240px;
-	}
 }
 
 .zoomContainer {
