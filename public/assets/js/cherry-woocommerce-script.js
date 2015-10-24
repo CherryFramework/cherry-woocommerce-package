@@ -98,27 +98,27 @@
 			if ( undefined === step ) {
 				step = 1;
 			} else {
-				step = parseInt( step );
+				step = parseInt( step, 10 );
 			}
 
 			if ( undefined === min ) {
 				min = 1;
 			} else {
-				min = parseInt( min );
+				min = parseInt( min, 10 );
 			}
 
 			if ( undefined === max ) {
 				max = false;
 			} else {
-				max = parseInt( max );
+				max = parseInt( max, 10 );
 			}
 
 			$this.on( 'click', add.selector, function( event ) {
 
 				event.preventDefault();
-				current = parseInt( input.val() );
+				current = parseInt( input.val(), 10 );
 
-				if ( false == max || max <= ( current + step ) ) {
+				if ( false === max || max <= ( current + step ) ) {
 					input.val( current + step );
 				}
 
@@ -127,7 +127,7 @@
 			$this.on( 'click', remove.selector, function( event ) {
 
 				event.preventDefault();
-				current = parseInt( input.val() );
+				current = parseInt( input.val(), 10 );
 
 				if ( min <= ( current - step ) ) {
 					input.val( current - step );
@@ -143,10 +143,6 @@
 jQuery( document ).ready(function( $ ) {
 
 	'use strict';
-
-	var initialWidth = $( '#site-wrapper' ).width(),
-		currentWidth = initialWidth,
-		reinit        = false;
 
 	// Init dropdowns
 	$( '[data-dropdown="box"]' ).CherryWCDropdown();
