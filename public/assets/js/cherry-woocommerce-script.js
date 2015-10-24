@@ -75,6 +75,72 @@
 	};
 })( jQuery );
 
+/**
+ * Quantity controls
+ */
+(function( $ ) {
+
+	'use strict';
+
+	$.fn.CherryWCQty = function() {
+
+		return this.each( function() {
+
+			var $this  = $( this ),
+				add    = $( '.qty-controls-add', $this ),
+				remove = $( '.qty-controls-remove', $this ),
+				input  = $( '.qty', $this ),
+				min    = input.attr( 'min' ),
+				max    = input.attr( 'max' ),
+				step   = input.attr( 'step' ),
+				current;
+
+			if ( undefined === step ) {
+				step = 1;
+			} else {
+				step = parseInt( step );
+			}
+
+
+			if ( undefined === min ) {
+				min = 1;
+			} else {
+				min = parseInt( min );
+			}
+
+			if ( undefined === max ) {
+				max = false;
+			} else {
+				max = parseInt( max );
+			}
+
+			$this.on( 'click', add.selector, function( event ) {
+
+				event.preventDefault();
+				current = parseInt( input.val() );
+
+				if ( false == max || max <= ( current + step ) ) {
+					input.val( current + step );
+				}
+
+			});
+
+			$this.on( 'click', remove.selector, function( event ) {
+
+				event.preventDefault();
+				current = parseInt( input.val() );
+
+				if ( min <= ( current - step ) ) {
+					input.val( current - step );
+				}
+
+			});
+
+		});
+
+	};
+})( jQuery );
+
 jQuery( document ).ready(function( $ ) {
 
 	'use strict';
@@ -85,6 +151,9 @@ jQuery( document ).ready(function( $ ) {
 
 	// Init dropdowns
 	$( '[data-dropdown="box"]' ).CherryWCDropdown();
+
+	// Init Qty controls
+	$( '.quantity-wrap' ).CherryWCQty();
 
 	// Quick view
 	$( document ).on( 'click', '.cherry-quick-view', function( event ) {
@@ -179,25 +248,9 @@ jQuery( document ).ready(function( $ ) {
 
 	function reinitScripts() {
 
-		reinit        = false;
-		currentWidth = $( '#site-wrapper' ).width();
-
-		if ( initialWidth > 979 && currentWidth <= 979 ) {
-			reinit = true;
-		} else if ( initialWidth <= 979 && currentWidth > 979 ) {
-			reinit = true;
-		} else if ( initialWidth > 450 && currentWidth <= 450 ) {
-			reinit = true;
-		} else if ( initialWidth <= 450 && currentWidth > 450 ) {
-			reinit = true;
-		}
-
-		if ( true === reinit ) {
-			initialWidth = currentWidth;
-			zoomInit();
-			if ( $.isFunction( jQuery.fn.cycle ) ) {
-				$( '.cycle-slideshow' ).cycle( 'reinit' );
-			}
+		zoomInit();
+		if ( $.isFunction( jQuery.fn.cycle ) ) {
+			$( '.cycle-slideshow' ).cycle( 'reinit' );
 		}
 
 	}

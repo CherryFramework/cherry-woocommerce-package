@@ -31,7 +31,7 @@ $layout_class = apply_filters( 'cherry_wc_product_gallery_layout', 'fullwidth' )
 
 		if ( $thumb_count > 4 ) {
 			$thumb_class = ' cycle-slideshow';
-			$controls = '<a href="#" class="product-thumbnails_prev"><i class="fa fa-caret-up"></i></a><a href="#" class="product-thumbnails_next"><i class="fa fa-caret-down"></i></a>';
+			$controls = '<a href="#" class="product-thumbnails_prev"><i class="fa fa-caret-left"></i></a><a href="#" class="product-thumbnails_next"><i class="fa fa-caret-right"></i></a>';
 
 		}
 
@@ -71,7 +71,7 @@ $layout_class = apply_filters( 'cherry_wc_product_gallery_layout', 'fullwidth' )
 		?>
 		</div>
 		<div class="product-thumbnails">
-			<div class="product-thumbnails_list<?php echo $thumb_class; ?>" data-cycle-fx="carousel" data-cycle-timeout="0" data-cycle-next=".product-thumbnails_next" data-cycle-prev=".product-thumbnails_prev" data-cycle-carousel-visible="4" data-cycle-carousel-vertical="true" data-allow-wrap=false>
+			<div class="product-thumbnails_list<?php echo $thumb_class; ?>" data-cycle-fx="carousel" data-cycle-timeout="0" data-cycle-next=".product-thumbnails_next" data-cycle-prev=".product-thumbnails_prev" data-cycle-carousel-visible="4" data-allow-wrap=false>
 			<?php
 				foreach ( $thumbnails as $thumb_id ) {
 					$image_link = wp_get_attachment_url( $thumb_id );

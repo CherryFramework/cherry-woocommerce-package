@@ -43,6 +43,10 @@ if ( ! class_exists( 'Cherry_WC_Options' ) ) {
 		 */
 		public function add_options( $sections ) {
 
+			if ( ! defined( 'PARENT_URI' ) ) {
+				return $sections;
+			}
+
 			$menus = wp_get_nav_menus( array( 'orderby' => 'name' ) );
 
 			$options_menus = array(
@@ -60,6 +64,16 @@ if ( ! class_exists( 'Cherry_WC_Options' ) ) {
 					'label'       => '',
 					'description' => __( 'Set a number of products per shop page.', 'cherry-woocommerce-package' ),
 					'value'       => '8',
+					'step_value'  => '1',
+					'max_value'   => '40',
+					'min_value'   => '1',
+				),
+				'shop-per-cat-page' => array(
+					'type'        => 'stepper',
+					'title'       => __( 'Products per category page', 'cherry-woocommerce-package' ),
+					'label'       => '',
+					'description' => __( 'Set a number of products per category page.', 'cherry-woocommerce-package' ),
+					'value'       => '9',
 					'step_value'  => '1',
 					'max_value'   => '40',
 					'min_value'   => '1',
@@ -137,11 +151,130 @@ if ( ! class_exists( 'Cherry_WC_Options' ) ) {
 				),
 			);
 
+			$shop_layout = array(
+				'shop-loop-layout' => array(
+					'type'        => 'radio',
+					'title'       => __( 'Main shop page layout', 'cherry-woocommerce-package' ),
+					'hint'        => array(
+						'type'    => 'text',
+						'content' => __( 'You can choose if you want to display sidebars and how you want to display them.', 'cherry-woocommerce-package' ),
+					),
+					'value'         => 'no-sidebar',
+					'display_input' => false,
+					'options'       => array(
+						'sidebar-content' => array(
+							'label'   => __( 'Left sidebar', 'cherry-woocommerce-package' ),
+							'img_src' => PARENT_URI . '/lib/admin/assets/images/svg/page-layout-left-sidebar.svg',
+						),
+						'content-sidebar' => array(
+							'label'   => __( 'Right sidebar', 'cherry-woocommerce-package' ),
+							'img_src' => PARENT_URI . '/lib/admin/assets/images/svg/page-layout-right-sidebar.svg',
+						),
+						'sidebar-content-sidebar' => array(
+							'label'   => __( 'Left and right sidebar', 'cherry-woocommerce-package' ),
+							'img_src' => PARENT_URI . '/lib/admin/assets/images/svg/page-layout-both-sidebar.svg',
+						),
+						'sidebar-sidebar-content' => array(
+							'label'   => __( 'Two sidebars on the left', 'cherry-woocommerce-package' ),
+							'img_src' => PARENT_URI . '/lib/admin/assets/images/svg/page-layout-sameside-left-sidebar.svg',
+						),
+						'content-sidebar-sidebar' => array(
+							'label'   => __( 'Two sidebars on the right', 'cherry-woocommerce-package' ),
+							'img_src' => PARENT_URI . '/lib/admin/assets/images/svg/page-layout-sameside-right-sidebar.svg',
+						),
+						'no-sidebar' => array(
+							'label'   => __( 'No sidebar', 'cherry-woocommerce-package' ),
+							'img_src' => PARENT_URI . '/lib/admin/assets/images/svg/page-layout-fullwidth.svg',
+						),
+					),
+				),
+				'shop-category-layout' => array(
+					'type'        => 'radio',
+					'title'       => __( 'Product categories and tags layout', 'cherry-woocommerce-package' ),
+					'hint'        => array(
+						'type'    => 'text',
+						'content' => __( 'You can choose if you want to display sidebars and how you want to display them.', 'cherry-woocommerce-package' ),
+					),
+					'value'         => 'sidebar-content',
+					'display_input' => false,
+					'options'       => array(
+						'sidebar-content' => array(
+							'label'   => __( 'Left sidebar', 'cherry-woocommerce-package' ),
+							'img_src' => PARENT_URI . '/lib/admin/assets/images/svg/page-layout-left-sidebar.svg',
+						),
+						'content-sidebar' => array(
+							'label'   => __( 'Right sidebar', 'cherry-woocommerce-package' ),
+							'img_src' => PARENT_URI . '/lib/admin/assets/images/svg/page-layout-right-sidebar.svg',
+						),
+						'sidebar-content-sidebar' => array(
+							'label'   => __( 'Left and right sidebar', 'cherry-woocommerce-package' ),
+							'img_src' => PARENT_URI . '/lib/admin/assets/images/svg/page-layout-both-sidebar.svg',
+						),
+						'sidebar-sidebar-content' => array(
+							'label'   => __( 'Two sidebars on the left', 'cherry-woocommerce-package' ),
+							'img_src' => PARENT_URI . '/lib/admin/assets/images/svg/page-layout-sameside-left-sidebar.svg',
+						),
+						'content-sidebar-sidebar' => array(
+							'label'   => __( 'Two sidebars on the right', 'cherry-woocommerce-package' ),
+							'img_src' => PARENT_URI . '/lib/admin/assets/images/svg/page-layout-sameside-right-sidebar.svg',
+						),
+						'no-sidebar' => array(
+							'label'   => __( 'No sidebar', 'cherry-woocommerce-package' ),
+							'img_src' => PARENT_URI . '/lib/admin/assets/images/svg/page-layout-fullwidth.svg',
+						),
+					),
+				),
+				'shop-single-layout' => array(
+					'type'        => 'radio',
+					'title'       => __( 'Single page layout', 'cherry-woocommerce-package' ),
+					'hint'        => array(
+						'type'    => 'text',
+						'content' => __( 'You can choose if you want to display sidebars and how you want to display them.', 'cherry-woocommerce-package' ),
+					),
+					'value'         => 'no-sidebar',
+					'display_input' => false,
+					'options'       => array(
+						'sidebar-content' => array(
+							'label'   => __( 'Left sidebar', 'cherry-woocommerce-package' ),
+							'img_src' => PARENT_URI . '/lib/admin/assets/images/svg/page-layout-left-sidebar.svg',
+						),
+						'content-sidebar' => array(
+							'label'   => __( 'Right sidebar', 'cherry-woocommerce-package' ),
+							'img_src' => PARENT_URI . '/lib/admin/assets/images/svg/page-layout-right-sidebar.svg',
+						),
+						'sidebar-content-sidebar' => array(
+							'label'   => __( 'Left and right sidebar', 'cherry-woocommerce-package' ),
+							'img_src' => PARENT_URI . '/lib/admin/assets/images/svg/page-layout-both-sidebar.svg',
+						),
+						'sidebar-sidebar-content' => array(
+							'label'   => __( 'Two sidebars on the left', 'cherry-woocommerce-package' ),
+							'img_src' => PARENT_URI . '/lib/admin/assets/images/svg/page-layout-sameside-left-sidebar.svg',
+						),
+						'content-sidebar-sidebar' => array(
+							'label'   => __( 'Two sidebars on the right', 'cherry-woocommerce-package' ),
+							'img_src' => PARENT_URI . '/lib/admin/assets/images/svg/page-layout-sameside-right-sidebar.svg',
+						),
+						'no-sidebar' => array(
+							'label'   => __( 'No sidebar', 'cherry-woocommerce-package' ),
+							'img_src' => PARENT_URI . '/lib/admin/assets/images/svg/page-layout-fullwidth.svg',
+						),
+					),
+				),
+			);
+
 			$sections['shop-section'] = array(
 				'name'         => __( 'Shop', 'cherry-woocommerce-package' ),
 				'icon'         => 'dashicons dashicons-cart',
 				'priority'     => 105,
-				'options-list' => apply_filters( 'cherry_wc_package_options_list', $shop_options ),
+				'options-list' => apply_filters( 'cherry_wc_package_shop_options_list', $shop_options ),
+			);
+
+			$sections['shop-layout-subsection'] = array(
+				'name'         => __( 'Layout', 'cherry-woocommerce-package' ),
+				'parent'       => 'shop-section',
+				'icon'         => 'dashicons dashicons-arrow-right',
+				'priority'     => 110,
+				'options-list' => apply_filters( 'cherry_wc_package_shop_layout_options_list', $shop_layout ),
 			);
 
 			return $sections;

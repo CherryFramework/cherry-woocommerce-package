@@ -75,3 +75,24 @@
 .woocommerce ul.order_details {
 	background: $color-gray-variations;
 }
+
+.woocommerce div.product .summary .yith-wcwl-wishlistaddedbrowse .feedback,
+.woocommerce div.product .summary .yith-wcwl-wishlistexistsbrowse .feedback {
+	background: $color-primary;
+	color: @contrast( $color-primary, #fff, #333 );
+}
+
+.woocommerce div.product .summary .yith-wcwl-wishlistaddedbrowse .feedback:after,
+.woocommerce div.product .summary .yith-wcwl-wishlistexistsbrowse .feedback:after {
+	border-color: $color-primary transparent transparent transparent;
+}
+
+.woocommerce .widget_price_filter .ui-slider .ui-slider-range {
+	background-color: $color-primary;
+}
+.woocommerce .widget_price_filter .price_slider_wrapper .ui-widget-content {
+	background-color: @lighten( $color-primary, 20% );
+}
+.woocommerce .widget_price_filter .ui-slider .ui-slider-handle {
+	background-color: @darken( $color-primary, 15% );
+}

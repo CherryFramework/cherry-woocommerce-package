@@ -36,9 +36,20 @@ if ( ! class_exists( 'Cherry_WC_Frontend_Hooks' ) ) {
 		private $loop_cols = null;
 
 		/**
+		 * Holder for shop sidebar ID
+		 *
+		 * @since 1.0.0
+		 * @var   string
+		 */
+		public $shop_sidebar_id = null;
+
+		/**
 		 * Constructor for the class
 		 */
 		function __construct() {
+
+			$this->shop_sidebar_id = apply_filters( 'cherry_wc_shop_sidebar_id', 'sidebar-shop' );
+
 			add_filter( 'loop_shop_per_page', array( $this, 'loop_per_page' ) );
 			add_filter( 'loop_shop_columns', array( $this, 'loop_columns' ) );
 			add_filter( 'woocommerce_before_shop_loop', array( $this, 'loop_wrapper_open' ), 99 );
@@ -48,6 +59,100 @@ if ( ! class_exists( 'Cherry_WC_Frontend_Hooks' ) ) {
 			add_filter( 'cherry_current_object_id', array( $this, 'set_shop_page_id' ) );
 			add_filter( 'woocommerce_output_related_products_args', array( $this, 'related_products_args' ) );
 			add_filter( 'cherry_wc_product_gallery_layout', array( $this, 'product_gallery_layout' ) );
+			add_filter( 'cherry_get_page_layout', array( $this, 'shop_page_layouts' ) );
+
+			add_action( 'woocommerce_before_template_part', array( $this, 'open_qty_wrap' ), 10, 4 );
+			add_action( 'woocommerce_after_template_part', array( $this, 'close_qty_wrap' ), 10, 4 );
+
+			add_action( 'widgets_init', array( $this, 'register_shop_sidebar' ) );
+
+			add_filter( 'cherry_get_main_sidebar', array( $this, 'show_shop_sidebar' ) );
+
+		}
+
+		/**
+		 * Open quantity block wrappers.
+		 * Hooked to woocommerce_before_template_part and processed only if is qty template
+		 *
+		 * @since  1.0.0
+		 * @param  string $template_name current template name.
+		 * @param  string $template_path current template path.
+		 * @param  string $located       current template location.
+		 * @param  array  $args          additional args, passed into template.
+		 * @return void
+		 */
+		public function open_qty_wrap( $template_name, $template_path, $located, $args ) {
+
+			if ( 'global/quantity-input.php' !== $template_name ) {
+				return;
+			}
+			?>
+			<div class="quantity-wrap">
+				<div class="qty-controls">
+					<span class="qty-controls-add"></span>
+					<span class="qty-controls-remove"></span>
+				</div>
+			<?php
+		}
+
+		/**
+		 * Close quantity block wrappers.
+		 * Hooked to woocommerce_after_template_part and processed only if is qty template
+		 *
+		 * @since  1.0.0
+		 * @param  string $template_name current template name.
+		 * @param  string $template_path current template path.
+		 * @param  string $located       current template location.
+		 * @param  array  $args          additional args, passed into template.
+		 * @return void
+		 */
+		public function close_qty_wrap( $template_name, $template_path, $located, $args ) {
+
+			if ( 'global/quantity-input.php' !== $template_name ) {
+				return;
+			}
+			?>
+			</div>
+			<?php
+		}
+
+		/**
+		 * Rwegister sidabar for shop pages
+		 *
+		 * @since  1.0.0
+		 * @return void
+		 */
+		public function register_shop_sidebar() {
+
+			if ( function_exists( 'cherry_register_sidebar' ) ) {
+				cherry_register_sidebar(
+					array(
+						'id'           => $this->shop_sidebar_id,
+						'name'         => __( 'Shop Sidebar', 'cherry-wcoocommerce-package' ),
+						'description'  => __( 'Main Shop Sidebar', 'cherry-wcoocommerce-package' ),
+						'before_title' => '<h5 class="widget-title">',
+						'after_title'  => '</h5>',
+					)
+				);
+			}
+
+		}
+
+		/**
+		 * Pass shop sidebar as main page sidebar for WooCommerce pages
+		 *
+		 * @since  1.0.0
+		 * @param  string $sidebar mcurrent main sidebar name
+		 * @return string
+		 */
+		public function show_shop_sidebar( $sidebar ) {
+
+			if ( ! function_exists( 'is_woocommerce' ) || ! is_woocommerce() ) {
+				return $sidebar;
+			}
+
+			return $this->shop_sidebar_id;
+
 		}
 
 		/**
@@ -78,7 +183,11 @@ if ( ! class_exists( 'Cherry_WC_Frontend_Hooks' ) ) {
 		 * @return int
 		 */
 		public function loop_per_page( $num ) {
-			$per_page = cherry_wc_options()->get_option( 'shop-per-page', 8 );
+			if ( is_product_taxonomy() ) {
+				$per_page = cherry_wc_options()->get_option( 'shop-per-cat-page', 8 );
+			} else {
+				$per_page = cherry_wc_options()->get_option( 'shop-per-page', 8 );
+			}
 			return $per_page;
 		}
 
@@ -184,11 +293,32 @@ if ( ! class_exists( 'Cherry_WC_Frontend_Hooks' ) ) {
 		 */
 		public function set_shop_page_id( $id ) {
 
-			if ( ! is_shop() && ! is_product_taxonomy() ) {
+			if ( ! is_shop() ) {
 				return $id;
 			}
 
 			return wc_get_page_id( 'shop' );
+
+		}
+
+		/**
+		 * Get specific layouts from options for shop-related pages
+		 *
+		 * @since  1.0.0
+		 * @param  string $layout layout type
+		 * @return string
+		 */
+		public function shop_page_layouts( $layout ) {
+
+			if ( is_shop() ) {
+				$layout = cherry_wc_options()->get_option( 'shop-loop-layout', 'no-sidebar' );
+			} elseif ( is_product_taxonomy() ) {
+				$layout = cherry_wc_options()->get_option( 'shop-category-layout', 'no-sidebar' );
+			} elseif ( is_singular( 'product' ) ) {
+				$layout = cherry_wc_options()->get_option( 'shop-single-layout', 'no-sidebar' );
+			}
+
+			return $layout;
 
 		}
 
