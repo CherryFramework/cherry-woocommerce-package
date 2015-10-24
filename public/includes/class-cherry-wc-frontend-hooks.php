@@ -142,7 +142,7 @@ if ( ! class_exists( 'Cherry_WC_Frontend_Hooks' ) ) {
 		 * Pass shop sidebar as main page sidebar for WooCommerce pages
 		 *
 		 * @since  1.0.0
-		 * @param  string $sidebar mcurrent main sidebar name
+		 * @param  string $sidebar mcurrent main sidebar name.
 		 * @return string
 		 */
 		public function show_shop_sidebar( $sidebar ) {
@@ -305,7 +305,7 @@ if ( ! class_exists( 'Cherry_WC_Frontend_Hooks' ) ) {
 		 * Get specific layouts from options for shop-related pages
 		 *
 		 * @since  1.0.0
-		 * @param  string $layout layout type
+		 * @param  string $layout layout type.
 		 * @return string
 		 */
 		public function shop_page_layouts( $layout ) {

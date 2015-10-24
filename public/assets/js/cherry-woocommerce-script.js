@@ -101,7 +101,6 @@
 				step = parseInt( step );
 			}
 
-
 			if ( undefined === min ) {
 				min = 1;
 			} else {
