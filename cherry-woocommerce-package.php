@@ -107,6 +107,7 @@ if ( ! class_exists( 'Cherry_Woocommerce_Package' ) ) {
 				return;
 			}
 
+			require_once $this->plugin_dir( 'admin/includes/class-cherry-wc-admin-hooks.php' );
 			require_once $this->plugin_dir( 'admin/includes/class-cherry-update/class-cherry-plugin-update.php' );
 
 			$Cherry_Plugin_Update = new Cherry_Plugin_Update();

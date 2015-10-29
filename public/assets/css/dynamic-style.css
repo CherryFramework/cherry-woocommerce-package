@@ -96,3 +96,12 @@
 .woocommerce .widget_price_filter .ui-slider .ui-slider-handle {
 	background-color: @darken( $color-primary, 15% );
 }
+
+.product-categories .cat-item:before {
+	color: $color-primary;
+}
+
+.product-categories .cat-item.current-cat:before,
+.product-categories .cat-item.current-cat > a {
+	color: $color-secondary;
+}
