@@ -32,8 +32,23 @@ if ( ! class_exists( 'Cherry_WC_Admin_Hooks' ) ) {
 		 */
 		function __construct() {
 
+			add_filter( 'cherry_dm_export_database_tables', array( $this, 'export_termmmeta' ) );
 			add_filter( 'cherry_data_manager_export_options', array( $this, 'shop_options_to_export' ) );
 			add_filter( 'cherry_data_manager_options_ids', array( $this, 'shop_options_ids' ) );
+
+		}
+
+		/**
+		 * Pass woocommerce_termmeta into exported database tables
+		 *
+		 * @since  1.0.0
+		 * @param  array $tables tables array to export.
+		 * @return array
+		 */
+		public function export_termmmeta( $tables ) {
+
+			$tables[] = 'woocommerce_termmeta';
+			return $tables;
 
 		}
 
@@ -41,10 +56,10 @@ if ( ! class_exists( 'Cherry_WC_Admin_Hooks' ) ) {
 		 * Pass option id's to rewrite
 		 *
 		 * @since  1.0.0
-		 * @param  array $options
+		 * @param  array $options default options array.
 		 * @return array
 		 */
-		function shop_options_ids( $options ) {
+		public function shop_options_ids( $options ) {
 
 			$options[] = 'woocommerce_shop_page_id';
 			$options[] = 'woocommerce_shop_page_display';
@@ -62,10 +77,10 @@ if ( ! class_exists( 'Cherry_WC_Admin_Hooks' ) ) {
 		 * Pass shop options to contant exposrter
 		 *
 		 * @since  1.0.0
-		 * @param  array $options default options to export list
+		 * @param  array $options default options to export list.
 		 * @return array
 		 */
-		function shop_options_to_export( $options ) {
+		public function shop_options_to_export( $options ) {
 
 			$options[] = 'woocommerce_enable_myaccount_registration';
 			$options[] = 'woocommerce_weight_unit';
