@@ -318,4 +318,25 @@ div[data-dropdown="content"],
 			padding: 0 0 30px 0;
 		}
 	}
+	&.compare-table-page {
+		h1 {
+			.close {
+				font-size: 14px;
+				line-height: 20px;
+				font-weight: normal;
+				&:hover {
+					color: inherit;
+					font-size: 14px;
+					line-height: 20px;
+				}
+			}
+			@media (max-width: 480px) {
+				text-align: center;
+				.close {
+					float: none;
+					display: block
+				}
+			}
+		}
+	}
 }

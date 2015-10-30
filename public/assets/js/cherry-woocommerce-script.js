@@ -118,7 +118,7 @@
 				event.preventDefault();
 				current = parseInt( input.val(), 10 );
 
-				if ( false === max || max <= ( current + step ) ) {
+				if ( false === max || max >= ( current + step ) ) {
 					input.val( current + step );
 				}
 
