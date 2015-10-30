@@ -43,16 +43,46 @@
 			&:nth-child(4n+1) {
 				clear: both;
 			}
+			@media ( max-width: 768px ) {
+				width: 50%;
+				&:nth-child(2n+1) {
+					clear: both;
+				}
+			}
 		}
 		.col-5 > & {
 			width: 20%;
 			&:nth-child(5n+1) {
 				clear: both;
 			}
+			@media ( max-width: 768px ) {
+				width: 50%;
+				&:nth-child(2n+1) {
+					clear: both;
+				}
+			}
 		}
 		.col-6 > & {
 			width: 16.6666%;
 			&:nth-child(6n+1) {
+				clear: both;
+			}
+			@media ( max-width: 768px ) {
+				width: 50%;
+				&:nth-child(2n+1) {
+					clear: both;
+				}
+			}
+		}
+		@media ( max-width: 480px ) {
+			.col-1 > &,
+			.col-2 > &,
+			.col-3 > &,
+			.col-4 > &,
+			.col-5 > &,
+			.col-6 > & {
+				width: 100%;
+				float: none;
 				clear: both;
 			}
 		}
@@ -313,6 +343,11 @@ span.onsale {
 		ul.products {
 			li.product {
 				width: 100%;
+				@media ( max-width: 480px ) {
+					width: 100%;
+					float: none;
+					clear: both;
+				}
 			}
 		}
 	}
@@ -322,6 +357,11 @@ span.onsale {
 		ul.products {
 			li.product {
 				width: 50%;
+				@media ( max-width: 480px ) {
+					width: 100%;
+					float: none;
+					clear: both;
+				}
 			}
 		}
 	}
@@ -331,6 +371,31 @@ span.onsale {
 		ul.products {
 			li.product {
 				width: 33.33333%;
+				@media ( max-width: 480px ) {
+					width: 100%;
+					float: none;
+					clear: both;
+				}
+			}
+		}
+	}
+
+	&.columns-4,
+	.product-cols-4 {
+		ul.products {
+			li.product {
+				width: 25%;
+				@media ( max-width: 768px ) {
+					width: 50%;
+					&:nth-child(2n+1) {
+						clear: both;
+					}
+				}
+				@media ( max-width: 480px ) {
+					width: 100%;
+					float: none;
+					clear: both;
+				}
 			}
 		}
 	}
@@ -340,6 +405,17 @@ span.onsale {
 		ul.products {
 			li.product {
 				width: 20%;
+				@media ( max-width: 768px ) {
+					width: 50%;
+					&:nth-child(2n+1) {
+						clear: both;
+					}
+				}
+				@media ( max-width: 480px ) {
+					width: 100%;
+					float: none;
+					clear: both;
+				}
 			}
 		}
 	}
@@ -349,6 +425,17 @@ span.onsale {
 		ul.products {
 			li.product {
 				width: 16.66666%;
+				@media ( max-width: 768px ) {
+					width: 50%;
+					&:nth-child(2n+1) {
+						clear: both;
+					}
+				}
+				@media ( max-width: 480px ) {
+					width: 100%;
+					float: none;
+					clear: both;
+				}
 			}
 		}
 	}
