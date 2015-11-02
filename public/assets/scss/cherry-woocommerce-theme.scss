@@ -661,6 +661,13 @@ span.onsale {
 
 .woocommerce-tabs {
 	clear: both;
+	padding: 0 0 30px 0;
+	&:after {
+		clear: both;
+		content: "";
+		width: 100%;
+		display: block;
+	}
 	ul.tabs {
 		list-style: none;
 		padding: 0;

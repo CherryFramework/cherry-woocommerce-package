@@ -18,4 +18,6 @@ if ( 'simple' !== $product->product_type ) {
 	return;
 }
 ?>
-<a href="<?php esc_url( get_permalink( $post->ID ) ); ?>"><?php _e( 'Read More', 'cherry-woocommerce-package' ); ?></a>
+<a class="button alt" href="<?php esc_url( get_permalink( $post->ID ) ); ?>">
+	<?php _e( 'Read More', 'cherry-woocommerce-package' ); ?>
+</a>

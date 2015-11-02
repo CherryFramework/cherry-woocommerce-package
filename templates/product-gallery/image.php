@@ -52,6 +52,7 @@ $layout_class = apply_filters( 'cherry_wc_product_gallery_layout', 'fullwidth' )
 					'data-initial-thumb-large' => $image_link,
 					'title'                    => $product_title,
 					'alt'                      => $product_title,
+					'data-is-shop-single'      => true,
 				) );
 
 				echo $image;

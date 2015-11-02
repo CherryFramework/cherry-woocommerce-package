@@ -174,7 +174,7 @@ jQuery( document ).ready(function( $ ) {
 					product: productId
 				},
 				success: function( response ) {
-					$( '#' + currentPopup ).find( '.cherry-quick-view-popup-content' ).html( response );
+					$( '#' + currentPopup ).find( '.cherry-quick-view-popup-content' ).html( $.parseHTML( response ) );
 				}
 			});
 		}
@@ -189,7 +189,7 @@ jQuery( document ).ready(function( $ ) {
 				items: {
 					src: '#' + currentPopup
 				},
-				type: 'inline'
+				type: 'inline',
 			}, 0 );
 		}
 

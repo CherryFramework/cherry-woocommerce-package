@@ -46,6 +46,31 @@
 	&-data {
 		overflow: hidden;
 		padding: 0 0 0 20px;
+		.product_title {
+			padding: 0 0 20px 0;
+		}
+		.woocommerce-product-rating {
+			float: right;
+			+ * {
+				clear: both;
+			}
+		}
+		div[itemprop="offers"] {
+			clear: none;
+			+ * {
+				clear: both;
+			}
+		}
+		ins {
+			text-decoration: none;
+		}
+		.price {
+			padding: 0 0 15px;
+			margin: 0;
+		}
+		.added_to_cart {
+			display: none;
+		}
 	}
 }
 

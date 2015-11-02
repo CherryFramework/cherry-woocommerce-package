@@ -60,6 +60,7 @@ if ( ! class_exists( 'Cherry_WC_Frontend_Hooks' ) ) {
 			add_filter( 'woocommerce_output_related_products_args', array( $this, 'related_products_args' ) );
 			add_filter( 'cherry_wc_product_gallery_layout', array( $this, 'product_gallery_layout' ) );
 			add_filter( 'cherry_get_page_layout', array( $this, 'shop_page_layouts' ) );
+			add_filter( 'wp_get_attachment_image_attributes', array( $this, 'remove_srcset' ), 10 ,3 );
 
 			add_action( 'woocommerce_before_template_part', array( $this, 'open_qty_wrap' ), 10, 4 );
 			add_action( 'woocommerce_after_template_part', array( $this, 'close_qty_wrap' ), 10, 4 );
@@ -68,6 +69,28 @@ if ( ! class_exists( 'Cherry_WC_Frontend_Hooks' ) ) {
 
 			add_filter( 'cherry_get_main_sidebar', array( $this, 'show_shop_sidebar' ) );
 
+		}
+
+		/**
+		 * Temporary remove srcset attribute from single shop image.
+		 *
+		 * @since  1.0.0
+		 * @param  array  $atts       default attributes array.
+		 * @param  object $attachment image attachment post object.
+		 * @param  array  $size       image size array.
+		 * @return array
+		 */
+		public function remove_srcset( $atts, $attachment, $size ) {
+
+			if ( ! isset($atts['srcset'])
+				 || ! isset( $atts['data-is-shop-single'] )
+				 || true !== $atts['data-is-shop-single'] ) {
+				return $atts;
+			}
+
+			unset( $atts['srcset'] );
+
+			return $atts;
 		}
 
 		/**
