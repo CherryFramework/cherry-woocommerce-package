@@ -82,7 +82,7 @@ if ( ! class_exists( 'Cherry_WC_Frontend_Hooks' ) ) {
 		 */
 		public function remove_srcset( $atts, $attachment, $size ) {
 
-			if ( ! isset($atts['srcset'])
+			if ( ! isset( $atts['srcset'] )
 				 || ! isset( $atts['data-is-shop-single'] )
 				 || true !== $atts['data-is-shop-single'] ) {
 				return $atts;

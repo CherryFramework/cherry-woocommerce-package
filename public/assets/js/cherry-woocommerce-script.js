@@ -189,7 +189,7 @@ jQuery( document ).ready(function( $ ) {
 				items: {
 					src: '#' + currentPopup
 				},
-				type: 'inline',
+				type: 'inline'
 			}, 0 );
 		}
 
