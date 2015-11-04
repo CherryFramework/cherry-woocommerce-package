@@ -269,7 +269,7 @@ if ( ! class_exists( 'Cherry_WC_Frontend_Hooks' ) ) {
 				return $this->loop_cols;
 			}
 
-			if ( in_array( $layout, array( "$s-$c-$s", "$s-$s-$c", "%c-$s-$s" ) ) ) {
+			if ( in_array( $layout, array( "$s-$c-$s", "$s-$s-$c", "$c-$s-$s" ) ) ) {
 				$this->loop_cols = 2;
 				return $this->loop_cols;
 			}

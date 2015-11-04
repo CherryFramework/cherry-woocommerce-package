@@ -260,6 +260,7 @@ span.onsale {
 	background-color: $highlight;
 	color: $highlightext;
 	font-size: .857em;
+	z-index: 10;
 	-webkit-font-smoothing: antialiased;
 }
 
@@ -676,6 +677,11 @@ span.onsale {
 		max-width: 30%;
 		min-width: 20%;
 		float: left;
+		@media ( max-width: 480px ) {
+			float: none;
+			width: 100%;
+			max-width: 100%;
+		}
 
 		li {
 			background: none;
@@ -730,6 +736,100 @@ span.onsale {
 			font-size: 26px;
 			line-height: 30px;
 			padding: 0 0 20px 0;
+		}
+		ol.commentlist {
+			padding: 0 0 20px 0;
+			margin: 0;
+			width: 100%;
+			background: none;
+			list-style: none;
+
+			&:after {
+				clear: both;
+			}
+
+			li {
+				padding: 0;
+				margin: 0 0 20px;
+				border: 0;
+				position: relative;
+				background: 0;
+				border: 0;
+
+				.meta {
+					color: $subtext;
+					font-size: 0.75em;
+				}
+
+				img.avatar {
+					float: left;
+					position: absolute;
+					top: 20px;
+					left: 0;
+					width: 32px;
+					height: auto;
+					margin: 0;
+					box-shadow: none;
+					border-radius: 100%;
+					@media ( max-width: 480px ) {
+						float: none;
+						position: static;
+						margin: 0 0 10px;
+					}
+				}
+
+				.comment-text {
+					margin: 0 0 0 50px;
+					border-radius: 0;
+					padding: 20px;
+					position: relative;
+					@include clearfix();
+
+					@media ( max-width: 480px ) {
+						margin: 0;
+						padding: 0 0 20px;
+						border: none;
+					}
+
+					&:before {
+						width: 0;
+						height: 0;
+						border-style: solid;
+						border-width: 10px 10px 10px 0;
+						content: "";
+						position: absolute;
+						left: -15px;
+						top: 25px;
+						@media ( max-width: 480px ) {
+							display: none;
+						}
+					}
+
+					p {
+						margin: 0 0 10px;
+						padding: 0;
+					}
+
+					p.meta {
+						font-size: 0.83em;
+					}
+				}
+			}
+
+			ul.children {
+				list-style: none outside;
+				margin: 20px 0 0 50px;
+
+				.star-rating {
+					display: none;
+				}
+			}
+
+			#respond {
+				border: 1px solid darken( $secondary, 3% );
+				padding: 20px;
+				margin: 20px 0 0 50px;
+			}
 		}
 	}
 }
