@@ -195,7 +195,7 @@ class Cherry_WC_Account_Dropdown {
 	 */
 	public function show_account_auth() {
 
-		if ( 'hide' == $this->account_options['shop-show-auth'] ) {
+		if ( 'false' == $this->account_options['shop-show-auth'] ) {
 			return;
 		}
 

@@ -1109,156 +1109,157 @@ p.demo_store {
 		}
 	}
 
-	/**
-	 * Layered nav widget
-	 */
-	.widget_layered_nav {
-		ul {
-			margin: 0;
-			padding: 0;
-			border: 0;
-			list-style: none outside;
+}
 
-			li {
-				@include clearfix();
-				padding: 0 0 1px;
-				list-style: none;
+/**
+ * Layered nav widget
+ */
+.widget_layered_nav {
+	ul {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		list-style: none outside;
 
-				a,
-				span {
-					padding: 1px 0;
-				}
-			}
-
-			li.chosen {
-				a {
-					&:before {
-						@include iconbefore( "\e013" );
-						color: $red;
-					}
-				}
-			}
-		}
-	}
-
-	.widget_product_search {
-		.search-field {
-			width: 100%;
-			margin: 0 0 10px;
-		}
-		input[type="submit"] {
-			width: 100%;
-		}
-	}
-
-	.yith-woocompare-widget {
 		li {
-			padding: 0 0 10px;
+			@include clearfix();
+			padding: 0 0 1px;
+			list-style: none;
+
+			a,
+			span {
+				padding: 1px 0;
+			}
+		}
+
+		li.chosen {
+			a {
+				&:before {
+					@include iconbefore( "\e013" );
+					color: $red;
+				}
+			}
+		}
+	}
+}
+
+.widget_product_search {
+	.search-field {
+		width: 100%;
+		margin: 0 0 10px;
+	}
+	input[type="submit"] {
+		width: 100%;
+	}
+}
+
+.yith-woocompare-widget {
+	li {
+		padding: 0 0 10px;
+		&:before {
+			display: none;
+		}
+	}
+}
+
+.widget_layered_nav_filters {
+	ul {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		list-style: none outside;
+		overflow: hidden;
+		zoom: 1;
+
+		li {
+			float: left;
+			padding: 0 1px 1px 0;
+			list-style: none;
 			&:before {
 				display: none;
 			}
-		}
-	}
 
-	.widget_layered_nav_filters {
-		ul {
-			margin: 0;
-			padding: 0;
-			border: 0;
-			list-style: none outside;
-			overflow: hidden;
-			zoom: 1;
+			a {
+				text-decoration: none;
 
-			li {
-				float: left;
-				padding: 0 1px 1px 0;
-				list-style: none;
 				&:before {
-					display: none;
-				}
-
-				a {
-					text-decoration: none;
-
-					&:before {
-						@include iconbefore( "\e013" );
-						color: $red;
-					}
+					@include iconbefore( "\e013" );
+					color: $red;
 				}
 			}
 		}
 	}
+}
 
-	/**
-	 * Price filter widget
-	 */
-	.widget_price_filter {
-		.price_slider {
-			margin: 0 0 20px;
-		}
+/**
+ * Price filter widget
+ */
+.widget_price_filter {
+	.price_slider {
+		margin: 0 0 20px;
+	}
 
-		.price_slider_amount {
-			text-align: center;
-			line-height: 1.2;
-			font-size: 0.8751em;
-		}
+	.price_slider_amount {
+		text-align: center;
+		line-height: 1.2;
+		font-size: 0.8751em;
+	}
 
-		.price_label {
-			padding: 20px 0 0 0;
-		}
+	.price_label {
+		padding: 20px 0 0 0;
+	}
 
-		.ui-slider {
-			position: relative;
-			text-align: left;
-			margin-left: .5em;
-			margin-right: .5em;
-		}
+	.ui-slider {
+		position: relative;
+		text-align: left;
+		margin-left: .5em;
+		margin-right: .5em;
+	}
 
-		.ui-slider .ui-slider-handle {
-			position: absolute;
-			z-index: 2;
-			width: 1em;
-			height: 1em;
-			border-radius: 1em;
-			cursor: ew-resize;
-			outline: none;
-			top: -.3em;
+	.ui-slider .ui-slider-handle {
+		position: absolute;
+		z-index: 2;
+		width: 1em;
+		height: 1em;
+		border-radius: 1em;
+		cursor: ew-resize;
+		outline: none;
+		top: -.3em;
 
-			//&:last-child {
-				margin-left: -.5em;
-			//}
-		}
+		//&:last-child {
+			margin-left: -.5em;
+		//}
+	}
 
-		.ui-slider .ui-slider-range {
-			position: absolute;
-			z-index: 1;
-			font-size: .7em;
-			display: block;
-			border: 0;
-			border-radius: 1em;
-		}
+	.ui-slider .ui-slider-range {
+		position: absolute;
+		z-index: 1;
+		font-size: .7em;
+		display: block;
+		border: 0;
+		border-radius: 1em;
+	}
 
-		.price_slider_wrapper .ui-widget-content {
-			border-radius: 1em;
-			border: 0;
-		}
+	.price_slider_wrapper .ui-widget-content {
+		border-radius: 1em;
+		border: 0;
+	}
 
-		.ui-slider-horizontal {
-			height: .5em;
-		}
+	.ui-slider-horizontal {
+		height: .5em;
+	}
 
-		.ui-slider-horizontal .ui-slider-range {
-			top: 0;
-			height: 100%;
-		}
+	.ui-slider-horizontal .ui-slider-range {
+		top: 0;
+		height: 100%;
+	}
 
-		.ui-slider-horizontal .ui-slider-range-min {
-			left: -1px;
-		}
+	.ui-slider-horizontal .ui-slider-range-min {
+		left: -1px;
+	}
 
-		.ui-slider-horizontal .ui-slider-range-max {
-			right: -1px;
-		}
+	.ui-slider-horizontal .ui-slider-range-max {
+		right: -1px;
 	}
 }
 
