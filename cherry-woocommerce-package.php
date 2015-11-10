@@ -11,7 +11,7 @@
  * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
  * Domain Path: /languages
  *
- * @package  Cherry Rank
+ * @package  Cherry WooCommerce Package
  * @category Core
  * @author   Cherry Team
  * @license  GPL-2.0+
