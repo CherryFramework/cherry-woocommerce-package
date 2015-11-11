@@ -94,17 +94,17 @@ if ( ! class_exists( 'Cherry_WC_Options' ) ) {
 					'label' => '',
 					'hint'  => array(
 						'type'    => 'text',
-						'content' => __( 'Set label for account dropdwon for not logged in users', 'cherry-woocommerce-package' ),
+						'content' => __( 'Set label for account drop down for not logged in users', 'cherry-woocommerce-package' ),
 					),
 					'value' => __( 'My Account', 'cherry-woocommerce-package' ),
 				),
 				'shop-logged-label' => array(
 					'type'  => 'text',
-					'title' => __( 'Memebers account menu label', 'cherry-woocommerce-package' ),
+					'title' => __( 'Members account menu label', 'cherry-woocommerce-package' ),
 					'label' => '',
 					'hint'  => array(
 						'type'    => 'text',
-						'content' => __( 'Set label for account dropdwon for logged in users', 'cherry-woocommerce-package' ),
+						'content' => __( 'Set label for account drop down for logged in users', 'cherry-woocommerce-package' ),
 					),
 					'value' => __( 'My Account', 'cherry-woocommerce-package' ),
 				),
@@ -135,7 +135,7 @@ if ( ! class_exists( 'Cherry_WC_Options' ) ) {
 					'label' => '',
 					'hint'  => array(
 						'type'    => 'text',
-						'content' => __( 'Set label for log in/register link in account dropdwon', 'cherry-woocommerce-package' ),
+						'content' => __( 'Set label for log in/register link in account drop down', 'cherry-woocommerce-package' ),
 					),
 					'value' => __( 'Log In/Register', 'cherry-woocommerce-package' ),
 				),
@@ -145,7 +145,7 @@ if ( ! class_exists( 'Cherry_WC_Options' ) ) {
 					'label' => '',
 					'hint'  => array(
 						'type'    => 'text',
-						'content' => __( 'Set label for log out link in account dropdwon', 'cherry-woocommerce-package' ),
+						'content' => __( 'Set label for log out link in account drop down', 'cherry-woocommerce-package' ),
 					),
 					'value' => __( 'Logout', 'cherry-woocommerce-package' ),
 				),

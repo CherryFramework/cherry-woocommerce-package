@@ -1,0 +1,2110 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: cherry-shortcodes\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-11-10 16:54+0200\n"
+"PO-Revision-Date: 2015-11-10 16:54+0200\n"
+"Last-Translator: J.L.Dokter <jldokter@gmail.com>\n"
+"Language-Team: Cherry Team <support@cherryframework.com>\n"
+"Language: ru_RU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Poedit 1.8.6\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: _e;__;_n:1,2;_n_noop:1,2;_x:1,2c;_nx:1,2,4c;"
+"_nx_noop:1,2,3c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;"
+"esc_html_x:1,2c\n"
+"X-Textdomain-Support: yes\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: init/statics/cherry-account-dropdown-static.php:40
+msgid "Shop Account Dropdown"
+msgstr ""
+
+#: init/statics/cherry-cart-dropdown-static.php:46
+msgid "Shop Cart Dropdown"
+msgstr ""
+
+#: modules/class-cherry-wc-account-dropdown.php:47
+#: modules/class-cherry-wc-account-dropdown.php:48
+#: public/includes/class-cherry-wc-options.php:99
+#: public/includes/class-cherry-wc-options.php:109
+msgid "My Account"
+msgstr ""
+
+#: modules/class-cherry-wc-account-dropdown.php:51
+#: public/includes/class-cherry-wc-options.php:140
+msgid "Log In/Register"
+msgstr ""
+
+#: modules/class-cherry-wc-account-dropdown.php:52
+#: public/includes/class-cherry-wc-options.php:150
+msgid "Logout"
+msgstr ""
+
+#: modules/class-cherry-wc-account-dropdown.php:146
+msgid "Orders"
+msgstr ""
+
+#: modules/class-cherry-wc-account-dropdown.php:153
+#: modules/class-cherry-wc-yith-addons.php:272
+msgid "Compare"
+msgstr ""
+
+#: modules/class-cherry-wc-account-dropdown.php:168
+msgid "Wishlist"
+msgstr ""
+
+#: modules/class-cherry-wc-cart-dropdown.php:44
+msgid "Shopping cart"
+msgstr ""
+
+#: modules/class-cherry-wc-product-sharing.php:47
+msgid "Share this"
+msgstr ""
+
+#: modules/class-cherry-wc-product-video-tab.php:85
+msgid "Video"
+msgstr ""
+
+#: modules/class-cherry-wc-product-video-tab.php:140
+msgid "Product video"
+msgstr ""
+
+#: modules/class-cherry-wc-product-video-tab.php:168
+msgid "YouTube video link"
+msgstr ""
+
+#: modules/class-cherry-wc-product-video-tab.php:170
+msgid "Paste YouTube video URL"
+msgstr ""
+
+#: modules/class-cherry-wc-quick-view.php:141
+msgid "Quick view"
+msgstr ""
+
+#: public/includes/class-cherry-wc-assets.php:132
+msgid "Loading..."
+msgstr ""
+
+#: public/includes/class-cherry-wc-frontend-hooks.php:154
+msgid "Shop Sidebar"
+msgstr ""
+
+#: public/includes/class-cherry-wc-frontend-hooks.php:155
+msgid "Main Shop Sidebar"
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:53
+msgid "Select menu"
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:63
+msgid "Products per page"
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:65
+msgid "Set a number of products per shop page."
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:73
+msgid "Products per category page"
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:75
+msgid "Set a number of products per category page."
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:83
+msgid "Show account dropdown"
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:87
+msgid "Show/hide account dropdown static content"
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:93
+msgid "Guests account menu label"
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:97
+msgid "Set label for account drop down for not logged in users"
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:103
+msgid "Members account menu label"
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:107
+msgid "Set label for account drop down for logged in users"
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:113
+msgid "Menu to show in account dropdown"
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:117
+msgid "Select navigation menu to show it in account dropdown"
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:124
+msgid "Login/out links in account menu"
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:128
+msgid "Show/hide authentication links in account dropdown"
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:134
+msgid "Log in link label"
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:138
+msgid "Set label for log in/register link in account drop down"
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:144
+msgid "Logout link label"
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:148
+msgid "Set label for log out link in account drop down"
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:157
+msgid "Main shop page layout"
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:160
+#: public/includes/class-cherry-wc-options.php:196
+#: public/includes/class-cherry-wc-options.php:232
+msgid ""
+"You can choose if you want to display sidebars and how you want to display "
+"them."
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:166
+#: public/includes/class-cherry-wc-options.php:202
+#: public/includes/class-cherry-wc-options.php:238
+msgid "Left sidebar"
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:170
+#: public/includes/class-cherry-wc-options.php:206
+#: public/includes/class-cherry-wc-options.php:242
+msgid "Right sidebar"
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:174
+#: public/includes/class-cherry-wc-options.php:210
+#: public/includes/class-cherry-wc-options.php:246
+msgid "Left and right sidebar"
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:178
+#: public/includes/class-cherry-wc-options.php:214
+#: public/includes/class-cherry-wc-options.php:250
+msgid "Two sidebars on the left"
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:182
+#: public/includes/class-cherry-wc-options.php:218
+#: public/includes/class-cherry-wc-options.php:254
+msgid "Two sidebars on the right"
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:186
+#: public/includes/class-cherry-wc-options.php:222
+#: public/includes/class-cherry-wc-options.php:258
+msgid "No sidebar"
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:193
+msgid "Product categories and tags layout"
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:229
+msgid "Single page layout"
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:266
+msgid "Shop"
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:273
+msgid "Layout"
+msgstr ""
+
+#: public/includes/class-cherry-wc-shortcodes.php:77
+msgid "Shop Categories"
+msgstr ""
+
+#: public/includes/class-cherry-wc-shortcodes.php:84
+msgid "Show only parent"
+msgstr ""
+
+#: public/includes/class-cherry-wc-shortcodes.php:85
+#: public/includes/class-cherry-wc-shortcodes.php:132
+msgid "Show only 1st level categories"
+msgstr ""
+
+#: public/includes/class-cherry-wc-shortcodes.php:93
+msgid "Categories number"
+msgstr ""
+
+#: public/includes/class-cherry-wc-shortcodes.php:94
+msgid "Specify number of categories that you want to show. Enter -1 to get all"
+msgstr ""
+
+#: public/includes/class-cherry-wc-shortcodes.php:99
+msgid "None"
+msgstr "Нет"
+
+#: public/includes/class-cherry-wc-shortcodes.php:100
+msgid "Category ID"
+msgstr ""
+
+#: public/includes/class-cherry-wc-shortcodes.php:101
+#: public/includes/class-cherry-wc-shortcodes.php:211
+msgid "Products count"
+msgstr ""
+
+#: public/includes/class-cherry-wc-shortcodes.php:102
+msgid "Category name"
+msgstr ""
+
+#: public/includes/class-cherry-wc-shortcodes.php:103
+msgid "Category slug"
+msgstr ""
+
+#: public/includes/class-cherry-wc-shortcodes.php:106
+msgid "Order by"
+msgstr "Упорядочить по"
+
+#: public/includes/class-cherry-wc-shortcodes.php:107
+msgid "Order categories by"
+msgstr ""
+
+#: public/includes/class-cherry-wc-shortcodes.php:112
+msgid "Descending"
+msgstr "Убывающий"
+
+#: public/includes/class-cherry-wc-shortcodes.php:113
+msgid "Ascending"
+msgstr "Возрастающий"
+
+#: public/includes/class-cherry-wc-shortcodes.php:116
+msgid "Order"
+msgstr "Порядок"
+
+#: public/includes/class-cherry-wc-shortcodes.php:117
+msgid "Categories order"
+msgstr ""
+
+#: public/includes/class-cherry-wc-shortcodes.php:125
+msgid "Columns number"
+msgstr ""
+
+#: public/includes/class-cherry-wc-shortcodes.php:126
+msgid "Specify number of columns to show"
+msgstr ""
+
+#: public/includes/class-cherry-wc-shortcodes.php:131
+msgid "Hide empty categories"
+msgstr ""
+
+#: public/includes/class-cherry-wc-shortcodes.php:136
+msgid "Categories from"
+msgstr ""
+
+#: public/includes/class-cherry-wc-shortcodes.php:137
+msgid "Show direct children of selected category post (enter category ID)"
+msgstr ""
+
+#: public/includes/class-cherry-wc-shortcodes.php:141
+msgid "Categories ID's"
+msgstr ""
+
+#: public/includes/class-cherry-wc-shortcodes.php:142
+msgid "Enter comma separated ID's of the categories that you want to show"
+msgstr ""
+
+#: public/includes/class-cherry-wc-shortcodes.php:150
+msgid "Template"
+msgstr "Шаблон"
+
+#: public/includes/class-cherry-wc-shortcodes.php:151
+msgid "Shortcode template"
+msgstr "Шаблон шорткода"
+
+#: public/includes/class-cherry-wc-shortcodes.php:154
+msgid "Show product categories list"
+msgstr ""
+
+#: public/includes/class-cherry-wc-shortcodes.php:193
+msgid "Featured image"
+msgstr ""
+
+#: public/includes/class-cherry-wc-shortcodes.php:199
+msgid "Name"
+msgstr ""
+
+#: public/includes/class-cherry-wc-shortcodes.php:205
+msgid "Description"
+msgstr "Описание"
+
+#: public/includes/class-cherry-wc-shortcodes.php:217
+msgid "Category permalink"
+msgstr ""
+
+#: public/includes/class-cherry-wc-templater.php:88
+msgid "Template file not found"
+msgstr ""
+
+#: templates/cart/cart-content.php:40
+msgid "Remove this item"
+msgstr ""
+
+#: templates/cart/cart-content.php:69
+msgid "No products in the cart."
+msgstr ""
+
+#: templates/cart/cart-content.php:77
+msgid "Subtotal"
+msgstr ""
+
+#: templates/cart/cart-content.php:82
+msgid "View Cart"
+msgstr ""
+
+#: templates/cart/cart-content.php:83
+msgid "Checkout"
+msgstr ""
+
+#: templates/product-gallery/image.php:66 templates/quick-view/image.php:33
+msgid "Placeholder"
+msgstr ""
+
+#: templates/quick-view/rating.php:28
+#, php-format
+msgid "Rated %s out of 5"
+msgstr ""
+
+#: templates/quick-view/rating.php:30
+#, php-format
+msgid "out of %s5%s"
+msgstr ""
+
+#: templates/quick-view/rating.php:31
+#, php-format
+msgid "based on %s customer rating"
+msgid_plural "based on %s customer ratings"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: templates/quick-view/read-more.php:22
+msgid "Read More"
+msgstr "Читать дальше"
+
+#~ msgid "Choose file"
+#~ msgstr "Выберите файл"
+
+#~ msgid "Insert"
+#~ msgstr "Вставить"
+
+#~ msgid "Select images"
+#~ msgstr "Выберите изображения"
+
+#~ msgid "Add selected images"
+#~ msgstr "Добавить выбранные изображения"
+
+#~ msgid "Please enter a name for new preset"
+#~ msgstr "Введите название новой предустановки"
+
+#~ msgid "New preset"
+#~ msgstr "Новая предустановка"
+
+#~ msgid "Last used settings"
+#~ msgstr "Последние использованные настройки"
+
+#~ msgid "All"
+#~ msgstr "Все"
+
+#~ msgid "Grid"
+#~ msgstr "Сетка"
+
+#~ msgid "Typography"
+#~ msgstr "Шрифт"
+
+#~ msgid "Content"
+#~ msgstr "Содержимое"
+
+#~ msgid "Media"
+#~ msgstr "Медиа"
+
+#~ msgid "Components"
+#~ msgstr "Компоненты"
+
+#~ msgid "Other"
+#~ msgstr "Другие"
+
+#~ msgid "Solid"
+#~ msgstr "Solid (сплошная)"
+
+#~ msgid "Dotted"
+#~ msgstr "Dotted (из точек)"
+
+#~ msgid "Dashed"
+#~ msgstr "Dashed (пунктирная)"
+
+#~ msgid "Double"
+#~ msgstr "Double (двойная)"
+
+#~ msgid "Groove"
+#~ msgstr ""
+#~ "Groove (трехмерная с вдавленным внутренним краем, с имитацией объема)"
+
+#~ msgid "Ridge"
+#~ msgstr "Ridge (трехмерная с вдавленным внешним краем, с имитацией объема)"
+
+#~ msgid "Row"
+#~ msgstr "Ряд"
+
+#~ msgid "Fixed Width"
+#~ msgstr "Фиксированная ширина"
+
+#~ msgid "Full Width"
+#~ msgstr "По всей ширине"
+
+#~ msgid "Type"
+#~ msgstr "Тип"
+
+#~ msgid "Type width"
+#~ msgstr "Тип ширины"
+
+#~ msgid "Class"
+#~ msgstr "Класс"
+
+#~ msgid "Extra CSS class"
+#~ msgstr "Дополнительный CSS класс"
+
+#~ msgid "Anchor"
+#~ msgstr "Якорь"
+
+#~ msgid "This option defines menu item marker."
+#~ msgstr "Данная опция определяет маркет пункта меню"
+
+#~ msgid ""
+#~ "[%prefix_col size_md=\"4\"]Column content[/%prefix_col]\n"
+#~ "[%prefix_col size_md=\"4\"]Column content[/%prefix_col]\n"
+#~ "[%prefix_col size_md=\"4\"]Column content[/%prefix_col]"
+#~ msgstr ""
+#~ "[%prefix_col size_md=\"4\"]Содержимое колонки[/%prefix_col]\n"
+#~ "[%prefix_col size_md=\"4\"]Содержимое колонки[/%prefix_col]\n"
+#~ "[%prefix_col size_md=\"4\"]Содержимое колонки[/%prefix_col]"
+
+#~ msgid "Row for flexible columns"
+#~ msgstr "Ряд для адаптивных колонкок"
+
+#~ msgid "Row Inner"
+#~ msgstr "Внутренний ряд"
+
+#~ msgid ""
+#~ "[%prefix_col_inner size_md=\"4\"]Column content[/%prefix_col_inner]\n"
+#~ "[%prefix_col_inner size_md=\"4\"]Column content[/%prefix_col_inner]\n"
+#~ "[%prefix_col_inner size_md=\"4\"]Column content[/%prefix_col_inner]"
+#~ msgstr ""
+#~ "[%prefix_col_inner size_md=\"4\"]Содержимое колонки[/%prefix_col_inner]\n"
+#~ "[%prefix_col_inner size_md=\"4\"]Содержимое колонки[/%prefix_col_inner]\n"
+#~ "[%prefix_col_inner size_md=\"4\"]Содержимое колонки[/%prefix_col_inner]"
+
+#~ msgid "Column"
+#~ msgstr "Колонка"
+
+#~ msgid "Size"
+#~ msgstr "Размер"
+
+#~ msgid "Select column width."
+#~ msgstr "Выберите ширину колонки."
+
+#~ msgid "Offset"
+#~ msgstr "Offset"
+
+#~ msgid "Select column offset."
+#~ msgstr "Установите значение смещения колонки слева."
+
+#~ msgid "Pull"
+#~ msgstr "Pull"
+
+#~ msgid "Select column pull."
+#~ msgstr "Установите значение перемещения колонки влево."
+
+#~ msgid "Push"
+#~ msgstr "Push"
+
+#~ msgid "Select column push."
+#~ msgstr "Установите значение перемещения колонки вправо."
+
+#~ msgid "No"
+#~ msgstr "Нет"
+
+#~ msgid "Yes"
+#~ msgstr "Да"
+
+#~ msgid "Collapse column paddings"
+#~ msgstr "Убрать внутренние отступы между колонками"
+
+#~ msgid "Column content"
+#~ msgstr "Содержимое колонки"
+
+#~ msgid "Flexible and responsive columns"
+#~ msgstr "Адаптивные колонки"
+
+#~ msgid "Column Inner"
+#~ msgstr "Внутренняя колонка"
+
+#~ msgid "Spacer"
+#~ msgstr "Пробел"
+
+#~ msgid "Spacer height"
+#~ msgstr "Высота пробела"
+
+#~ msgid "Vertical spacer between blocks"
+#~ msgstr "Вертикальный пробел между блоками"
+
+#~ msgid "Clear"
+#~ msgstr "Clear"
+
+#~ msgid "Clearing block"
+#~ msgstr "Отмена обтекания блока"
+
+#~ msgid "Icon"
+#~ msgstr "Иконка"
+
+#~ msgid "You can upload custom icon for this button or pick a built-in icon"
+#~ msgstr ""
+#~ "Вы можете загрузить свою иконку или выбрать из коллекции встроенных иконок"
+
+#~ msgid "Icon size"
+#~ msgstr "Размер иконки"
+
+#~ msgid "Font size in px (only for font icons)"
+#~ msgstr "Размер шрифта в пикселях (только для шрифтовых иконок)"
+
+#~ msgid "Icon Color"
+#~ msgstr "Цвет иконки"
+
+#~ msgid "Font icon color"
+#~ msgstr "Цвет шрифтовой иконки"
+
+#~ msgid "Insert custom icon"
+#~ msgstr "Вставить пользовательскую иконку"
+
+#~ msgid "Box"
+#~ msgstr "Блок"
+
+#~ msgid "Primary"
+#~ msgstr "Основной"
+
+#~ msgid "Secondary"
+#~ msgstr "Второстепенный"
+
+#~ msgid "Gray"
+#~ msgstr "Серый"
+
+#~ msgid "Primary border"
+#~ msgstr "Основная граница"
+
+#~ msgid "Secondary border"
+#~ msgstr "Второстепенная граница"
+
+#~ msgid "Gray border"
+#~ msgstr "Серая граница"
+
+#~ msgid "Box styling preset"
+#~ msgstr "Предустановка стиля блока"
+
+#~ msgid "Select box styling preset"
+#~ msgstr "Выберите предустановку стиля блока"
+
+#~ msgid "Background Color"
+#~ msgstr "Фоновый цвет"
+
+#~ msgid "Select box background color"
+#~ msgstr "Выберите фоновый цвет блока"
+
+#~ msgid "Background Image"
+#~ msgstr "Фоновое изображение"
+
+#~ msgid "Upload box background image"
+#~ msgstr "Загрузите фоновое изображение для блока"
+
+#~ msgid "Top Left"
+#~ msgstr "Вверху слева"
+
+#~ msgid "Top Center"
+#~ msgstr "Вверху по центру"
+
+#~ msgid "Top Right"
+#~ msgstr "Вверху справа"
+
+#~ msgid "Middle Left"
+#~ msgstr "По середине слева"
+
+#~ msgid "Middle Center"
+#~ msgstr "По середине по центру"
+
+#~ msgid "Middle Right"
+#~ msgstr "По середине справа"
+
+#~ msgid "Bottom Left"
+#~ msgstr "Внизу слева"
+
+#~ msgid "Bottom Center"
+#~ msgstr "Внизу по центру"
+
+#~ msgid "Bottom Right"
+#~ msgstr "Внизу справа"
+
+#~ msgid "Background image position"
+#~ msgstr "Позиция фонового изображения"
+
+#~ msgid "Select background image position"
+#~ msgstr "Выберите позицию фонового изображения"
+
+#~ msgid "No Repeat"
+#~ msgstr "Не повторять"
+
+#~ msgid "Repeat All"
+#~ msgstr "Повторять все"
+
+#~ msgid "Repeat Horizontally"
+#~ msgstr "Повторять по горизонтали"
+
+#~ msgid "Repeat Vertically"
+#~ msgstr "Повторять по вертикали"
+
+#~ msgid "Background image repeat"
+#~ msgstr "Повторение фонового изображения"
+
+#~ msgid "Select background image repeat"
+#~ msgstr "Выберите формат повторения фонового изображения"
+
+#~ msgid "Scroll normally"
+#~ msgstr "Обычная прокрутка"
+
+#~ msgid "Fixed in place"
+#~ msgstr "Фиксированное"
+
+#~ msgid "Background image attachment"
+#~ msgstr "Привязка фонового изображения"
+
+#~ msgid "Select background image attachment"
+#~ msgstr "Выберите формат привязки фонового изображения"
+
+#~ msgid "Fill"
+#~ msgstr "Заполнение"
+
+#~ msgid "Fill a parent container?"
+#~ msgstr "Заполнять родительский контейнер?"
+
+#~ msgid "Your content goes here"
+#~ msgstr "Место для содержимого"
+
+#~ msgid "Box Inner"
+#~ msgstr "Внутренний блок"
+
+#~ msgid "No preset"
+#~ msgstr "Нет предустановок"
+
+#~ msgid "Banner"
+#~ msgstr "Баннер"
+
+#~ msgid "Banner Image"
+#~ msgstr "Изображение баннера"
+
+#~ msgid "Banner Title"
+#~ msgstr "Заголовок баннера"
+
+#~ msgid "Enter banner title"
+#~ msgstr "Введите заголовок баннера"
+
+#~ msgid "Banner URL"
+#~ msgstr "URL баннера"
+
+#~ msgid "Banner link URL"
+#~ msgstr "URL ссылки баннера"
+
+#~ msgid "Text color"
+#~ msgstr "Цвет текста"
+
+#~ msgid "Banner text color"
+#~ msgstr "Цвет текста баннера"
+
+#~ msgid "Background color"
+#~ msgstr "Фоновый цвет"
+
+#~ msgid "Banner background color"
+#~ msgstr "Фоновый цвет баннера"
+
+#~ msgid "Banner content goes here"
+#~ msgstr "Место для содержимого баннера"
+
+#~ msgid "Horizontal Rule"
+#~ msgstr "Горизонтальная линия"
+
+#~ msgid "Line height"
+#~ msgstr "Высота линии"
+
+#~ msgid "Horizontal rule height"
+#~ msgstr "Высота горизонтальной линии"
+
+#~ msgid "Line color"
+#~ msgstr "Цвет линии"
+
+#~ msgid "Horizontal rule color"
+#~ msgstr "Цвет горизонтальной линии"
+
+#~ msgid "Indent before"
+#~ msgstr "Отступ слева"
+
+#~ msgid "Indent before horizontal rule"
+#~ msgstr "Отступ перед горизонтальной линией"
+
+#~ msgid "Indent after"
+#~ msgstr "Отступ справа"
+
+#~ msgid "Indent after horizontal rule"
+#~ msgstr "Отступ после горизонтальной линии"
+
+#~ msgid "Title Box"
+#~ msgstr "Блок заголовка"
+
+#~ msgid "Title"
+#~ msgstr "Заголовок"
+
+#~ msgid "Title text"
+#~ msgstr "Текст заголовка"
+
+#~ msgid "Subtitle"
+#~ msgstr "Подзаголовок"
+
+#~ msgid "Subtitle text"
+#~ msgstr "Текст подзаголовка"
+
+#~ msgid "Title Color"
+#~ msgstr "Цвет заголовка"
+
+#~ msgid "Title text color"
+#~ msgstr "Цвет текста заголовка"
+
+#~ msgid "Subtitle Color"
+#~ msgstr "Цвет подзаголовка"
+
+#~ msgid "Subtitle text color"
+#~ msgstr "Цвет текста подзаголовка"
+
+#~ msgid "Title box"
+#~ msgstr "Блок заголовка"
+
+#~ msgid "Dropcap"
+#~ msgstr "Буквица"
+
+#~ msgid "Text size"
+#~ msgstr "Размер текста"
+
+#~ msgid "Text size in px"
+#~ msgstr "Размер текста в пикселях"
+
+#~ msgid "Canvas size"
+#~ msgstr "Размер холста"
+
+#~ msgid "Canvas size in px"
+#~ msgstr "Размер холста в пикселях"
+
+#~ msgid "Text Color"
+#~ msgstr "Цвет текста"
+
+#~ msgid "Dropcap text color"
+#~ msgstr "Цвет текста буквицы"
+
+#~ msgid "Dropcap background color"
+#~ msgstr "Цвет фона буквицы"
+
+#~ msgid "Left"
+#~ msgstr "По левому краю"
+
+#~ msgid "Right"
+#~ msgstr "По правому краю"
+
+#~ msgid "Center"
+#~ msgstr "По центру"
+
+#~ msgid "Align"
+#~ msgstr "Выравнивание"
+
+#~ msgid "Dropcap alignment"
+#~ msgstr "Выравнивание буквицы"
+
+#~ msgid "Border radius"
+#~ msgstr "Закругленные углы рамки"
+
+#~ msgid "Border radius size in px"
+#~ msgstr "Радиус закругленных углов рамки"
+
+#~ msgid "Border"
+#~ msgstr "Рамка"
+
+#~ msgid "Setup dropcap border"
+#~ msgstr "Установить рамку для буквицы"
+
+#~ msgid "A"
+#~ msgstr "A"
+
+#~ msgid "Dropcap box"
+#~ msgstr "Блок буквицы"
+
+#~ msgid "Button"
+#~ msgstr "Кнопка"
+
+#~ msgid "Read more"
+#~ msgstr "Читать дальше"
+
+#~ msgid "Text"
+#~ msgstr "Текст"
+
+#~ msgid "Button text"
+#~ msgstr "Текст кнопки"
+
+#~ msgid "Link"
+#~ msgstr "Ссылка"
+
+#~ msgid "Button link"
+#~ msgstr "Ссылка кнопки"
+
+#~ msgid "Primary-light"
+#~ msgstr "Основной светлый"
+
+#~ msgid "Default"
+#~ msgstr "По умолчанию"
+
+#~ msgid "Success"
+#~ msgstr "Сообщение об успехе"
+
+#~ msgid "Info"
+#~ msgstr "Информационное сообщение"
+
+#~ msgid "Warning"
+#~ msgstr "Cообщение об ошибке"
+
+#~ msgid "Danger"
+#~ msgstr "Сообщение о неудачи"
+
+#~ msgid "Style"
+#~ msgstr "Стиль"
+
+#~ msgid "Button style preset"
+#~ msgstr "Предустановка стиля кнопки"
+
+#~ msgid "Extra Small"
+#~ msgstr "Очень маленикий"
+
+#~ msgid "Small"
+#~ msgstr "Маленький"
+
+#~ msgid "Medium"
+#~ msgstr "Средний"
+
+#~ msgid "Large"
+#~ msgstr "Большой"
+
+#~ msgid "Extra Large"
+#~ msgstr "Очень большой"
+
+#~ msgid "Button size preset"
+#~ msgstr "Предустановка размера кнопки"
+
+#~ msgid "Inline"
+#~ msgstr "Строчный"
+
+#~ msgid "Wide"
+#~ msgstr "Широкий"
+
+#~ msgid "Display"
+#~ msgstr "Отображение"
+
+#~ msgid "Button display type"
+#~ msgstr "Стиль отображения кнопки"
+
+#~ msgid "Button border radius"
+#~ msgstr "Радиус закругленных углов кнопки"
+
+#~ msgid "Centered"
+#~ msgstr "Центрировать"
+
+#~ msgid "Is button centered on the page"
+#~ msgstr "Отцентрировать кнопку на странице?"
+
+#~ msgid "Fluid"
+#~ msgstr "Выравнивание"
+
+#~ msgid "Is button fluid"
+#~ msgstr "Выровнять кнопку?"
+
+#~ msgid "Fluid Position"
+#~ msgstr "Позиция выравнивания"
+
+#~ msgid "Button fluid position"
+#~ msgstr "Позиция выравнивания кнопки"
+
+#~ msgid "Top"
+#~ msgstr "Сверху"
+
+#~ msgid "Bottom"
+#~ msgstr "Снизу"
+
+#~ msgid "Icon Position"
+#~ msgstr "Позиция иконки"
+
+#~ msgid "Button icon position"
+#~ msgstr "Позиция иконки кнопки"
+
+#~ msgid "Small description under button text."
+#~ msgstr "Краткое описание под текстом кнопки."
+
+#~ msgid "Background"
+#~ msgstr "Фон"
+
+#~ msgid "Button background color"
+#~ msgstr "Фоновый цвет кнопки"
+
+#~ msgid "Button text color"
+#~ msgstr "Цвет текста кнопки"
+
+#~ msgid "Min width"
+#~ msgstr "Мин. ширина"
+
+#~ msgid "Button minimal width"
+#~ msgstr "Минимальная ширина кнопки"
+
+#~ msgid "Same tab"
+#~ msgstr "Та же вкладка"
+
+#~ msgid "New tab"
+#~ msgstr "Новая вкладка"
+
+#~ msgid "Target"
+#~ msgstr "Target"
+
+#~ msgid "Button link target"
+#~ msgstr "Атрибут ссылки кнопки &quot;target&quot;"
+
+#~ msgid "Rel attribute"
+#~ msgstr "Атрибут Rel"
+
+#~ msgid "Here you can add value for the rel attribute."
+#~ msgstr "Здесь можно добавить значение для &quot;атрибута rel&quot;."
+
+#~ msgid "Fade"
+#~ msgstr "Fade (проявление)"
+
+#~ msgid "Hover animation"
+#~ msgstr "Анимация при ховере"
+
+#~ msgid "Button hover aniamtion type"
+#~ msgstr "Тип анимации кнопки при ховере"
+
+#~ msgid "Styled button"
+#~ msgstr "Стилизованная кнопка"
+
+#~ msgid "List"
+#~ msgstr "Список"
+
+#~ msgid "List Item"
+#~ msgstr "Элемент списка"
+
+#~ msgid "Swiper carousel"
+#~ msgstr "Карусель Swiper"
+
+#~ msgid "Customizable post carousel"
+#~ msgstr "Настраиваемая карусель записей"
+
+#~ msgid "Posts per page"
+#~ msgstr "Количество записей на странице"
+
+#~ msgid ""
+#~ "Specify number of posts that you want to show. Enter -1 to get all posts"
+#~ msgstr ""
+#~ "Укажите количество записей, которые будут отображаться на странице. "
+#~ "Введите значение -1, чтобы отображать все записи."
+
+#~ msgid "Post types"
+#~ msgstr "Типы записей"
+
+#~ msgid "Select post types. Hold Ctrl key to select multiple post types"
+#~ msgstr ""
+#~ "Выберите типы записей. Зажмите клавишу Ctrl, чтобы выбрать несколько "
+#~ "типов."
+
+#~ msgid "Taxonomy"
+#~ msgstr "Классификация"
+
+#~ msgid "Select taxonomy to show posts from"
+#~ msgstr "Выберите классификацию, из которой будут отображаться записи."
+
+#~ msgid "Terms"
+#~ msgstr "Термины"
+
+#, fuzzy
+#~ msgid "Select terms to show posts from"
+#~ msgstr "Выберите термины, которые должны содержаться в отображаемых записях"
+
+#, fuzzy
+#~ msgid "Taxonomy term operator"
+#~ msgstr "Оператор терминов классификации"
+
+#~ msgid ""
+#~ "IN - posts that have any of selected categories terms<br/>NOT IN - posts "
+#~ "that  do not have any of selected terms<br/>AND - posts that have all "
+#~ "selected terms"
+#~ msgstr ""
+#~ "IN - записи, которые содержат любые из выбранных терминов категорий <br/"
+#~ ">NOT IN - записи, которые не содержат ни одного из выбранных терминов<br/"
+#~ ">AND - записи, которые содержат все выбранные термины"
+
+#~ msgid "Authors"
+#~ msgstr "Авторы"
+
+#~ msgid "Enter here comma-separated list of author's IDs. Example: 1,7,18"
+#~ msgstr "Введите список ID авторов, разделяя их запятыми. Например, 1,7,18"
+
+#~ msgid "Specify offset to start posts loop not from first post"
+#~ msgstr "Установите смещение, чтобы начать цикл записей не с первой записи "
+
+#~ msgid "Posts order"
+#~ msgstr "Порядок записей"
+
+#~ msgid "Post ID"
+#~ msgstr "ID записи"
+
+#~ msgid "Post author"
+#~ msgstr "Автор записи"
+
+#~ msgid "Post title"
+#~ msgstr "Заголовок записи"
+
+#~ msgid "Post slug"
+#~ msgstr "Заголовок для URL-адреса записи"
+
+#~ msgid "Date"
+#~ msgstr "Дата"
+
+#~ msgid "Last modified date"
+#~ msgstr "Дата последнего редактирования"
+
+#~ msgid "Post parent"
+#~ msgstr "Родитель записи"
+
+#~ msgid "Random"
+#~ msgstr "Произвольно"
+
+#~ msgid "Comments number"
+#~ msgstr "Количество комментарий"
+
+#~ msgid "Menu order"
+#~ msgstr "Порядок меню"
+
+#~ msgid "Order posts by"
+#~ msgstr "Упорядочить записи по"
+
+#~ msgid "Show children of entered post (enter post ID)"
+#~ msgstr "Отображать дочерние элементы указанной записи (введите ID записи)"
+
+#~ msgid "Published"
+#~ msgstr "Published (опубликованная)"
+
+#~ msgid "Pending"
+#~ msgstr "Pending (запись, ожидающая проверки редактором или администратором)"
+
+#~ msgid "Draft"
+#~ msgstr "Draft (черновик)"
+
+#~ msgid "Auto-draft"
+#~ msgstr ""
+#~ "Auto-draft (черновик, созданный автоматически в процессе редактирования "
+#~ "записи)"
+
+#~ msgid "Future post"
+#~ msgstr ""
+#~ "Future post (запись, запланированная к публикации на определенную дату)"
+
+#~ msgid "Private post"
+#~ msgstr "Private post (запись, доступная только для администраторов)"
+
+#~ msgid "Inherit"
+#~ msgstr "Inherit (определяет ревизию записи)"
+
+#~ msgid "Trashed"
+#~ msgstr "Trashed (запись, находящаеся в корзине)"
+
+#~ msgid "Any"
+#~ msgstr "Любой"
+
+#~ msgid "Post status"
+#~ msgstr "Статус записи"
+
+#~ msgid "Show only posts with selected status"
+#~ msgstr "Отображать только записи с выбранным статусом"
+
+#~ msgid "Ignore sticky"
+#~ msgstr "Игнорировать прикрепленные записи"
+
+#~ msgid "Select Yes to ignore posts that are sticked"
+#~ msgstr ""
+#~ "Выберите значение &quot;Да&quot;, чтобы игнорировать прикрепленные записи"
+
+#~ msgid "Linked title"
+#~ msgstr "Заголовок-ссылка"
+
+#~ msgid "Linked title description"
+#~ msgstr "Включить ссылки заголовков"
+
+#~ msgid "Linked featured image"
+#~ msgstr "Миниатюра-ссылка"
+
+#~ msgid "Linked featured image description"
+#~ msgstr "Включить ссылки миниатюр изображений"
+
+#~ msgid "Part of content"
+#~ msgstr "Часть содержимого"
+
+#~ msgid "Full content"
+#~ msgstr "Часть содержимого"
+
+#~ msgid "Post content"
+#~ msgstr "Все содержимое"
+
+#~ msgid "Content Length"
+#~ msgstr "Длина содержимого"
+
+#~ msgid "Insert the number of words you want to show in the post content."
+#~ msgstr "Укажите количество слов, отображаемых в содержимом записей."
+
+#~ msgid "read more"
+#~ msgstr "&quot;Читать дальше&quot;"
+
+#~ msgid "Button text description"
+#~ msgstr "Введите текст кнопки"
+
+#~ msgid "Using cropped image"
+#~ msgstr "Использовать обрезанные изображения"
+
+#~ msgid "Slider Loop Mode"
+#~ msgstr "Режим цикла слайдера"
+
+#~ msgid "Cropping image width"
+#~ msgstr "Ширина обрезанного изображения"
+
+#~ msgid "Width value(px)"
+#~ msgstr "Величина ширины (px)"
+
+#~ msgid "Cropping image height"
+#~ msgstr "Высота обрезанного изображения"
+
+#~ msgid "Height value(px)"
+#~ msgstr "Величина высоты (px)"
+
+#~ msgid "Number of slides per view"
+#~ msgstr "Количество слайдов за один просмотр"
+
+#~ msgid "Specify number of slides per view"
+#~ msgstr "Укажите количество слайдов за один просмотр"
+
+#~ msgid "Number slides per group"
+#~ msgstr "Количество слайдов в одной группе"
+
+#~ msgid ""
+#~ "Set numbers of slides to define and enable group sliding. Useful to use "
+#~ "with slidesPerView > 1"
+#~ msgstr ""
+#~ "Установите количество слайдов, чтобы определить и включить групповое "
+#~ "пролистывание. Используется с опцией &quot;Количество слайдов за один "
+#~ "просмотр > 1&quot;"
+
+#~ msgid "Multi Row Slides Layout"
+#~ msgstr "Многоколонная разметка слайдов"
+
+#~ msgid "Space Between Slides"
+#~ msgstr "Отступ между слайдами"
+
+#~ msgid "Width of the space between slides(px)"
+#~ msgstr "Ширина отступа между слайдами (px)"
+
+#~ msgid "Duration of transition"
+#~ msgstr "Продолжительность перехода"
+
+#~ msgid "Duration of transition between slides (ms)"
+#~ msgstr "Время перехода между слайдами (ms)"
+
+#~ msgid "Slider Infinite Loop"
+#~ msgstr "Бесконечный цикл слайдера"
+
+#~ msgid "Free Mode sliding"
+#~ msgstr "Режим свободного пролистывания"
+
+#~ msgid "No fixed positions for slides"
+#~ msgstr "Фиксированные позиции для слайдов не установлена"
+
+#~ msgid "Grab Cursor"
+#~ msgstr "Захват курсором"
+
+#~ msgid "Using Grab Cursor for slider"
+#~ msgstr "Использовать функцию захвата курсором для слайдера"
+
+#~ msgid "Mousewheel Control"
+#~ msgstr "Контроль колесиком мыши"
+
+#~ msgid "Mousewheel control mode"
+#~ msgstr "Режим контроля колесиком мыши"
+
+#~ msgid "Centered Slides"
+#~ msgstr "Центрирование слайдов"
+
+#~ msgid "Centered slides mode"
+#~ msgstr "Режим центрирования слайдов"
+
+#~ msgid "Slide"
+#~ msgstr "Slide (слайд)"
+
+#~ msgid "Cube"
+#~ msgstr "Cube (куб)"
+
+#~ msgid "Coverflow"
+#~ msgstr "Coverflow (перелистывание)"
+
+#~ msgid "Effect Layout"
+#~ msgstr "Разметка эффекта "
+
+#~ msgid "Could be \"slide\", \"fade\", \"cube\" or \"coverflow\" effect"
+#~ msgstr "Доступны эффекты \"slide\", \"fade\", \"cube\" или \"coverflow\""
+
+#~ msgid "Slider pagination"
+#~ msgstr "Пагинация слайдера"
+
+#~ msgid "Displaying slider pagination"
+#~ msgstr "Отображать пагинацию слайдера"
+
+#~ msgid "Slider navigation"
+#~ msgstr "Навигация слайдера"
+
+#~ msgid "Displaying slider navigation"
+#~ msgstr "Отображать навигацию слайдера"
+
+#~ msgid "Inner"
+#~ msgstr "Внутри"
+
+#~ msgid "Outer"
+#~ msgstr "Снаружи"
+
+#~ msgid "Slider navigation position"
+#~ msgstr "Позиция навигации слайдера"
+
+#~ msgid "Choose slider navigation position"
+#~ msgstr "Выберите позицию навигации слайдера"
+
+#~ msgid "Posts"
+#~ msgstr "Записи"
+
+#~ msgid "Post ID's"
+#~ msgstr "ID записей"
+
+#~ msgid "Enter comma separated ID's of the posts that you want to show"
+#~ msgstr ""
+#~ "Введите ID записей, которые вы хотите отображать, разделив их запятыми"
+
+#~ msgid "Open featured image in a lightbox?"
+#~ msgstr "Открывать миниатюру в лайтбоксе?"
+
+#~ msgid "Featured image size"
+#~ msgstr "Размер миниатюры"
+
+#~ msgid "Select size for a Featured image"
+#~ msgstr "Выберите размер миниатюры"
+
+#~ msgid "Column class"
+#~ msgstr "Класс колонки"
+
+#~ msgid "Column class for each item."
+#~ msgstr "Класс колонки для каждого элемента."
+
+#, fuzzy
+#~ msgid "Custom posts query with customizable template"
+#~ msgstr "Запрос пользовательских записей с редактируемым шаблоном"
+
+#~ msgid "Tabs"
+#~ msgstr "Вкладки"
+
+#~ msgid "Simple"
+#~ msgstr "Простой"
+
+#~ msgid "Choose style for these tabs"
+#~ msgstr "Выберите стиль вкладок"
+
+#~ msgid "Active tab"
+#~ msgstr "Активная вкладка"
+
+#~ msgid "Select which tab is open by default"
+#~ msgstr "Выберите вкладку, которая будет открыта по умолчанию"
+
+#~ msgid "Vertical"
+#~ msgstr "Вертикально"
+
+#~ msgid "Show tabs vertically"
+#~ msgstr "Отображать вкладки вертикально"
+
+#~ msgid ""
+#~ "[%prefix_tab title=\"Title 1\"]Content 1[/%prefix_tab]\n"
+#~ "[%prefix_tab title=\"Title 2\"]Content 2[/%prefix_tab]\n"
+#~ "[%prefix_tab title=\"Title 3\"]Content 3[/%prefix_tab]"
+#~ msgstr ""
+#~ "[%prefix_tab title=\"Title 1\"]Содержимое 1[/%prefix_tab]\n"
+#~ "[%prefix_tab title=\"Title 2\"]Содержимое 2[/%prefix_tab]\n"
+#~ "[%prefix_tab title=\"Title 3\"]Содержимое 3[/%prefix_tab]"
+
+#~ msgid "Tabs container"
+#~ msgstr "Контейнер вкладок"
+
+#~ msgid "Tab"
+#~ msgstr "Вкладка"
+
+#~ msgid "Tab name"
+#~ msgstr "Название вкладки"
+
+#~ msgid "Enter tab name"
+#~ msgstr "Введите название вкладки"
+
+#~ msgid "Disabled"
+#~ msgstr "Отключить"
+
+#~ msgid "Is this tab disabled"
+#~ msgstr "Отключить эту вкладку?"
+
+#~ msgid ""
+#~ "You can use unique anchor for this tab to access it with hash in page "
+#~ "url. For example: type here <b%value>Hello</b> and then use url like "
+#~ "http://example.com/page-url#Hello. This tab will be activated and "
+#~ "scrolled in"
+#~ msgstr ""
+#~ "Вы можете использовать уникальный якорь для данной вкладки, чтобы перейти "
+#~ "на нее с помощью решетки '#' в url страницы. Например, введите в этом "
+#~ "поле <b%value>Hello</b> и ссылка будет выглядеть следующим образом: "
+#~ "http://example.com/page-url#Hello. Эта вкладка будет активирована и "
+#~ "страница прокрутится к ней."
+
+#~ msgid "URL"
+#~ msgstr "URL"
+
+#~ msgid ""
+#~ "You can link this tab to any webpage. Enter here d URL to switch this tab "
+#~ "into link"
+#~ msgstr ""
+#~ "Вы можете связать эту вкладку с любой веб-страницей. Введите здесь URL, "
+#~ "на который будет ссылаться данная вкладка"
+
+#~ msgid "Open link in the same window/tab"
+#~ msgstr "Открывать ссылку в той же вкладке/окне"
+
+#~ msgid "Open link in a new window/tab"
+#~ msgstr "Открывать ссылку в новой вкладке/окне"
+
+#~ msgid "Link target"
+#~ msgstr "Атрибут ссылки &quot;target&quot;"
+
+#~ msgid "Choose how to open the custom tab link"
+#~ msgstr "Выберите, в каком окне открывать ссылку пользовательской вкладки"
+
+#~ msgid "Tab content"
+#~ msgstr "Содержимое вкладки"
+
+#~ msgid "Single tab"
+#~ msgstr "Одна вкладка"
+
+#~ msgid "Spoiler"
+#~ msgstr "Спойлер"
+
+#~ msgid "Spoiler title"
+#~ msgstr "Заголовок спойлера"
+
+#~ msgid "Text in spoiler title"
+#~ msgstr "Текст заголовка спойлера"
+
+#~ msgid "Open"
+#~ msgstr "Открыть"
+
+#~ msgid "Is spoiler content visible by default"
+#~ msgstr "Сделать содержимое спойлера видимым по умолчанию?"
+
+#~ msgid "Choose style for this spoiler"
+#~ msgstr "Выберите стиль спойлера"
+
+#~ msgid ""
+#~ "You can use unique anchor for this spoiler to access it with hash in page "
+#~ "url. For example: type here <b%value>Hello</b> and then use url like "
+#~ "http://example.com/page-url#Hello. This spoiler will be opened and "
+#~ "scrolled in"
+#~ msgstr ""
+#~ "Вы можете использовать уникальный якорь для данного спойлера, чтобы "
+#~ "перейти на нее с помощью решетки '#' в url страницы. Например, введите в "
+#~ "этом поле <b%value>Hello</b> и ссылка будет выглядеть следующим образом: "
+#~ "http://example.com/page-url#Hello. Этот спойлер будет активирован и "
+#~ "страница прокрутится к нему."
+
+#~ msgid "Hidden content"
+#~ msgstr "Спрятанной содержимое"
+
+#~ msgid "Spoiler with hidden content"
+#~ msgstr "Спойлер со спрятанным содержимым"
+
+#~ msgid "Accordion"
+#~ msgstr "Аккордеон"
+
+#~ msgid ""
+#~ "[%prefix_spoiler title=\"Spoiler Title\"]Content[/%prefix_spoiler]\n"
+#~ "[%prefix_spoiler title=\"Spoiler Title\"]Content[/%prefix_spoiler]\n"
+#~ "[%prefix_spoiler title=\"Spoiler Title\"]Content[/%prefix_spoiler]"
+#~ msgstr ""
+#~ "[%prefix_spoiler title=\"Spoiler Title\"]Содержимое[/%prefix_spoiler]\n"
+#~ "[%prefix_spoiler title=\"Spoiler Title\"]Содержимое[/%prefix_spoiler]\n"
+#~ "[%prefix_spoiler title=\"Spoiler Title\"]Содержимое[/%prefix_spoiler]"
+
+#~ msgid "Accordion with spoilers"
+#~ msgstr "Гармошка со спойлерами"
+
+#~ msgid "Google map"
+#~ msgstr "Карта Google"
+
+#~ msgid "Address"
+#~ msgstr "Адрес"
+
+#~ msgid "The display options for the Pan control."
+#~ msgstr "Опции отображения регулятора панорамы."
+
+#~ msgid "Latitude  geographical coordinates"
+#~ msgstr "Географические координаты широты"
+
+#~ msgid ""
+#~ "Latitude ranges between -90 and 90 degrees, inclusive. Values above or "
+#~ "below this range will be clamped to the range [-90, 90]. This means that "
+#~ "if the value specified is less than -90, it will be set to -90. And if "
+#~ "the value is greater than 90, it will be set to 90."
+#~ msgstr ""
+#~ "Диапазон координат широты: от -90 до 90 градусов включительно. Значение "
+#~ "выше и ниже этого диапазона [-90, 90] будут округляться. Это означает, "
+#~ "что значение меньше -90 будет округляться до -90. А значение больше 90 "
+#~ "будет округляться до 90."
+
+#~ msgid "Longitude geographical coordinates"
+#~ msgstr "Географические координаты долготы"
+
+#~ msgid ""
+#~ "Longitude ranges between -180 and 180 degrees, inclusive. Values above or "
+#~ "below this range will be wrapped so that they fall within the range. For "
+#~ "example, a value of -190 will be converted to 170. A value of 190 will be "
+#~ "converted to -170. This reflects the fact that longitudes wrap around the "
+#~ "globe."
+#~ msgstr ""
+#~ "Диапазон координат долготы: от -180 до 180 градусов включительно. "
+#~ "Значение выши и ниже этого диапазона будут округлены. Например, значение "
+#~ "-190 будет конвертировано в 170. А значение 190 - в -170. Это происходит "
+#~ "потому, что долгота охватывает земной шар."
+
+#~ msgid "Map zoom level"
+#~ msgstr "Уровень масштабирования карты"
+
+#~ msgid "The initial Map zoom level. Required."
+#~ msgstr "Исходный уровень масштабирования карты. Обязательно. "
+
+#~ msgid "Scroll wheel"
+#~ msgstr "Колесико прокрутки"
+
+#~ msgid ""
+#~ "If false, disables scrollwheel zooming on the map. The scrollwheel is "
+#~ "enabled by default."
+#~ msgstr ""
+#~ "Выберите значение &quot;Нет&quot;, чтобы отключить эффект смены масштаба "
+#~ "карты при прокрутке колесиком мышки."
+
+#~ msgid "Map Style"
+#~ msgstr "Стиль карты"
+
+#~ msgid ""
+#~ "Styles to apply to each of the default map types. Note that for Satellite/"
+#~ "Hybrid and Terrain modes, these styles will only apply to labels and "
+#~ "geometry."
+#~ msgstr ""
+#~ "Применять стили к каждому из стандартных типов карты. Внимание: эти стили "
+#~ "применяются только для надписей и геометрии в режимах Спутника/"
+#~ "Совмещенной и Карты Местности."
+
+#~ msgid "Map height"
+#~ msgstr "Высота карты"
+
+#~ msgid "Map height value(px)"
+#~ msgstr "Значение высоты карты (px)"
+
+#~ msgid "Pan control"
+#~ msgstr "Регулятор панорамы"
+
+#~ msgid "Zoom control"
+#~ msgstr "Выбор масштаба "
+
+#~ msgid "The enabled/disabled state of the Zoom control."
+#~ msgstr "Включить/Отключить панель выбора масштаба."
+
+#~ msgid "Draggable map"
+#~ msgstr "Перетаскиваемая карта "
+
+#~ msgid ""
+#~ "If false, prevents the map from being dragged. Dragging is enabled by "
+#~ "default."
+#~ msgstr ""
+#~ "Выберите значение &quot;Нет&quot;, чтобы отключить функцию перетаскивания "
+#~ "карты. По умолчанию эта функция активирована."
+
+#~ msgid "Marker source"
+#~ msgstr "Файл маркера"
+
+#~ msgid "Google Map"
+#~ msgstr "Карта Google"
+
+#~ msgid "Parallax image"
+#~ msgstr "Изображение parallax"
+
+#~ msgid "Upload parallax image url source"
+#~ msgstr "Загрузите изображение parallax или введите ссылку на изображение"
+
+#~ msgid "Parallax speed"
+#~ msgstr "Скорость parallax"
+
+#~ msgid "Parallax speed value (s)"
+#~ msgstr "Значение скорости parallax (s)"
+
+#~ msgid "Parallax invert"
+#~ msgstr "Инвертированность parallax "
+
+#~ msgid "Parallax invert direction move"
+#~ msgstr "Направление инвертированности parallax"
+
+#~ msgid "Parallax container min-height"
+#~ msgstr "Мин. высота контейнера parallax"
+
+#~ msgid "container min-height value (px)"
+#~ msgstr "Минимальная высота контейнера (px)"
+
+#~ msgid "Enter custom class"
+#~ msgstr "Введите пользовательский класс"
+
+#~ msgid "Parallax block"
+#~ msgstr "Блок parallax"
+
+#~ msgid "Parallax html video"
+#~ msgstr "Parallax html видео"
+
+#~ msgid "Poster"
+#~ msgstr "Постер"
+
+#~ msgid "Poster image url"
+#~ msgstr "URL изображения постера"
+
+#~ msgid "mp4 file"
+#~ msgstr "mp4 файл"
+
+#~ msgid "URL to mp4 video-file"
+#~ msgstr "URL mp4 видео файла"
+
+#~ msgid "webm file"
+#~ msgstr "webm файл"
+
+#~ msgid "URL to webm video-file"
+#~ msgstr "URL webm видео файла"
+
+#~ msgid "ogv file"
+#~ msgstr "ogv файл"
+
+#~ msgid "URL to ogv video-file"
+#~ msgstr "URL ogv видео файла"
+
+#~ msgid "Counter"
+#~ msgstr "Счетчик"
+
+#~ msgid "Value"
+#~ msgstr "Значение"
+
+#~ msgid "Value for counter"
+#~ msgstr "Значение счетчика"
+
+#~ msgid "Counter delay"
+#~ msgstr "Задержка отсчета"
+
+#~ msgid "Counter delay (ms)"
+#~ msgstr "Задержка отсчета (ms)"
+
+#~ msgid "Speed time"
+#~ msgstr "Скорость"
+
+#~ msgid "Speed time (ms)"
+#~ msgstr "Скорость (ms)"
+
+#~ msgid "Before content"
+#~ msgstr "Текст перед счетчиком"
+
+#~ msgid "Enter before custom content"
+#~ msgstr "Введите текст, который будет отображаться перед счетчиком"
+
+#~ msgid "After content"
+#~ msgstr "Текст после счетчика"
+
+#~ msgid "Enter after custom content"
+#~ msgstr "Введите текст, который будет отображаться после счетчика"
+
+#~ msgid "Lazy Load Effect"
+#~ msgstr "Эффект Lazy Load "
+
+#~ msgid "Not changed"
+#~ msgstr "Без изменений"
+
+#~ msgid "Start Position"
+#~ msgstr "Стартовая позиция"
+
+#~ msgid "Element position at the animation start."
+#~ msgstr "Позиция элемента при старте анимации"
+
+#~ msgid "Out rotation"
+#~ msgstr "Наружное вращение"
+
+#~ msgid "Initial element angle (min - -360&#176; max 360&#176;)"
+#~ msgstr "Угол исходного элемента (мин. - 360&#176; макс - 360&#176;)"
+
+#~ msgid "Flip X"
+#~ msgstr "Переворот по оси X "
+
+#~ msgid ""
+#~ "Initial element angle Flip X (X-axis rotation min - -360&#176; max "
+#~ "360&#176;)"
+#~ msgstr ""
+#~ "Угол переворота элемента по оси X (мин. вращение по оси X - 360&#176;  "
+#~ "макс. -360&#176; )"
+
+#~ msgid "Flip Y"
+#~ msgstr "Переворот по оси Y"
+
+#~ msgid ""
+#~ "Initial element angle Flip Y (Y-axis rotation min - -360&#176; max "
+#~ "360&#176;)"
+#~ msgstr ""
+#~ "Угол переворота элемента по оси Y (мин. вращение по оси Y - 360&#176;  "
+#~ "макс. -360&#176; )"
+
+#~ msgid "Pivot"
+#~ msgstr "Точка вращения"
+
+#~ msgid "Element rotation point."
+#~ msgstr "Точка вращения элемента."
+
+#~ msgid "Scale"
+#~ msgstr "Масштабирование"
+
+#~ msgid "Element scale value (min - 0; max 10;)"
+#~ msgstr "Значение масштабирования элемента (мин - 0; макс 10;)"
+
+#~ msgid "Opacity"
+#~ msgstr "Прозрачность"
+
+#~ msgid "Element opacity value (min - 0; max 1;)"
+#~ msgstr "Значение прозрачности элемента (мин - 0; макс - 1;)"
+
+#~ msgid "Ease None"
+#~ msgstr "Ease None"
+
+#~ msgid "Ease In Cubic"
+#~ msgstr "Ease In Cubic"
+
+#~ msgid "Ease Out Cubic"
+#~ msgstr "Ease Out Cubic"
+
+#~ msgid "Ease In Out Cubic"
+#~ msgstr "Ease In Out Cubic"
+
+#~ msgid "Ease In Quart"
+#~ msgstr "Ease In Quart"
+
+#~ msgid "Ease Out Quart"
+#~ msgstr "Ease Out Quart"
+
+#~ msgid "Ease In Out Quart"
+#~ msgstr "Ease In Out Quart"
+
+#~ msgid "Ease In Expo"
+#~ msgstr "Ease In Expo"
+
+#~ msgid "Ease Out Expo"
+#~ msgstr "Ease Out Expo"
+
+#~ msgid "Ease In Out Expo"
+#~ msgstr "Ease In Out Expo"
+
+#~ msgid "Ease In Back"
+#~ msgstr "Ease In Back"
+
+#~ msgid "Ease Out Back"
+#~ msgstr "Ease Out Back"
+
+#~ msgid "Ease In Out Back"
+#~ msgstr "Ease In Out Back"
+
+#~ msgid "Easing"
+#~ msgstr "Плавность"
+
+#~ msgid "Animation easing."
+#~ msgstr "Плавность анимации"
+
+#~ msgid "Animation Speed"
+#~ msgstr "Скорость анимации"
+
+#~ msgid "Animation speed in seconds.(Example: 0.2 or 1)"
+#~ msgstr "Скорость анимации в секундах (например, 0.2 или 1)"
+
+#~ msgid "Animation Delay"
+#~ msgstr "Задержка анимации"
+
+#~ msgid "Animation Delay in seconds"
+#~ msgstr "Время задержки анимации в секундах"
+
+#~ msgid "Element custom class"
+#~ msgstr "Пользовательский класс элемента"
+
+#~ msgid "This shortcode adds show animations on any page element."
+#~ msgstr ""
+#~ "Этот шорткод позволяет добавить анимацию отображения для любого элемента "
+#~ "страницы."
+
+#~ msgid "Video Preview"
+#~ msgstr "Предпросмотр видео"
+
+#~ msgid "Hide control buttons"
+#~ msgstr "Спрятать кнопки управления"
+
+#~ msgid "Show control buttons"
+#~ msgstr "Отображать кнопки управления"
+
+#~ msgid "Show control button on mouse hover"
+#~ msgstr "Отображать кнопки управления при ховере"
+
+#~ msgid "Video Autoplay"
+#~ msgstr "Автовоспроизведение видео"
+
+#~ msgid "Play video on mouse hover"
+#~ msgstr "Запускать видео при ховере"
+
+#~ msgid "Element custom class. You can use \"full-width\" class for video"
+#~ msgstr ""
+#~ "Пользовательский класс элемента. Вы можете использовать класс \"full-width"
+#~ "\"  для видео"
+
+#~ msgid "Image"
+#~ msgstr "Изображение"
+
+#~ msgid "Banner image URL"
+#~ msgstr "URL изображения баннера"
+
+#~ msgid "Banner title"
+#~ msgstr "Заголовок баннера"
+
+#~ msgid "Banner default text color"
+#~ msgstr "Цвет текста баннера по умолчанию"
+
+#~ msgid "Banner content"
+#~ msgstr "Содержимое баннера"
+
+#~ msgid "Custom CSS class"
+#~ msgstr "Пользовательский CSS класс"
+
+#~ msgid "Select a page:"
+#~ msgstr "Выберите страницу:"
+
+#~ msgid "Landing page"
+#~ msgstr "Стартовая страница"
+
+#~ msgid "Please select landing page. (Page with anchor navigation menu.)"
+#~ msgstr "Выберите стартовую страницу (страница с якорным меню навигации)."
+
+#~ msgid "Media manager"
+#~ msgstr "Менеджер медиафайлов"
+
+#~ msgid "Icon picker"
+#~ msgstr "Подборщик иконок"
+
+#~ msgid "Filter icons"
+#~ msgstr "Иконки фильтра"
+
+#~ msgid "Please wait"
+#~ msgstr "Пожалуйста, подождите"
+
+#~ msgid "Untitled gallery"
+#~ msgstr "Галерея без заголовка"
+
+#~ msgid "Galleries not found"
+#~ msgstr "Галереи не найдены"
+
+#~ msgid "Manage galleries"
+#~ msgstr "Управлять галереями"
+
+#~ msgid "Reload galleries"
+#~ msgstr "Перезагрузить галереи"
+
+#~ msgid "Horizontal offset"
+#~ msgstr "Горизонтальное смещение"
+
+#~ msgid "Vertical offset"
+#~ msgstr "Вертикальное смещение"
+
+#~ msgid "Blur"
+#~ msgstr "Размытие"
+
+#~ msgid "Color"
+#~ msgstr "Цвет"
+
+#~ msgid "Border width"
+#~ msgstr "Ширина рамки"
+
+#~ msgid "Border style"
+#~ msgstr "Стиль рамки"
+
+#~ msgid "Border color"
+#~ msgstr "Цвет рамки"
+
+#~ msgid "Media library"
+#~ msgstr "Библиотека медиафайлов"
+
+#~ msgid "Recent posts"
+#~ msgstr "Последние записи"
+
+#~ msgid "Category"
+#~ msgstr "Категория"
+
+#~ msgid "Select images source"
+#~ msgstr "Выберите файл изображения"
+
+#~ msgid "Select taxonomy"
+#~ msgstr "Выбрать классификацию"
+
+#~ msgid "Add images"
+#~ msgstr "Добавить изображения"
+
+#~ msgid ""
+#~ "Click the button above and select images.<br>You can select multimple "
+#~ "images with Ctrl (Cmd) key"
+#~ msgstr ""
+#~ "Нажмите кнопку выше и выберите изображения.<br> Вы можете выбрать "
+#~ "несколько изображений, зажав клавишу Ctrl (Cmd) "
+
+#~ msgid ""
+#~ "Select categories to retrieve posts from.<br>You can select multiple "
+#~ "categories with Ctrl (Cmd) key"
+#~ msgstr ""
+#~ "Выберите категории, из которых будут грузится записи.<br> Вы можете "
+#~ "выбрать несколько категорий, зажав клавишу Ctrl (Cmd)"
+
+#, fuzzy
+#~ msgid ""
+#~ "Select taxonomy and it's terms.<br>You can select multiple terms with "
+#~ "Ctrl (Cmd) key"
+#~ msgstr ""
+#~ "Выберите классификацию и ее атрибуты.<br> Вы можете выбрать несколько "
+#~ "атрибутов, зажав клавишу Ctrl (Cmd)"
+
+#~ msgid "Extra small devices (Phones)"
+#~ msgstr "Очень маленькие устройства (телефоны) "
+
+#~ msgid "Small devices (Tablets)"
+#~ msgstr "Маленькие устройства (планшеты) "
+
+#~ msgid "Medium devices (Desktops)"
+#~ msgstr "Средние устройства (компьютеры)"
+
+#~ msgid "Large devices (Desktops)"
+#~ msgstr "Большие устройства (компьтеры)"
+
+#~ msgid "Insert shortcode"
+#~ msgstr "Вставить шорткод"
+
+#~ msgid "Search for shortcodes"
+#~ msgstr "Искать шорткоды"
+
+#~ msgid "Filter by type"
+#~ msgstr "Отфильтровать по типу"
+
+#~ msgid "Shortcode not specified"
+#~ msgstr "Шорткод не указан"
+
+#~ msgid "Live preview"
+#~ msgstr "Live preview (предварительный просмотр в реальном времени)"
+
+#~ msgid "Click to return to the shortcodes list"
+#~ msgstr "Нажмите, чтобы вернуться к списку шорткодов"
+
+#~ msgid "All shortcodes"
+#~ msgstr "Все шорткоды"
+
+#~ msgid "Examples of use"
+#~ msgstr "Примеры использования"
+
+#~ msgid "Click to set this value"
+#~ msgstr "Нажмите, чтобы установить это значение"
+
+#~ msgid "Preview"
+#~ msgstr "Предпросмотр"
+
+#~ msgid "Access denied"
+#~ msgstr "Нет доступа"
+
+#~ msgid "Presets"
+#~ msgstr "Предустановки"
+
+#~ msgid "Save current settings as preset"
+#~ msgstr "Сохранить текущие изменения как предустановку"
+
+#~ msgid "Presets not found"
+#~ msgstr "Предустановки не найдены"
+
+#~ msgid "Template file (*.tmpl) not found"
+#~ msgstr "Файл шаблона (*.tmpl) не найден"
+
+#~ msgid "Posts not found"
+#~ msgstr "Записи не найдены"
+
+#~ msgid "Tab title"
+#~ msgstr "Заголовок вкладки"
+
+#~ msgid "Plugin Settings"
+#~ msgstr "Настройки плагина"
+
+#~ msgid "Use selected file"
+#~ msgstr "Использовать выбранный файл"
+
+#~ msgid "Save changes"
+#~ msgstr "Сохранить изменения"
+
+#~ msgid "Saving"
+#~ msgstr "Сохранение"
+
+#~ msgid "Saved"
+#~ msgstr "Сохранено"
+
+#~ msgid ""
+#~ "This action will delete all your settings. Are you sure? This action "
+#~ "cannot be undone!"
+#~ msgstr ""
+#~ "Это действие удалит все ваши изменения. Вы уверены? Это действие нельзя "
+#~ "будет отменить! "
+
+#~ msgid "Restore default settings"
+#~ msgstr "Восстановить опции по умолчанию"
+
+#~ msgid "Text field"
+#~ msgstr "Текстовое поле"
+
+#~ msgid "Textarea field"
+#~ msgstr "Текстовое поле"
+
+#~ msgid "Checkbox"
+#~ msgstr "Кнопка-флажок"
+
+#~ msgid "Label"
+#~ msgstr "Надпись"
+
+#~ msgid "Color picker"
+#~ msgstr "Цветоподборщик"
+
+#~ msgid "Pick a color"
+#~ msgstr "Выберите цвет"
+
+#~ msgid ""
+#~ "For full functionality of this page it is reccomended to enable "
+#~ "javascript."
+#~ msgstr ""
+#~ "Для полноценной функциональности страницы рекомендуется активировать "
+#~ "javascript."
+
+#~ msgid "Settings saved successfully"
+#~ msgstr "Настройки успешно сохранены"
+
+#~ msgid "Settings reseted successfully"
+#~ msgstr "Настройки успешно сброшены."
+
+#~ msgid "option type %s is not callable"
+#~ msgstr "тип опции %s не может быть выбран"
+
+#~ msgid "Special widget with Cherry Shortcodes."
+#~ msgstr "Специальный виджет для Cherry шорткодов."
+
+#~ msgid "Cherry Shortcodes"
+#~ msgstr "Шорткоды Cherry"
+
+#~ msgid "Title:"
+#~ msgstr "Заголовок:"
+
+#~ msgid "Upload banner image"
+#~ msgstr "Загрузить изображение баннера"
+
+#~ msgid "Choose to display a part or d content"
+#~ msgstr ""
+#~ "Выберите стиль отображения содержимого записей: частичный или полный"
+
+#~ msgid "Upload marker source"
+#~ msgstr "Загрузите файл маркера"
+
+#~ msgid "Custom class"
+#~ msgstr "Пользовательский класс"
+
+#~ msgid "URL or File."
+#~ msgstr "URL или файл."
+
+#~ msgid ""
+#~ "To use video from YouTube or Vimeo input video URL. You can also upload "
+#~ "video file from media library."
+#~ msgstr ""
+#~ "Чтобы использовать YouTube  или  Vimeo видео, введите ссылку на видео. Вы "
+#~ "также можете загрузить видео файл из библиотеки медиафайлов."
+
+#~ msgid "Poster."
+#~ msgstr "Постер"
+
+#~ msgid "Poster image url."
+#~ msgstr "URL изображения постера."
+
+#~ msgid "Controls."
+#~ msgstr "Управление"
+
+#~ msgid "Show content on mouse hover."
+#~ msgstr "Отображать содержимое при ховере"
+
+#~ msgid "Muted."
+#~ msgstr "Выключить звук"
+
+#~ msgid "Loop."
+#~ msgstr "Цикл "
+
+#~ msgid "Preload."
+#~ msgstr "Предварительная загрузка"
+
+#~ msgid "Posted on"
+#~ msgstr "Опубликован на"
+
+#~ msgid "by"
+#~ msgstr " "

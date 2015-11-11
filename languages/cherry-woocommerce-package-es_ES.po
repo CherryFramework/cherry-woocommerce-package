@@ -1,0 +1,2109 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: cherry-shortcodes\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-11-09 18:21+0200\n"
+"PO-Revision-Date: 2015-11-09 18:21+0200\n"
+"Last-Translator: J.L.Dokter <jldokter@gmail.com>\n"
+"Language-Team: Cherry Team <support@cherryframework.com>\n"
+"Language: es_ES\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 1.8.6\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: _e;__;_n:1,2;_n_noop:1,2;_x:1,2c;_nx:1,2,4c;"
+"_nx_noop:1,2,3c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;"
+"esc_html_x:1,2c\n"
+"X-Textdomain-Support: yes\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: init/statics/cherry-account-dropdown-static.php:40
+msgid "Shop Account Dropdown"
+msgstr ""
+
+#: init/statics/cherry-cart-dropdown-static.php:46
+msgid "Shop Cart Dropdown"
+msgstr ""
+
+#: modules/class-cherry-wc-account-dropdown.php:47
+#: modules/class-cherry-wc-account-dropdown.php:48
+#: public/includes/class-cherry-wc-options.php:99
+#: public/includes/class-cherry-wc-options.php:109
+msgid "My Account"
+msgstr ""
+
+#: modules/class-cherry-wc-account-dropdown.php:51
+#: public/includes/class-cherry-wc-options.php:140
+msgid "Log In/Register"
+msgstr ""
+
+#: modules/class-cherry-wc-account-dropdown.php:52
+#: public/includes/class-cherry-wc-options.php:150
+msgid "Logout"
+msgstr ""
+
+#: modules/class-cherry-wc-account-dropdown.php:146
+msgid "Orders"
+msgstr ""
+
+#: modules/class-cherry-wc-account-dropdown.php:153
+#: modules/class-cherry-wc-yith-addons.php:272
+msgid "Compare"
+msgstr ""
+
+#: modules/class-cherry-wc-account-dropdown.php:168
+msgid "Wishlist"
+msgstr ""
+
+#: modules/class-cherry-wc-cart-dropdown.php:44
+msgid "Shopping cart"
+msgstr ""
+
+#: modules/class-cherry-wc-product-sharing.php:47
+msgid "Share this"
+msgstr ""
+
+#: modules/class-cherry-wc-product-video-tab.php:85
+msgid "Video"
+msgstr ""
+
+#: modules/class-cherry-wc-product-video-tab.php:140
+msgid "Product video"
+msgstr ""
+
+#: modules/class-cherry-wc-product-video-tab.php:168
+msgid "YouTube video link"
+msgstr ""
+
+#: modules/class-cherry-wc-product-video-tab.php:170
+msgid "Paste YouTube video URL"
+msgstr ""
+
+#: modules/class-cherry-wc-quick-view.php:141
+msgid "Quick view"
+msgstr ""
+
+#: public/includes/class-cherry-wc-assets.php:132
+msgid "Loading..."
+msgstr ""
+
+#: public/includes/class-cherry-wc-frontend-hooks.php:154
+msgid "Shop Sidebar"
+msgstr ""
+
+#: public/includes/class-cherry-wc-frontend-hooks.php:155
+msgid "Main Shop Sidebar"
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:53
+msgid "Select menu"
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:63
+msgid "Products per page"
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:65
+msgid "Set a number of products per shop page."
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:73
+msgid "Products per category page"
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:75
+msgid "Set a number of products per category page."
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:83
+msgid "Show account dropdown"
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:87
+msgid "Show/hide account dropdown static content"
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:93
+msgid "Guests account menu label"
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:97
+msgid "Set label for account dropdwon for not logged in users"
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:103
+msgid "Memebers account menu label"
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:107
+msgid "Set label for account dropdwon for logged in users"
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:113
+msgid "Menu to show in account dropdown"
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:117
+msgid "Select navigation menu to show it in account dropdown"
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:124
+msgid "Login/out links in account menu"
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:128
+msgid "Show/hide authentication links in account dropdown"
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:134
+msgid "Log in link label"
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:138
+msgid "Set label for log in/register link in account dropdwon"
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:144
+msgid "Logout link label"
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:148
+msgid "Set label for log out link in account dropdwon"
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:157
+msgid "Main shop page layout"
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:160
+#: public/includes/class-cherry-wc-options.php:196
+#: public/includes/class-cherry-wc-options.php:232
+msgid ""
+"You can choose if you want to display sidebars and how you want to display "
+"them."
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:166
+#: public/includes/class-cherry-wc-options.php:202
+#: public/includes/class-cherry-wc-options.php:238
+msgid "Left sidebar"
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:170
+#: public/includes/class-cherry-wc-options.php:206
+#: public/includes/class-cherry-wc-options.php:242
+msgid "Right sidebar"
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:174
+#: public/includes/class-cherry-wc-options.php:210
+#: public/includes/class-cherry-wc-options.php:246
+msgid "Left and right sidebar"
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:178
+#: public/includes/class-cherry-wc-options.php:214
+#: public/includes/class-cherry-wc-options.php:250
+msgid "Two sidebars on the left"
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:182
+#: public/includes/class-cherry-wc-options.php:218
+#: public/includes/class-cherry-wc-options.php:254
+msgid "Two sidebars on the right"
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:186
+#: public/includes/class-cherry-wc-options.php:222
+#: public/includes/class-cherry-wc-options.php:258
+msgid "No sidebar"
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:193
+msgid "Product categories and tags layout"
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:229
+msgid "Single page layout"
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:266
+msgid "Shop"
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:273
+msgid "Layout"
+msgstr ""
+
+#: public/includes/class-cherry-wc-shortcodes.php:77
+msgid "Shop Categories"
+msgstr ""
+
+#: public/includes/class-cherry-wc-shortcodes.php:84
+msgid "Show only parent"
+msgstr ""
+
+#: public/includes/class-cherry-wc-shortcodes.php:85
+#: public/includes/class-cherry-wc-shortcodes.php:132
+msgid "Show only 1st level categories"
+msgstr ""
+
+#: public/includes/class-cherry-wc-shortcodes.php:93
+msgid "Categories number"
+msgstr ""
+
+#: public/includes/class-cherry-wc-shortcodes.php:94
+msgid "Specify number of categories that you want to show. Enter -1 to get all"
+msgstr ""
+
+#: public/includes/class-cherry-wc-shortcodes.php:99
+msgid "None"
+msgstr "Ningún "
+
+#: public/includes/class-cherry-wc-shortcodes.php:100
+msgid "Category ID"
+msgstr ""
+
+#: public/includes/class-cherry-wc-shortcodes.php:101
+#: public/includes/class-cherry-wc-shortcodes.php:211
+msgid "Products count"
+msgstr ""
+
+#: public/includes/class-cherry-wc-shortcodes.php:102
+msgid "Category name"
+msgstr ""
+
+#: public/includes/class-cherry-wc-shortcodes.php:103
+msgid "Category slug"
+msgstr ""
+
+#: public/includes/class-cherry-wc-shortcodes.php:106
+msgid "Order by"
+msgstr "Ordenar por"
+
+#: public/includes/class-cherry-wc-shortcodes.php:107
+msgid "Order categories by"
+msgstr ""
+
+#: public/includes/class-cherry-wc-shortcodes.php:112
+msgid "Descending"
+msgstr "Descendente"
+
+#: public/includes/class-cherry-wc-shortcodes.php:113
+msgid "Ascending"
+msgstr "Ascendente"
+
+#: public/includes/class-cherry-wc-shortcodes.php:116
+msgid "Order"
+msgstr "Orden"
+
+#: public/includes/class-cherry-wc-shortcodes.php:117
+msgid "Categories order"
+msgstr ""
+
+#: public/includes/class-cherry-wc-shortcodes.php:125
+msgid "Columns number"
+msgstr ""
+
+#: public/includes/class-cherry-wc-shortcodes.php:126
+msgid "Specify number of columns to show"
+msgstr ""
+
+#: public/includes/class-cherry-wc-shortcodes.php:131
+msgid "Hide empty categories"
+msgstr ""
+
+#: public/includes/class-cherry-wc-shortcodes.php:136
+msgid "Categories from"
+msgstr ""
+
+#: public/includes/class-cherry-wc-shortcodes.php:137
+msgid "Show direct children of selected category post (enter category ID)"
+msgstr ""
+
+#: public/includes/class-cherry-wc-shortcodes.php:141
+msgid "Categories ID's"
+msgstr ""
+
+#: public/includes/class-cherry-wc-shortcodes.php:142
+msgid "Enter comma separated ID's of the categories that you want to show"
+msgstr ""
+
+#: public/includes/class-cherry-wc-shortcodes.php:150
+msgid "Template"
+msgstr "Plantilla"
+
+#: public/includes/class-cherry-wc-shortcodes.php:151
+msgid "Shortcode template"
+msgstr "Plantilla de shortcode"
+
+#: public/includes/class-cherry-wc-shortcodes.php:154
+msgid "Show product categories list"
+msgstr ""
+
+#: public/includes/class-cherry-wc-shortcodes.php:193
+msgid "Featured image"
+msgstr ""
+
+#: public/includes/class-cherry-wc-shortcodes.php:199
+msgid "Name"
+msgstr ""
+
+#: public/includes/class-cherry-wc-shortcodes.php:205
+msgid "Description"
+msgstr "Descripción"
+
+#: public/includes/class-cherry-wc-shortcodes.php:217
+msgid "Category permalink"
+msgstr ""
+
+#: public/includes/class-cherry-wc-templater.php:88
+msgid "Template file not found"
+msgstr ""
+
+#: templates/cart/cart-content.php:40
+msgid "Remove this item"
+msgstr ""
+
+#: templates/cart/cart-content.php:69
+msgid "No products in the cart."
+msgstr ""
+
+#: templates/cart/cart-content.php:77
+msgid "Subtotal"
+msgstr ""
+
+#: templates/cart/cart-content.php:82
+msgid "View Cart"
+msgstr ""
+
+#: templates/cart/cart-content.php:83
+msgid "Checkout"
+msgstr ""
+
+#: templates/product-gallery/image.php:66 templates/quick-view/image.php:33
+msgid "Placeholder"
+msgstr ""
+
+#: templates/quick-view/rating.php:28
+#, php-format
+msgid "Rated %s out of 5"
+msgstr ""
+
+#: templates/quick-view/rating.php:30
+#, php-format
+msgid "out of %s5%s"
+msgstr ""
+
+#: templates/quick-view/rating.php:31
+#, php-format
+msgid "based on %s customer rating"
+msgid_plural "based on %s customer ratings"
+msgstr[0] ""
+msgstr[1] ""
+
+#: templates/quick-view/read-more.php:22
+msgid "Read More"
+msgstr "Leer Más"
+
+#~ msgid "Choose file"
+#~ msgstr "Elija archivo"
+
+#~ msgid "Insert"
+#~ msgstr "Insertar"
+
+#~ msgid "Select images"
+#~ msgstr "Seleccionar imágenes"
+
+#~ msgid "Add selected images"
+#~ msgstr "Añadir imágenes seleccionadas"
+
+#~ msgid "Please enter a name for new preset"
+#~ msgstr "Por favor, introduzca un nombre para el nuevo preajuste"
+
+#~ msgid "New preset"
+#~ msgstr "Nuevo preajuste"
+
+#~ msgid "Last used settings"
+#~ msgstr "Últimos ajustes usados"
+
+#~ msgid "All"
+#~ msgstr "Todo"
+
+#~ msgid "Grid"
+#~ msgstr "Rejilla"
+
+#~ msgid "Typography"
+#~ msgstr "Tipografía"
+
+#~ msgid "Content"
+#~ msgstr "Contenido"
+
+#~ msgid "Media"
+#~ msgstr "Media"
+
+#~ msgid "Components"
+#~ msgstr "Сomponentes"
+
+#~ msgid "Other"
+#~ msgstr "Otros"
+
+#~ msgid "Solid"
+#~ msgstr "Sólido"
+
+#~ msgid "Dotted"
+#~ msgstr "Punteado"
+
+#~ msgid "Dashed"
+#~ msgstr "Discontinuo"
+
+#~ msgid "Double"
+#~ msgstr "Doble"
+
+#~ msgid "Groove"
+#~ msgstr "Hundimiento"
+
+#~ msgid "Ridge"
+#~ msgstr "Saliente "
+
+#~ msgid "Row"
+#~ msgstr "Fila"
+
+#~ msgid "Fixed Width"
+#~ msgstr "Ancho Fijo"
+
+#~ msgid "Full Width"
+#~ msgstr "Ancho completo"
+
+#~ msgid "Type"
+#~ msgstr "Tipo"
+
+#~ msgid "Type width"
+#~ msgstr "Tipo de anchura"
+
+#~ msgid "Class"
+#~ msgstr "Clase"
+
+#~ msgid "Extra CSS class"
+#~ msgstr "Extra clase CSS "
+
+#~ msgid "Anchor"
+#~ msgstr "Autor"
+
+#~ msgid "This option defines menu item marker."
+#~ msgstr "Esta opción define marcador de elemento de menú."
+
+#~ msgid ""
+#~ "[%prefix_col size_md=\"4\"]Column content[/%prefix_col]\n"
+#~ "[%prefix_col size_md=\"4\"]Column content[/%prefix_col]\n"
+#~ "[%prefix_col size_md=\"4\"]Column content[/%prefix_col]"
+#~ msgstr ""
+#~ "[%prefix_col size_md=\"4\"]Contenido de la columna[/%prefix_col]\n"
+#~ "[%prefix_col size_md=\"4\"]Contenido de la columna[/%prefix_col]\n"
+#~ "[%prefix_col size_md=\"4\"]Contenido de la columna[/%prefix_col]"
+
+#~ msgid "Row for flexible columns"
+#~ msgstr "Fila de columnas flexibles"
+
+#~ msgid "Row Inner"
+#~ msgstr "Fila Interior"
+
+#~ msgid ""
+#~ "[%prefix_col_inner size_md=\"4\"]Column content[/%prefix_col_inner]\n"
+#~ "[%prefix_col_inner size_md=\"4\"]Column content[/%prefix_col_inner]\n"
+#~ "[%prefix_col_inner size_md=\"4\"]Column content[/%prefix_col_inner]"
+#~ msgstr ""
+#~ "[%prefix_col_inner size_md=\"4\"]Contenido de la columna[/"
+#~ "%prefix_col_inner]\n"
+#~ "[%prefix_col_inner size_md=\"4\"]Contenido de la columna[/"
+#~ "%prefix_col_inner]\n"
+#~ "[%prefix_col_inner size_md=\"4\"]Contenido de la columna[/"
+#~ "%prefix_col_inner]"
+
+#~ msgid "Column"
+#~ msgstr "Columna"
+
+#~ msgid "Size"
+#~ msgstr "Tamaño"
+
+#~ msgid "Select column width."
+#~ msgstr "Seleccione el ancho de columna."
+
+#~ msgid "Offset"
+#~ msgstr "Desplazamiento"
+
+#~ msgid "Select column offset."
+#~ msgstr "Seleccione el desplazamiento de la columna."
+
+#~ msgid "Pull"
+#~ msgstr "Tirón"
+
+#~ msgid "Select column pull."
+#~ msgstr "Seleccione la columna de tirón."
+
+#~ msgid "Push"
+#~ msgstr "Empujón"
+
+#~ msgid "Select column push."
+#~ msgstr "Seleccione la columna de empujón."
+
+#~ msgid "No"
+#~ msgstr "No"
+
+#~ msgid "Yes"
+#~ msgstr "Si"
+
+#~ msgid "Collapse column paddings"
+#~ msgstr "Reducir el relleno de columna"
+
+#~ msgid "Column content"
+#~ msgstr "Contenido de columna"
+
+#~ msgid "Flexible and responsive columns"
+#~ msgstr "Columnas flexibles y sensibles"
+
+#~ msgid "Column Inner"
+#~ msgstr "Columna Interna"
+
+#~ msgid "Spacer"
+#~ msgstr "Espacio"
+
+#~ msgid "Spacer height"
+#~ msgstr "Altura del espaciador"
+
+#~ msgid "Vertical spacer between blocks"
+#~ msgstr "Espaciador vertical entre bloques"
+
+#~ msgid "Clear"
+#~ msgstr "Limpio"
+
+#~ msgid "Clearing block"
+#~ msgstr "Bloque limpio"
+
+#~ msgid "Icon"
+#~ msgstr "Icono"
+
+#~ msgid "You can upload custom icon for this button or pick a built-in icon"
+#~ msgstr ""
+#~ "Puedes subir un icono personalizado para este botón o elegir un icono "
+#~ "incorporado"
+
+#~ msgid "Icon size"
+#~ msgstr "Tamaño del icono "
+
+#~ msgid "Font size in px (only for font icons)"
+#~ msgstr "Tamaño de la fuente en px (sólo para los iconos de la fuente)"
+
+#~ msgid "Icon Color"
+#~ msgstr "Color del icono"
+
+#~ msgid "Font icon color"
+#~ msgstr "Color del icono de la fuente"
+
+#~ msgid "Insert custom icon"
+#~ msgstr "Inserte icono personalizado"
+
+#~ msgid "Box"
+#~ msgstr "Caja"
+
+#~ msgid "Primary"
+#~ msgstr "Primario"
+
+#~ msgid "Secondary"
+#~ msgstr "Secundario"
+
+#~ msgid "Gray"
+#~ msgstr "Gris"
+
+#~ msgid "Primary border"
+#~ msgstr "Borde primario"
+
+#~ msgid "Secondary border"
+#~ msgstr "Borde secundario"
+
+#~ msgid "Gray border"
+#~ msgstr "Borde gris"
+
+#~ msgid "Box styling preset"
+#~ msgstr "Estilo preestablecido de la caja"
+
+#~ msgid "Select box styling preset"
+#~ msgstr "Seleccione el estilo preestablecido de la caja"
+
+#~ msgid "Background Color"
+#~ msgstr "Color de Fondo"
+
+#~ msgid "Select box background color"
+#~ msgstr "Seleccione el color del fondo de la caja"
+
+#~ msgid "Background Image"
+#~ msgstr "Imagen de Fondo"
+
+#~ msgid "Upload box background image"
+#~ msgstr "Suba la imagen de fondo de la caja"
+
+#~ msgid "Top Left"
+#~ msgstr "Arriba a la Izquierda"
+
+#~ msgid "Top Center"
+#~ msgstr "Arriba al Centro"
+
+#~ msgid "Top Right"
+#~ msgstr "Arriba a la Rerecha"
+
+#~ msgid "Middle Left"
+#~ msgstr "En Medio a la Izquierda"
+
+#~ msgid "Middle Center"
+#~ msgstr "En Medio al Centro"
+
+#~ msgid "Middle Right"
+#~ msgstr "En Medio a la Derecha"
+
+#~ msgid "Bottom Left"
+#~ msgstr "Abajo a la Izquierda"
+
+#~ msgid "Bottom Center"
+#~ msgstr "Abajo al Centro"
+
+#~ msgid "Bottom Right"
+#~ msgstr "Abajo a la Derecha"
+
+#~ msgid "Background image position"
+#~ msgstr "Posición de la imagen de fondo"
+
+#~ msgid "Select background image position"
+#~ msgstr "Seleccione la posición de la imagen de fondo"
+
+#~ msgid "No Repeat"
+#~ msgstr "No repetir"
+
+#~ msgid "Repeat All"
+#~ msgstr "Repetir Todo"
+
+#~ msgid "Repeat Horizontally"
+#~ msgstr "Repetir Horizontalmente"
+
+#~ msgid "Repeat Vertically"
+#~ msgstr "Repetir Verticalmente"
+
+#~ msgid "Background image repeat"
+#~ msgstr "Repetir la imagen de fondo"
+
+#~ msgid "Select background image repeat"
+#~ msgstr "Seleccione la imagen de fondo repetida"
+
+#~ msgid "Scroll normally"
+#~ msgstr "Desplazar Normalmente"
+
+#~ msgid "Fixed in place"
+#~ msgstr "Fijado en Lugar"
+
+#~ msgid "Background image attachment"
+#~ msgstr "Imagen de fondo fijada"
+
+#~ msgid "Select background image attachment"
+#~ msgstr "Seleccione la imagen de fondo fijada"
+
+#~ msgid "Fill"
+#~ msgstr "Rellenar"
+
+#~ msgid "Fill a parent container?"
+#~ msgstr "¿Rellenar el contenedor padre?"
+
+#~ msgid "Your content goes here"
+#~ msgstr "Su contenido está aquí"
+
+#~ msgid "Box Inner"
+#~ msgstr "Caja interior"
+
+#~ msgid "No preset"
+#~ msgstr "No está preestablecido"
+
+#~ msgid "Banner"
+#~ msgstr "Banner"
+
+#~ msgid "Banner Image"
+#~ msgstr "Imagen del banner"
+
+#~ msgid "Banner Title"
+#~ msgstr "Título del banner"
+
+#~ msgid "Enter banner title"
+#~ msgstr "Introduzca el título del banner"
+
+#~ msgid "Banner URL"
+#~ msgstr "Banner URL"
+
+#~ msgid "Banner link URL"
+#~ msgstr "Enlace URL de Banner"
+
+#~ msgid "Text color"
+#~ msgstr "Color del texto"
+
+#~ msgid "Banner text color"
+#~ msgstr "Color del texto de banner"
+
+#~ msgid "Background color"
+#~ msgstr "Color del fondo"
+
+#~ msgid "Banner background color"
+#~ msgstr "Color del fondo de banner"
+
+#~ msgid "Banner content goes here"
+#~ msgstr "Contenido del Banner está aquí"
+
+#~ msgid "Horizontal Rule"
+#~ msgstr "Regla Horizontal"
+
+#~ msgid "Line height"
+#~ msgstr "Altura de la línea"
+
+#~ msgid "Horizontal rule height"
+#~ msgstr "Regla Horizontal de la altura"
+
+#~ msgid "Line color"
+#~ msgstr "Línea de color "
+
+#~ msgid "Horizontal rule color"
+#~ msgstr "Regla Horizontal del color"
+
+#~ msgid "Indent before"
+#~ msgstr "Espacio de antes"
+
+#~ msgid "Indent before horizontal rule"
+#~ msgstr "Espacio de antes de la regla horizontal"
+
+#~ msgid "Indent after"
+#~ msgstr "Espacio de después"
+
+#~ msgid "Indent after horizontal rule"
+#~ msgstr "Espacio de después de la regla horizontal"
+
+#~ msgid "Title Box"
+#~ msgstr "Título de la Caja"
+
+#~ msgid "Title"
+#~ msgstr "Título"
+
+#~ msgid "Title text"
+#~ msgstr "Título del texto"
+
+#~ msgid "Subtitle"
+#~ msgstr "Subtítulo"
+
+#~ msgid "Subtitle text"
+#~ msgstr "Texto de los subtítulos"
+
+#~ msgid "Title Color"
+#~ msgstr "Color del Título"
+
+#~ msgid "Title text color"
+#~ msgstr "Color del título del texto"
+
+#~ msgid "Subtitle Color"
+#~ msgstr "Color del subtítulo"
+
+#~ msgid "Subtitle text color"
+#~ msgstr "Color del texto de subtítulo"
+
+#~ msgid "Title box"
+#~ msgstr "Título de la Caja"
+
+#~ msgid "Dropcap"
+#~ msgstr "Dropcap"
+
+#~ msgid "Text size"
+#~ msgstr "Tamaño del texto"
+
+#~ msgid "Text size in px"
+#~ msgstr "Tamaño del texto en px"
+
+#~ msgid "Canvas size"
+#~ msgstr "Tamaño del lienzo"
+
+#~ msgid "Canvas size in px"
+#~ msgstr "Tamaño del lienzo en px"
+
+#~ msgid "Text Color"
+#~ msgstr "Color del Texto"
+
+#~ msgid "Dropcap text color"
+#~ msgstr "Color del texto de Dropcap"
+
+#~ msgid "Dropcap background color"
+#~ msgstr "Color del fondo de Dropcap"
+
+#~ msgid "Left"
+#~ msgstr "Izquierdo"
+
+#~ msgid "Right"
+#~ msgstr "Derecho"
+
+#~ msgid "Center"
+#~ msgstr "Centro"
+
+#~ msgid "Align"
+#~ msgstr "Alinear"
+
+#~ msgid "Dropcap alignment"
+#~ msgstr "Alineación de Dropcap"
+
+#~ msgid "Border radius"
+#~ msgstr "Radio del borde"
+
+#~ msgid "Border radius size in px"
+#~ msgstr "Tamaño del radio del borde en px"
+
+#~ msgid "Border"
+#~ msgstr "Borde"
+
+#~ msgid "Setup dropcap border"
+#~ msgstr "Configuración del borde de dropcap "
+
+#~ msgid "A"
+#~ msgstr "A"
+
+#~ msgid "Dropcap box"
+#~ msgstr "Caja Dropcap"
+
+#~ msgid "Button"
+#~ msgstr "Botón"
+
+#~ msgid "Read more"
+#~ msgstr "Leer Más"
+
+#~ msgid "Text"
+#~ msgstr "Texto"
+
+#~ msgid "Button text"
+#~ msgstr "Texto del botón"
+
+#~ msgid "Link"
+#~ msgstr "Enlace"
+
+#~ msgid "Button link"
+#~ msgstr "Enlace del Botón"
+
+#~ msgid "Primary-light"
+#~ msgstr "Primario-claro"
+
+#~ msgid "Default"
+#~ msgstr "Por defecto"
+
+#~ msgid "Success"
+#~ msgstr "Éxito"
+
+#~ msgid "Info"
+#~ msgstr "Info"
+
+#~ msgid "Warning"
+#~ msgstr "Advertencia"
+
+#~ msgid "Danger"
+#~ msgstr "Peligro"
+
+#~ msgid "Style"
+#~ msgstr "Estilo"
+
+#~ msgid "Button style preset"
+#~ msgstr "Estilo preestablecido del botón"
+
+#~ msgid "Extra Small"
+#~ msgstr "Extra pequeño"
+
+#~ msgid "Small"
+#~ msgstr "Pequeño"
+
+#~ msgid "Medium"
+#~ msgstr "Mediano"
+
+#~ msgid "Large"
+#~ msgstr "Grande"
+
+#~ msgid "Extra Large"
+#~ msgstr "Extra Grande"
+
+#~ msgid "Button size preset"
+#~ msgstr "Tamaño preestablecido del Botón"
+
+#~ msgid "Inline"
+#~ msgstr "En línea"
+
+#~ msgid "Wide"
+#~ msgstr "Amplio"
+
+#~ msgid "Display"
+#~ msgstr "Mostrar"
+
+#~ msgid "Button display type"
+#~ msgstr "Mostrar el tipo del botón"
+
+#~ msgid "Button border radius"
+#~ msgstr "Botón del radio de borde"
+
+#~ msgid "Centered"
+#~ msgstr "Centrado"
+
+#~ msgid "Is button centered on the page"
+#~ msgstr "El botón está centrado en la página"
+
+#~ msgid "Fluid"
+#~ msgstr "Fluido"
+
+#~ msgid "Is button fluid"
+#~ msgstr "El botón fluido "
+
+#~ msgid "Fluid Position"
+#~ msgstr "Posición fluida"
+
+#~ msgid "Button fluid position"
+#~ msgstr "Posición fluido del botón"
+
+#~ msgid "Top"
+#~ msgstr "Parte superior"
+
+#~ msgid "Bottom"
+#~ msgstr "Baja"
+
+#~ msgid "Icon Position"
+#~ msgstr "Posición del Icono"
+
+#~ msgid "Button icon position"
+#~ msgstr "Posición del Icono del botón"
+
+#~ msgid "Small description under button text."
+#~ msgstr "Pequeña descripción bajo el texto del botón."
+
+#~ msgid "Background"
+#~ msgstr "Fondo"
+
+#~ msgid "Button background color"
+#~ msgstr "El color de fondo del botón"
+
+#~ msgid "Button text color"
+#~ msgstr "Color del texto del botón"
+
+#~ msgid "Min width"
+#~ msgstr "Anchura mínima"
+
+#~ msgid "Button minimal width"
+#~ msgstr "Anchura mínima del botón"
+
+#~ msgid "Same tab"
+#~ msgstr "Pestaña igual"
+
+#~ msgid "New tab"
+#~ msgstr "Pestaña nueva"
+
+#~ msgid "Target"
+#~ msgstr "Target"
+
+#~ msgid "Button link target"
+#~ msgstr "Destino del enlace del botón"
+
+#~ msgid "Rel attribute"
+#~ msgstr "Atributo rel"
+
+#~ msgid "Here you can add value for the rel attribute."
+#~ msgstr "Aquí puede añadir valor para el atributo rel."
+
+#~ msgid "Fade"
+#~ msgstr "Fundirse"
+
+#~ msgid "Hover animation"
+#~ msgstr "Animación al pasar el ratón"
+
+#~ msgid "Button hover aniamtion type"
+#~ msgstr "Tipo de animación del botón al pasar el ratón"
+
+#~ msgid "Styled button"
+#~ msgstr "Estilo del botón"
+
+#~ msgid "List"
+#~ msgstr "Lista"
+
+#~ msgid "List Item"
+#~ msgstr "Lista de artículos"
+
+#~ msgid "Swiper carousel"
+#~ msgstr "Swiper carrusel"
+
+#~ msgid "Customizable post carousel"
+#~ msgstr "Personalizable carrusel del artículo"
+
+#~ msgid "Posts per page"
+#~ msgstr "Artículos por página"
+
+#~ msgid ""
+#~ "Specify number of posts that you want to show. Enter -1 to get all posts"
+#~ msgstr ""
+#~ "Especifique el número de elementos para mostrar. Introduzca -1 para "
+#~ "obtener todos los artículos"
+
+#~ msgid "Post types"
+#~ msgstr "Tipo de artículos"
+
+#~ msgid "Select post types. Hold Ctrl key to select multiple post types"
+#~ msgstr ""
+#~ "Seleccione los tipos de artículos. Sostenga la tecla Ctrl para "
+#~ "seleccionar varios tipos de elementos."
+
+#~ msgid "Taxonomy"
+#~ msgstr "Taxonomía"
+
+#~ msgid "Select taxonomy to show posts from"
+#~ msgstr "Seleccione la taxonomía de artículos para mostrar"
+
+#~ msgid "Terms"
+#~ msgstr "Condiciones"
+
+#~ msgid "Select terms to show posts from"
+#~ msgstr "Seleccione los términos para mostrar artículos"
+
+#~ msgid "Taxonomy term operator"
+#~ msgstr "Términos de la taxonomía del operador"
+
+#~ msgid ""
+#~ "IN - posts that have any of selected categories terms<br/>NOT IN - posts "
+#~ "that  do not have any of selected terms<br/>AND - posts that have all "
+#~ "selected terms"
+#~ msgstr ""
+#~ "IN - artículos que tienen todos los términos seleccionados <br/> NOT IN - "
+#~ "artículos que no tienen ningún término seleccionado<br/>AND - elementos "
+#~ "que tienen todos los términos seleccionados"
+
+#~ msgid "Authors"
+#~ msgstr "Autores"
+
+#~ msgid "Enter here comma-separated list of author's IDs. Example: 1,7,18"
+#~ msgstr ""
+#~ "Introduzca la lista de autores con ID´s separados por comas. Ejemplo: "
+#~ "1,7,18"
+
+#~ msgid "Specify offset to start posts loop not from first post"
+#~ msgstr ""
+#~ "Especifique el desplazamiento para no iniciar el bucle de artículo por "
+#~ "artículo"
+
+#~ msgid "Posts order"
+#~ msgstr "Orden de artículos "
+
+#~ msgid "Post ID"
+#~ msgstr "ID del artículo"
+
+#~ msgid "Post author"
+#~ msgstr "Autor del artículo"
+
+#~ msgid "Post title"
+#~ msgstr "Título del artículo"
+
+#~ msgid "Post slug"
+#~ msgstr "Slug del artículo"
+
+#~ msgid "Date"
+#~ msgstr "Fecha"
+
+#~ msgid "Last modified date"
+#~ msgstr "Última fecha de modificación"
+
+#~ msgid "Post parent"
+#~ msgstr "Artículo padres"
+
+#~ msgid "Random"
+#~ msgstr "Aleatorio"
+
+#~ msgid "Comments number"
+#~ msgstr "Número de comentarios"
+
+#~ msgid "Menu order"
+#~ msgstr "Orden del Menu"
+
+#~ msgid "Order posts by"
+#~ msgstr "Ordenar artículos por"
+
+#~ msgid "Show children of entered post (enter post ID)"
+#~ msgstr ""
+#~ "Mostrar elementos hijo del elemento seleccionado (introducir ID del "
+#~ "elemento)"
+
+#~ msgid "Published"
+#~ msgstr "Publicado"
+
+#~ msgid "Pending"
+#~ msgstr "A la espera de"
+
+#~ msgid "Draft"
+#~ msgstr "Borrador"
+
+#~ msgid "Auto-draft"
+#~ msgstr "Auto borrador"
+
+#~ msgid "Future post"
+#~ msgstr "El artículo futuro"
+
+#~ msgid "Private post"
+#~ msgstr "Artículo privado"
+
+#~ msgid "Inherit"
+#~ msgstr "Heredar"
+
+#~ msgid "Trashed"
+#~ msgstr "Suprimido"
+
+#~ msgid "Any"
+#~ msgstr "Algun"
+
+#~ msgid "Post status"
+#~ msgstr "Estado del artículo"
+
+#~ msgid "Show only posts with selected status"
+#~ msgstr "Mostrar solo artículos con el estado seleccionado"
+
+#~ msgid "Ignore sticky"
+#~ msgstr "Ignorar pegado"
+
+#~ msgid "Select Yes to ignore posts that are sticked"
+#~ msgstr "Seleccione Sí para omitir los artículos pegados"
+
+#~ msgid "Linked title"
+#~ msgstr "Título vinculado"
+
+#~ msgid "Linked title description"
+#~ msgstr "Descripción del título vinculado"
+
+#~ msgid "Linked featured image"
+#~ msgstr "Imagen destacada vinculada"
+
+#~ msgid "Linked featured image description"
+#~ msgstr "Descripción de imagen destacada vinculada"
+
+#~ msgid "Part of content"
+#~ msgstr "Parte del contenido"
+
+#~ msgid "Full content"
+#~ msgstr "Contenido completo"
+
+#~ msgid "Post content"
+#~ msgstr "Contenido del artículo"
+
+#~ msgid "Content Length"
+#~ msgstr "Longitud del contenido"
+
+#~ msgid "Insert the number of words you want to show in the post content."
+#~ msgstr ""
+#~ "Inserte el número de palabras que desea mostrar en el contenido de los "
+#~ "artículos."
+
+#~ msgid "read more"
+#~ msgstr "leer más"
+
+#~ msgid "Button text description"
+#~ msgstr "Descripción del texto del botón"
+
+#~ msgid "Using cropped image"
+#~ msgstr "Use una imagen recortada"
+
+#~ msgid "Slider Loop Mode"
+#~ msgstr "Bucle del modo de presentación"
+
+#~ msgid "Cropping image width"
+#~ msgstr "Ancho de la imagen recortada"
+
+#~ msgid "Width value(px)"
+#~ msgstr "Valor de la anchura (px)"
+
+#~ msgid "Cropping image height"
+#~ msgstr "Altura de la imagen recortada"
+
+#~ msgid "Height value(px)"
+#~ msgstr "Valor de la altura (px)"
+
+#~ msgid "Number of slides per view"
+#~ msgstr "Número de diapositivas para mostrar"
+
+#~ msgid "Specify number of slides per view"
+#~ msgstr "Especifique el número de diapositivas para mostrar"
+
+#~ msgid "Number slides per group"
+#~ msgstr "Número de diapositivas en grupo"
+
+#~ msgid ""
+#~ "Set numbers of slides to define and enable group sliding. Useful to use "
+#~ "with slidesPerView > 1"
+#~ msgstr ""
+#~ "Set numbers of slides to define and enable group sliding. Useful to use "
+#~ "with slidesPerView > 1"
+
+#~ msgid "Multi Row Slides Layout"
+#~ msgstr "Columna Múltiples de Diseño de Diapositivas "
+
+#~ msgid "Space Between Slides"
+#~ msgstr "Espacio entre diapositivas"
+
+#~ msgid "Width of the space between slides(px)"
+#~ msgstr "Ancho del espacio entre las diapositivas (px)"
+
+#~ msgid "Duration of transition"
+#~ msgstr "Duración de la transición"
+
+#~ msgid "Duration of transition between slides (ms)"
+#~ msgstr "Duración de la transición entre diapositivas (en ms)"
+
+#~ msgid "Slider Infinite Loop"
+#~ msgstr "La repetición constante del slider"
+
+#~ msgid "Free Mode sliding"
+#~ msgstr "Modo Libre de deslizamiento"
+
+#~ msgid "No fixed positions for slides"
+#~ msgstr "No hay posiciones fijas para diapositivas"
+
+#~ msgid "Grab Cursor"
+#~ msgstr "Agarrar el Cursor"
+
+#~ msgid "Using Grab Cursor for slider"
+#~ msgstr "Usar Agarramiento del Cursor para el sldier"
+
+#~ msgid "Mousewheel Control"
+#~ msgstr "Control de la Rueda del ratón"
+
+#~ msgid "Mousewheel control mode"
+#~ msgstr "El modo del control de la Rueda del ratón"
+
+#~ msgid "Centered Slides"
+#~ msgstr "Diapositivas Centrales"
+
+#~ msgid "Centered slides mode"
+#~ msgstr "Modo de diapositivas"
+
+#~ msgid "Slide"
+#~ msgstr "Diapositiva"
+
+#~ msgid "Cube"
+#~ msgstr "Cubo"
+
+#~ msgid "Coverflow"
+#~ msgstr "Coverflow"
+
+#~ msgid "Effect Layout"
+#~ msgstr "Efecto de Layout"
+
+#~ msgid "Could be \"slide\", \"fade\", \"cube\" or \"coverflow\" effect"
+#~ msgstr "Podría ser \"slide\", \"fade\", \"cubo\" o efecto \"coverflow\""
+
+#~ msgid "Slider pagination"
+#~ msgstr "Paginación del slider"
+
+#~ msgid "Displaying slider pagination"
+#~ msgstr "Mostrando paginación del slider"
+
+#~ msgid "Slider navigation"
+#~ msgstr "Navigación del slider"
+
+#~ msgid "Displaying slider navigation"
+#~ msgstr "Mostrando navegación del slider"
+
+#~ msgid "Inner"
+#~ msgstr "En el interior"
+
+#~ msgid "Outer"
+#~ msgstr "Exterior"
+
+#~ msgid "Slider navigation position"
+#~ msgstr "Posición de navegación de diapositivas"
+
+#~ msgid "Choose slider navigation position"
+#~ msgstr "Elija la posición de navegación del slider"
+
+#~ msgid "Posts"
+#~ msgstr "Artículos"
+
+#~ msgid "Post ID's"
+#~ msgstr "ID del Artículo"
+
+#~ msgid "Enter comma separated ID's of the posts that you want to show"
+#~ msgstr ""
+#~ "Introduzca separados por comas ID de los artículos que desea mostrar"
+
+#~ msgid "Open featured image in a lightbox?"
+#~ msgstr "Abrir la imagen destacada según el lightbox?"
+
+#~ msgid "Featured image size"
+#~ msgstr "Tamaño de la imagen Destacada"
+
+#~ msgid "Select size for a Featured image"
+#~ msgstr "Seleccione el tamaño de la imagen Destacada"
+
+#~ msgid "Column class"
+#~ msgstr "Clase de columna"
+
+#~ msgid "Column class for each item."
+#~ msgstr "Clase de columna para cada elemento."
+
+#~ msgid "Custom posts query with customizable template"
+#~ msgstr "Artículos personalizados de consulta con plantilla personalizable"
+
+#~ msgid "Tabs"
+#~ msgstr "Fichas"
+
+#~ msgid "Simple"
+#~ msgstr "Simple"
+
+#~ msgid "Choose style for these tabs"
+#~ msgstr "Elija el estilo de estas fichas"
+
+#~ msgid "Active tab"
+#~ msgstr "Pestaña activa"
+
+#~ msgid "Select which tab is open by default"
+#~ msgstr "Seleccione la ficha que está abierta por defecto"
+
+#~ msgid "Vertical"
+#~ msgstr "Vertical"
+
+#~ msgid "Show tabs vertically"
+#~ msgstr "Mostar fichas verticalmente"
+
+#~ msgid ""
+#~ "[%prefix_tab title=\"Title 1\"]Content 1[/%prefix_tab]\n"
+#~ "[%prefix_tab title=\"Title 2\"]Content 2[/%prefix_tab]\n"
+#~ "[%prefix_tab title=\"Title 3\"]Content 3[/%prefix_tab]"
+#~ msgstr ""
+#~ "[%prefix_tab title=\"Title 1\"]Contenido 1[/%prefix_tab]\n"
+#~ "[%prefix_tab title=\"Title 2\"]Contenido 2[/%prefix_tab]\n"
+#~ "[%prefix_tab title=\"Title 3\"]Contenido 3[/%prefix_tab]"
+
+#~ msgid "Tabs container"
+#~ msgstr "Contenedor de pestañas"
+
+#~ msgid "Tab"
+#~ msgstr "Ficha"
+
+#~ msgid "Tab name"
+#~ msgstr "Nombre de la ficha"
+
+#~ msgid "Enter tab name"
+#~ msgstr "Introduzca nombre de la ficha"
+
+#~ msgid "Disabled"
+#~ msgstr "Desactivado"
+
+#~ msgid "Is this tab disabled"
+#~ msgstr "Esta ficha está desactivada"
+
+#~ msgid ""
+#~ "You can use unique anchor for this tab to access it with hash in page "
+#~ "url. For example: type here <b%value>Hello</b> and then use url like "
+#~ "http://example.com/page-url#Hello. This tab will be activated and "
+#~ "scrolled in"
+#~ msgstr ""
+#~ "Para proporcionar acceso inmediato a esta ficha con # en la dirección URL "
+#~ "de la página que puede escribir, por ejemplo, <b%value> Hello</b> y "
+#~ "utilice el enlace como http://example.com/page -url # Hello. Página se "
+#~ "desplaza hacia abajo y se abre automáticamente esta ficha"
+
+#~ msgid "URL"
+#~ msgstr "URL"
+
+#~ msgid ""
+#~ "You can link this tab to any webpage. Enter here d URL to switch this tab "
+#~ "into link"
+#~ msgstr ""
+#~ "En esta ficha, puede proporcionar un enlace a cualquier página web. Pulse "
+#~ "aquí para URL."
+
+#~ msgid "Open link in the same window/tab"
+#~ msgstr "Abra el enlace en la misma ventana/pestaña"
+
+#~ msgid "Open link in a new window/tab"
+#~ msgstr "Abrir enlace en una nueva ventana/pestaña"
+
+#~ msgid "Link target"
+#~ msgstr "Objetivo del enlace"
+
+#~ msgid "Choose how to open the custom tab link"
+#~ msgstr "Elija cómo abrir el enlace de pestaña personalizada"
+
+#~ msgid "Tab content"
+#~ msgstr "Contenido de la pestaña"
+
+#~ msgid "Single tab"
+#~ msgstr "Pestaña simple"
+
+#~ msgid "Spoiler"
+#~ msgstr "Alerón"
+
+#~ msgid "Spoiler title"
+#~ msgstr "Título de alerón"
+
+#~ msgid "Text in spoiler title"
+#~ msgstr "Texto en el título de alerón"
+
+#~ msgid "Open"
+#~ msgstr "Abierto"
+
+#~ msgid "Is spoiler content visible by default"
+#~ msgstr "Es el contenido alerón visible por defecto"
+
+#~ msgid "Choose style for this spoiler"
+#~ msgstr "Elija el estilo de este alerón"
+
+#~ msgid ""
+#~ "You can use unique anchor for this spoiler to access it with hash in page "
+#~ "url. For example: type here <b%value>Hello</b> and then use url like "
+#~ "http://example.com/page-url#Hello. This spoiler will be opened and "
+#~ "scrolled in"
+#~ msgstr ""
+#~ "Para facilitar el acceso al alerón use # en el URL de la página que puede "
+#~ "escribir, por ejemplo, <b%value>Hello</ b> y utilice el enlace como "
+#~ "http://example.com/page-url#Hello. Página se desplaza hacia abajo y se "
+#~ "abre automáticamente el alerón"
+
+#~ msgid "Hidden content"
+#~ msgstr "El contenido ocultado"
+
+#~ msgid "Spoiler with hidden content"
+#~ msgstr "Alerón con el contenido ocultado"
+
+#~ msgid "Accordion"
+#~ msgstr "Acordeón"
+
+#~ msgid ""
+#~ "[%prefix_spoiler title=\"Spoiler Title\"]Content[/%prefix_spoiler]\n"
+#~ "[%prefix_spoiler title=\"Spoiler Title\"]Content[/%prefix_spoiler]\n"
+#~ "[%prefix_spoiler title=\"Spoiler Title\"]Content[/%prefix_spoiler]"
+#~ msgstr ""
+#~ "[%prefix_spoiler title=\"Título del Alerón\"]Contenido[/%prefix_spoiler]\n"
+#~ "[%prefix_spoiler title=\"Título del Alerón\"]Contenido[/%prefix_spoiler]\n"
+#~ "[%prefix_spoiler title=\"Título del Alerón\"]Contenido[/%prefix_spoiler]"
+
+#~ msgid "Accordion with spoilers"
+#~ msgstr "Acordeón con "
+
+#~ msgid "Google map"
+#~ msgstr "Google map"
+
+#~ msgid "Address"
+#~ msgstr "Dirección"
+
+#~ msgid "The display options for the Pan control."
+#~ msgstr "Las opciones de visualización para el control de Pan."
+
+#~ msgid "Latitude  geographical coordinates"
+#~ msgstr "Las coordenadas geográficas de latitud"
+
+#~ msgid ""
+#~ "Latitude ranges between -90 and 90 degrees, inclusive. Values above or "
+#~ "below this range will be clamped to the range [-90, 90]. This means that "
+#~ "if the value specified is less than -90, it will be set to -90. And if "
+#~ "the value is greater than 90, it will be set to 90."
+#~ msgstr ""
+#~ "La latitud es de entre -90 y 90 grados inclusive. Los valores más altos o "
+#~ "más bajos en este rango se reducirán en el intervalo [-90, 90]. Esto "
+#~ "significa que si el valor especificado es inferior a -90, se fijó en -90. "
+#~ "Y si el valor es superior a 90, se ha fijado en 90."
+
+#~ msgid "Longitude geographical coordinates"
+#~ msgstr "Las coordenadas geográficas de longitud"
+
+#~ msgid ""
+#~ "Longitude ranges between -180 and 180 degrees, inclusive. Values above or "
+#~ "below this range will be wrapped so that they fall within the range. For "
+#~ "example, a value of -190 will be converted to 170. A value of 190 will be "
+#~ "converted to -170. This reflects the fact that longitudes wrap around the "
+#~ "globe."
+#~ msgstr ""
+#~ "Longitud varía entre -180 y 180 grados incluido. Los valores más altos o "
+#~ "más bajos en este rango serán cambiados para que caigan en el rango. Por "
+#~ "ejemplo, un valor de -190 se convierte a 170. Un valor de 190 se "
+#~ "convierte a -170."
+
+#~ msgid "Map zoom level"
+#~ msgstr "Nivel del zoom del mapa"
+
+#~ msgid "The initial Map zoom level. Required."
+#~ msgstr "El nivel de zoom del mapa inicial. Necesario."
+
+#~ msgid "Scroll wheel"
+#~ msgstr "Rueda de desplazamiento"
+
+#~ msgid ""
+#~ "If false, disables scrollwheel zooming on the map. The scrollwheel is "
+#~ "enabled by default."
+#~ msgstr ""
+#~ "Si es falso, mediante zoom del mapa la marcación está desactivada. La "
+#~ "rueda de desplazamiento está activada por defecto."
+
+#~ msgid "Map Style"
+#~ msgstr "Estilo del mapa"
+
+#~ msgid ""
+#~ "Styles to apply to each of the default map types. Note that for Satellite/"
+#~ "Hybrid and Terrain modes, these styles will only apply to labels and "
+#~ "geometry."
+#~ msgstr ""
+#~ "Estilos para aplicar a cada uno de los tipos de mapas por defecto. Tenga "
+#~ "en cuenta que para los modos de TV vía Satellite/Hybrid/Terrain esos "
+#~ "estilos se aplicarán solamente a las etiquetas y los elementos "
+#~ "geométricos."
+
+#~ msgid "Map height"
+#~ msgstr "Altura del mapa"
+
+#~ msgid "Map height value(px)"
+#~ msgstr "Valor de la altura del mapa(px)"
+
+#~ msgid "Pan control"
+#~ msgstr "Pan control"
+
+#~ msgid "Zoom control"
+#~ msgstr "Control de zoom"
+
+#~ msgid "The enabled/disabled state of the Zoom control."
+#~ msgstr "Activar / desactivar el control de zoom."
+
+#~ msgid "Draggable map"
+#~ msgstr "El Mapa se puede arrastrar"
+
+#~ msgid ""
+#~ "If false, prevents the map from being dragged. Dragging is enabled by "
+#~ "default."
+#~ msgstr "Activado por defecto. Si es falso, no es posible arrastrar el mapa."
+
+#~ msgid "Marker source"
+#~ msgstr "Imagen del Marcador"
+
+#~ msgid "Google Map"
+#~ msgstr "Google Map"
+
+#~ msgid "Parallax image"
+#~ msgstr "Imagen parallax"
+
+#~ msgid "Upload parallax image url source"
+#~ msgstr "Suba imagen parallax de la fuente URL"
+
+#~ msgid "Parallax speed"
+#~ msgstr "Velocidad de parallax"
+
+#~ msgid "Parallax speed value (s)"
+#~ msgstr "Valor de la velocidad de parallax (s)"
+
+#~ msgid "Parallax invert"
+#~ msgstr "Invertir parallax"
+
+#~ msgid "Parallax invert direction move"
+#~ msgstr "Indique la dirección del movimiento de parallax invertido"
+
+#~ msgid "Parallax container min-height"
+#~ msgstr "Altura mínima de contenedor de parallax"
+
+#~ msgid "container min-height value (px)"
+#~ msgstr "Valor del contenedor de altura mínima del parallax  (px)"
+
+#~ msgid "Enter custom class"
+#~ msgstr "Introduzca clase personalizada"
+
+#~ msgid "Parallax block"
+#~ msgstr "Bloque parallax"
+
+#~ msgid "Parallax html video"
+#~ msgstr "Vídeo html Parallax"
+
+#~ msgid "Poster"
+#~ msgstr "Cartel"
+
+#~ msgid "Poster image url"
+#~ msgstr "URL de la imagen del cartel"
+
+#~ msgid "mp4 file"
+#~ msgstr "archivo mp4"
+
+#~ msgid "URL to mp4 video-file"
+#~ msgstr "URL del archivo de vídeo mp4"
+
+#~ msgid "webm file"
+#~ msgstr "archivo webm"
+
+#~ msgid "URL to webm video-file"
+#~ msgstr "URL del archivo webm"
+
+#~ msgid "ogv file"
+#~ msgstr "archivo ogv"
+
+#~ msgid "URL to ogv video-file"
+#~ msgstr "URL del archivo ogv"
+
+#~ msgid "Counter"
+#~ msgstr "Contador"
+
+#~ msgid "Value"
+#~ msgstr "Valor"
+
+#~ msgid "Value for counter"
+#~ msgstr "Valor del contador"
+
+#~ msgid "Counter delay"
+#~ msgstr "Retraso del contador"
+
+#~ msgid "Counter delay (ms)"
+#~ msgstr "Retraso del contador (ms)"
+
+#~ msgid "Speed time"
+#~ msgstr "Tiempo de velocidad"
+
+#~ msgid "Speed time (ms)"
+#~ msgstr "Tiempo de velocidad (ms)"
+
+#~ msgid "Before content"
+#~ msgstr "Contenido de antes"
+
+#~ msgid "Enter before custom content"
+#~ msgstr "Escriba el contenido personalizado que se muestra antes"
+
+#~ msgid "After content"
+#~ msgstr "Contenido de después"
+
+#~ msgid "Enter after custom content"
+#~ msgstr "Introduzca el contenido personalizado después"
+
+#~ msgid "Lazy Load Effect"
+#~ msgstr "Efecto Lazy Load"
+
+#~ msgid "Not changed"
+#~ msgstr "Sin cambios"
+
+#~ msgid "Start Position"
+#~ msgstr "Posición inicial"
+
+#~ msgid "Element position at the animation start."
+#~ msgstr "La posición del elemento en el inicio de la animación."
+
+#~ msgid "Out rotation"
+#~ msgstr "Rotación externa"
+
+#~ msgid "Initial element angle (min - -360&#176; max 360&#176;)"
+#~ msgstr ""
+#~ "Ángulo de rotación inicial del element (min - -360&#176; max 360&#176;)"
+
+#~ msgid "Flip X"
+#~ msgstr "Flip X"
+
+#~ msgid ""
+#~ "Initial element angle Flip X (X-axis rotation min - -360&#176; max "
+#~ "360&#176;)"
+#~ msgstr ""
+#~ "Elemento angular inicial Flip X (X-axis rotation min - -360&#176; max "
+#~ "360&#176;)"
+
+#~ msgid "Flip Y"
+#~ msgstr "Flip Y"
+
+#~ msgid ""
+#~ "Initial element angle Flip Y (Y-axis rotation min - -360&#176; max "
+#~ "360&#176;)"
+#~ msgstr ""
+#~ "Elemento angular inicial Flip Y (Y-axis rotation min - -360&#176; max "
+#~ "360&#176;)"
+
+#~ msgid "Pivot"
+#~ msgstr "Pivote"
+
+#~ msgid "Element rotation point."
+#~ msgstr "Punto de rotación del elemento."
+
+#~ msgid "Scale"
+#~ msgstr "Escala"
+
+#~ msgid "Element scale value (min - 0; max 10;)"
+#~ msgstr "Valor de escala del elemento (min - 0; max 10;)"
+
+#~ msgid "Opacity"
+#~ msgstr "Opacidad"
+
+#~ msgid "Element opacity value (min - 0; max 1;)"
+#~ msgstr "Valor de opacidad Elemento (min - 0; max 1;)"
+
+#~ msgid "Ease None"
+#~ msgstr "Ease None"
+
+#~ msgid "Ease In Cubic"
+#~ msgstr "Ease In Cubic"
+
+#~ msgid "Ease Out Cubic"
+#~ msgstr "Ease Out Cubic"
+
+#~ msgid "Ease In Out Cubic"
+#~ msgstr "Ease In Out Cubic"
+
+#~ msgid "Ease In Quart"
+#~ msgstr "Ease In Quart"
+
+#~ msgid "Ease Out Quart"
+#~ msgstr "Ease Out Quart"
+
+#~ msgid "Ease In Out Quart"
+#~ msgstr "Ease In Out Quart"
+
+#~ msgid "Ease In Expo"
+#~ msgstr "Ease In Expo"
+
+#~ msgid "Ease Out Expo"
+#~ msgstr "Ease Out Expo"
+
+#~ msgid "Ease In Out Expo"
+#~ msgstr "Ease In Out Expo"
+
+#~ msgid "Ease In Back"
+#~ msgstr "Ease In Back"
+
+#~ msgid "Ease Out Back"
+#~ msgstr "Ease Out Back"
+
+#~ msgid "Ease In Out Back"
+#~ msgstr "Ease In Out Back"
+
+#~ msgid "Easing"
+#~ msgstr "Ease In Out Back"
+
+#~ msgid "Animation easing."
+#~ msgstr "Animation easing."
+
+#~ msgid "Animation Speed"
+#~ msgstr "Velocidad de Animación"
+
+#~ msgid "Animation speed in seconds.(Example: 0.2 or 1)"
+#~ msgstr "Velocidad de Animación en segundos. (Por ejemplo: 0.2 or 1)"
+
+#~ msgid "Animation Delay"
+#~ msgstr "Retraso de Animación"
+
+#~ msgid "Animation Delay in seconds"
+#~ msgstr "Retraso de Animación en segundos"
+
+#~ msgid "Element custom class"
+#~ msgstr "Clase personalizada del elemento"
+
+#~ msgid "This shortcode adds show animations on any page element."
+#~ msgstr ""
+#~ "Este shortcode se agrega para mostrar animaciones en cualquier elemento "
+#~ "de la página."
+
+#~ msgid "Video Preview"
+#~ msgstr "Ver el vídeo"
+
+#~ msgid "Hide control buttons"
+#~ msgstr "Ocultar botones de control"
+
+#~ msgid "Show control buttons"
+#~ msgstr "Mostrar botones de control"
+
+#~ msgid "Show control button on mouse hover"
+#~ msgstr "Mostrar botones de control con el cursor del ratón"
+
+#~ msgid "Video Autoplay"
+#~ msgstr "Reproducción automática de vídeo "
+
+#~ msgid "Play video on mouse hover"
+#~ msgstr "Reproducción del video al pasar el ratón"
+
+#~ msgid "Element custom class. You can use \"full-width\" class for video"
+#~ msgstr ""
+#~ "Clase de elemento personalizado. Puede utilizar la clase \"full-width\" "
+#~ "para el vídeo"
+
+#~ msgid "Image"
+#~ msgstr "Imagen"
+
+#~ msgid "Banner image URL"
+#~ msgstr "URL de la imagen del Banner"
+
+#~ msgid "Banner title"
+#~ msgstr "Título del Banner"
+
+#~ msgid "Banner default text color"
+#~ msgstr "Color de texto del banner por defecto"
+
+#~ msgid "Banner content"
+#~ msgstr "Contenido del banner"
+
+#~ msgid "Custom CSS class"
+#~ msgstr "Clase CSS personalizada"
+
+#~ msgid "Select a page:"
+#~ msgstr "Seleccione la página:"
+
+#~ msgid "Landing page"
+#~ msgstr "Landing page"
+
+#~ msgid "Please select landing page. (Page with anchor navigation menu.)"
+#~ msgstr ""
+#~ "Por favor, seleccione la página de destino. (Página con menú de "
+#~ "navegación del ancla.)"
+
+#~ msgid "Media manager"
+#~ msgstr "Media manager"
+
+#~ msgid "Icon picker"
+#~ msgstr "Icono de selector"
+
+#~ msgid "Filter icons"
+#~ msgstr "Filtrar los iconos"
+
+#~ msgid "Please wait"
+#~ msgstr "Espere por favor"
+
+#~ msgid "Untitled gallery"
+#~ msgstr "Galería sin título"
+
+#~ msgid "Galleries not found"
+#~ msgstr "Galerías no encontradas"
+
+#~ msgid "Manage galleries"
+#~ msgstr "Administrar galerías"
+
+#~ msgid "Reload galleries"
+#~ msgstr "Actualizar galerías"
+
+#~ msgid "Horizontal offset"
+#~ msgstr "Desplazamiento horizontal"
+
+#~ msgid "Vertical offset"
+#~ msgstr "Desplazamiento vertical"
+
+#~ msgid "Blur"
+#~ msgstr "Desenfoque"
+
+#~ msgid "Color"
+#~ msgstr "Color"
+
+#~ msgid "Border width"
+#~ msgstr "Ancho del borde"
+
+#~ msgid "Border style"
+#~ msgstr "Estilo del borde"
+
+#~ msgid "Border color"
+#~ msgstr "Color del borde"
+
+#~ msgid "Media library"
+#~ msgstr "Mediateca"
+
+#~ msgid "Recent posts"
+#~ msgstr "Artículos recientes"
+
+#~ msgid "Category"
+#~ msgstr "Categoría"
+
+#~ msgid "Select images source"
+#~ msgstr "Seleccione la fuente de las imágenes"
+
+#~ msgid "Select taxonomy"
+#~ msgstr "Seleccione la taxonomía"
+
+#~ msgid "Add images"
+#~ msgstr "Añadir imágenes"
+
+#~ msgid ""
+#~ "Click the button above and select images.<br>You can select multimple "
+#~ "images with Ctrl (Cmd) key"
+#~ msgstr ""
+#~ "Haga clic en el botón de arriba y elija las imágenes. <br> Puede "
+#~ "seleccionar varias imágenes utilizando la tecla Ctrl (Cmd)"
+
+#~ msgid ""
+#~ "Select categories to retrieve posts from.<br>You can select multiple "
+#~ "categories with Ctrl (Cmd) key"
+#~ msgstr ""
+#~ "Seleccione las categorías de datos para mostrar. Puede seleccionar varias "
+#~ "categorías utilizando la tecla Ctrl (Cmd)"
+
+#~ msgid ""
+#~ "Select taxonomy and it's terms.<br>You can select multiple terms with "
+#~ "Ctrl (Cmd) key"
+#~ msgstr ""
+#~ "Seleccione la taxonomía y sus términos.<br>Usted puede seleccionar varios "
+#~ "términos utilizando la tecla Ctrl (Cmd)"
+
+#~ msgid "Extra small devices (Phones)"
+#~ msgstr "Dispositivos muy pequeños (Móviles)"
+
+#~ msgid "Small devices (Tablets)"
+#~ msgstr "Dispositivos pequeños (Tablets)"
+
+#~ msgid "Medium devices (Desktops)"
+#~ msgstr "Dispositivos medios (Ordenadores)"
+
+#~ msgid "Large devices (Desktops)"
+#~ msgstr "Dispositivos grandes (Ordenadores)"
+
+#~ msgid "Insert shortcode"
+#~ msgstr "Insertar el shortcode"
+
+#~ msgid "Search for shortcodes"
+#~ msgstr "Buscador para  shortcodes"
+
+#~ msgid "Filter by type"
+#~ msgstr "Filtrar por tipo"
+
+#~ msgid "Shortcode not specified"
+#~ msgstr "Código corto no especificado"
+
+#~ msgid "Live preview"
+#~ msgstr "Vista previa en vivo"
+
+#~ msgid "Click to return to the shortcodes list"
+#~ msgstr "Haga clic para volver a la lista de shortcodes"
+
+#~ msgid "All shortcodes"
+#~ msgstr "Todos los shortcodes"
+
+#~ msgid "Examples of use"
+#~ msgstr "Ejemplos de uso"
+
+#~ msgid "Click to set this value"
+#~ msgstr "Haga clic para establecer este valor"
+
+#~ msgid "Preview"
+#~ msgstr "Vista previa"
+
+#~ msgid "Access denied"
+#~ msgstr "Acceso denegado"
+
+#~ msgid "Presets"
+#~ msgstr "Presets"
+
+#~ msgid "Save current settings as preset"
+#~ msgstr "Guardar configuración actual como preset"
+
+#~ msgid "Presets not found"
+#~ msgstr "Presets no se encontraron"
+
+#~ msgid "Template file (*.tmpl) not found"
+#~ msgstr "Archivo de la plantilla (*.tmpl) que no se ha encontrado"
+
+#~ msgid "Posts not found"
+#~ msgstr "Artículos no se han encontrado"
+
+#~ msgid "Tab title"
+#~ msgstr "Título del botón"
+
+#~ msgid "Plugin Settings"
+#~ msgstr "Ajustes del plugin"
+
+#~ msgid "Use selected file"
+#~ msgstr "Usar el archivo seleccionado"
+
+#~ msgid "Save changes"
+#~ msgstr "Guardar cambios"
+
+#~ msgid "Saving"
+#~ msgstr "Se está guardando"
+
+#~ msgid "Saved"
+#~ msgstr "Guardado"
+
+#~ msgid ""
+#~ "This action will delete all your settings. Are you sure? This action "
+#~ "cannot be undone!"
+#~ msgstr ""
+#~ "Esta acción eliminará todos los ajustes. ¿Está seguro? ¡Esta acción no se "
+#~ "puede deshacer!"
+
+#~ msgid "Restore default settings"
+#~ msgstr "Restaurar la configuración predeterminada"
+
+#~ msgid "Text field"
+#~ msgstr "Campo de texto"
+
+#~ msgid "Textarea field"
+#~ msgstr "Campo de texto (zona)"
+
+#~ msgid "Checkbox"
+#~ msgstr "Casilla de verificación"
+
+#~ msgid "Label"
+#~ msgstr "Label"
+
+#~ msgid "Color picker"
+#~ msgstr "Selector de color."
+
+#~ msgid "Pick a color"
+#~ msgstr "Elija un color"
+
+#~ msgid ""
+#~ "For full functionality of this page it is reccomended to enable "
+#~ "javascript."
+#~ msgstr ""
+#~ "Para obtener funcionalidad completa de esta página está recomendado "
+#~ "activar javascript."
+
+#~ msgid "Settings saved successfully"
+#~ msgstr "Ajustes han sido guardados correctamente"
+
+#~ msgid "Settings reseted successfully"
+#~ msgstr "Ajustes han sido reseteados con éxito "
+
+#~ msgid "option type %s is not callable"
+#~ msgstr "option type %s is not callable"
+
+#~ msgid "Special widget with Cherry Shortcodes."
+#~ msgstr "Widget especial con Cherry Shortcodes."
+
+#~ msgid "Cherry Shortcodes"
+#~ msgstr "Cherry Shortcodes"
+
+#~ msgid "Title:"
+#~ msgstr "Título:"
+
+#~ msgid "Upload banner image"
+#~ msgstr "Suba la imagen del banner"
+
+#~ msgid "Choose to display a part or d content"
+#~ msgstr "Elija si desea mostrar algún contenido o todo el contenido"
+
+#~ msgid "Upload marker source"
+#~ msgstr "Cargar imagen del marcador"
+
+#~ msgid "Custom class"
+#~ msgstr "Clase de personalización"
+
+#~ msgid "URL or File."
+#~ msgstr "URL del Archivo."
+
+#~ msgid ""
+#~ "To use video from YouTube or Vimeo input video URL. You can also upload "
+#~ "video file from media library."
+#~ msgstr ""
+#~ "Para utilizar el vídeo de YouTube o Vimeo favor escriba la URL del video. "
+#~ "También puede cargar archivos de vídeo de la biblioteca multimedia."
+
+#~ msgid "Poster."
+#~ msgstr "Cartel."
+
+#~ msgid "Poster image url."
+#~ msgstr "URL de la imagen del cartel."
+
+#~ msgid "Controls."
+#~ msgstr "Controles."
+
+#~ msgid "Show content on mouse hover."
+#~ msgstr "Mostrar el video al pasar el ratón."
+
+#~ msgid "Muted."
+#~ msgstr "Silenciado."
+
+#~ msgid "Loop."
+#~ msgstr "Loop."
+
+#~ msgid "Preload."
+#~ msgstr "Precarga."
+
+#~ msgid "Posted on"
+#~ msgstr "Publicado en "
+
+#~ msgid "by"
+#~ msgstr "por"
