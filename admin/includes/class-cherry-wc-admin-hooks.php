@@ -49,7 +49,7 @@ if ( ! class_exists( 'Cherry_WC_Admin_Hooks' ) ) {
 		 * Change Cherry documentation link attributes for WooCommerce templates
 		 *
 		 * @since  1.0.0
-		 * @param  array  $link_attr  default link attributes array
+		 * @param  array $link_attr default link attributes array.
 		 * @return array
 		 */
 		function change_documentation_link( $link_attr ) {
