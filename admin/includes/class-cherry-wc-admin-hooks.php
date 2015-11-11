@@ -32,10 +32,32 @@ if ( ! class_exists( 'Cherry_WC_Admin_Hooks' ) ) {
 		 */
 		function __construct() {
 
+			// Import-exposrt hooks
 			add_filter( 'cherry_dm_export_database_tables', array( $this, 'export_termmmeta' ) );
 			add_filter( 'cherry_data_manager_export_options', array( $this, 'shop_options_to_export' ) );
 			add_filter( 'cherry_data_manager_options_ids', array( $this, 'shop_options_ids' ) );
 
+			add_action( 'cherry_data_manager_update_featured_images', array( $this, 'update_term_thumb' ) );
+			add_action( 'cherry_data_manager_process_terms', array( $this, 'remap_term_id' ) );
+
+			// Admin UI hooks
+			add_filter( 'cherry_document_link_attr', array( $this, 'change_documentation_link' ), 10 );
+
+		}
+
+		/**
+		 * Change Cherry documentation link attributes for WooCommerce templates
+		 *
+		 * @since  1.0.0
+		 * @param  array  $link_attr  default link attributes array
+		 * @return array
+		 */
+		function change_documentation_link( $link_attr ) {
+
+			$link_attr['project']   = 'woocommerce';
+			$link_attr['text_link'] = __( 'WooCommerce documentation', 'cherry-woocommerce-package' );
+
+			return $link_attr;
 		}
 
 		/**
@@ -107,6 +129,99 @@ if ( ! class_exists( 'Cherry_WC_Admin_Hooks' ) ) {
 			$options[] = 'woocommerce_logout_endpoint';
 
 			return $options;
+
+		}
+
+		/**
+		 * Update term thumbnails ID.
+		 *
+		 * @since  1.0.0
+		 * @return void|bool false
+		 */
+		public function update_term_thumb() {
+
+			$terms = get_terms( 'product_cat', array( 'hide_empty' => false ) );
+
+			if ( empty( $terms ) ) {
+				return false;
+			}
+
+			global $wpdb;
+			$table = $wpdb->prefix . 'woocommerce_termmeta';
+
+			foreach ( $terms as $term ) {
+
+				$thumb = $wpdb->get_var( $wpdb->prepare(
+					"
+					SELECT meta_value
+					FROM $table
+					WHERE meta_key = %s AND woocommerce_term_id = %d
+					",
+					array( 'thumbnail_id', $term->term_id )
+				) );
+
+				if ( ! $thumb ) {
+					continue;
+				}
+
+				if ( ! isset( $_SESSION['processed_posts'][ $thumb ] ) ) {
+					continue;
+				}
+
+				$new_id = $_SESSION['processed_posts'][ $thumb ];
+
+				$wpdb->update(
+					$table,
+					array( 'meta_value' => $new_id ),
+					array( 'meta_key' => 'thumbnail_id', 'woocommerce_term_id' => $term->term_id ),
+					array( '%d' ),
+					array( '%s', '%d' )
+				);
+
+			}
+
+		}
+
+		/**
+		 * Remap term IDs in wp_woocommerce_termmeta
+		 *
+		 * @since  1.0.0
+		 * @return void|bool false
+		 */
+		public function remap_term_id() {
+
+			global $wpdb;
+
+			$table = $wpdb->prefix . 'woocommerce_termmeta';
+
+			$termmeta = $wpdb->get_results(
+				"
+				SELECT *
+				FROM $table
+				"
+			);
+
+			if ( empty( $termmeta ) ) {
+				return false;
+			}
+
+			foreach ( $termmeta as $row ) {
+
+				if ( ! array_key_exists( $row->woocommerce_term_id, $_SESSION['processed_terms'] ) ) {
+					continue;
+				}
+
+				$new_id = $_SESSION['processed_terms'][ $row->woocommerce_term_id ];
+
+				$wpdb->update(
+					$table,
+					array( 'woocommerce_term_id' => $new_id ),
+					array( 'meta_id' => $row->meta_id ),
+					array( '%d' ),
+					array( '%d' )
+				);
+
+			}
 
 		}
 
