@@ -1,0 +1,2107 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: cherry-shortcodes\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-11-10 16:54+0200\n"
+"PO-Revision-Date: 2015-11-10 16:54+0200\n"
+"Last-Translator: J.L.Dokter <jldokter@gmail.com>\n"
+"Language-Team: Cherry Team <support@cherryframework.com>\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Poedit 1.8.6\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: _e;__;_n:1,2;_n_noop:1,2;_x:1,2c;_nx:1,2,4c;"
+"_nx_noop:1,2,3c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;"
+"esc_html_x:1,2c\n"
+"X-Textdomain-Support: yes\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: init/statics/cherry-account-dropdown-static.php:40
+msgid "Shop Account Dropdown"
+msgstr ""
+
+#: init/statics/cherry-cart-dropdown-static.php:46
+msgid "Shop Cart Dropdown"
+msgstr ""
+
+#: modules/class-cherry-wc-account-dropdown.php:47
+#: modules/class-cherry-wc-account-dropdown.php:48
+#: public/includes/class-cherry-wc-options.php:99
+#: public/includes/class-cherry-wc-options.php:109
+msgid "My Account"
+msgstr ""
+
+#: modules/class-cherry-wc-account-dropdown.php:51
+#: public/includes/class-cherry-wc-options.php:140
+msgid "Log In/Register"
+msgstr ""
+
+#: modules/class-cherry-wc-account-dropdown.php:52
+#: public/includes/class-cherry-wc-options.php:150
+msgid "Logout"
+msgstr ""
+
+#: modules/class-cherry-wc-account-dropdown.php:146
+msgid "Orders"
+msgstr ""
+
+#: modules/class-cherry-wc-account-dropdown.php:153
+#: modules/class-cherry-wc-yith-addons.php:272
+msgid "Compare"
+msgstr ""
+
+#: modules/class-cherry-wc-account-dropdown.php:168
+msgid "Wishlist"
+msgstr ""
+
+#: modules/class-cherry-wc-cart-dropdown.php:44
+msgid "Shopping cart"
+msgstr ""
+
+#: modules/class-cherry-wc-product-sharing.php:47
+msgid "Share this"
+msgstr ""
+
+#: modules/class-cherry-wc-product-video-tab.php:85
+msgid "Video"
+msgstr ""
+
+#: modules/class-cherry-wc-product-video-tab.php:140
+msgid "Product video"
+msgstr ""
+
+#: modules/class-cherry-wc-product-video-tab.php:168
+msgid "YouTube video link"
+msgstr ""
+
+#: modules/class-cherry-wc-product-video-tab.php:170
+msgid "Paste YouTube video URL"
+msgstr ""
+
+#: modules/class-cherry-wc-quick-view.php:141
+msgid "Quick view"
+msgstr ""
+
+#: public/includes/class-cherry-wc-assets.php:132
+msgid "Loading..."
+msgstr ""
+
+#: public/includes/class-cherry-wc-frontend-hooks.php:154
+msgid "Shop Sidebar"
+msgstr ""
+
+#: public/includes/class-cherry-wc-frontend-hooks.php:155
+msgid "Main Shop Sidebar"
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:53
+msgid "Select menu"
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:63
+msgid "Products per page"
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:65
+msgid "Set a number of products per shop page."
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:73
+msgid "Products per category page"
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:75
+msgid "Set a number of products per category page."
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:83
+msgid "Show account dropdown"
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:87
+msgid "Show/hide account dropdown static content"
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:93
+msgid "Guests account menu label"
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:97
+msgid "Set label for account drop down for not logged in users"
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:103
+msgid "Members account menu label"
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:107
+msgid "Set label for account drop down for logged in users"
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:113
+msgid "Menu to show in account dropdown"
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:117
+msgid "Select navigation menu to show it in account dropdown"
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:124
+msgid "Login/out links in account menu"
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:128
+msgid "Show/hide authentication links in account dropdown"
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:134
+msgid "Log in link label"
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:138
+msgid "Set label for log in/register link in account drop down"
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:144
+msgid "Logout link label"
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:148
+msgid "Set label for log out link in account drop down"
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:157
+msgid "Main shop page layout"
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:160
+#: public/includes/class-cherry-wc-options.php:196
+#: public/includes/class-cherry-wc-options.php:232
+msgid ""
+"You can choose if you want to display sidebars and how you want to display "
+"them."
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:166
+#: public/includes/class-cherry-wc-options.php:202
+#: public/includes/class-cherry-wc-options.php:238
+msgid "Left sidebar"
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:170
+#: public/includes/class-cherry-wc-options.php:206
+#: public/includes/class-cherry-wc-options.php:242
+msgid "Right sidebar"
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:174
+#: public/includes/class-cherry-wc-options.php:210
+#: public/includes/class-cherry-wc-options.php:246
+msgid "Left and right sidebar"
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:178
+#: public/includes/class-cherry-wc-options.php:214
+#: public/includes/class-cherry-wc-options.php:250
+msgid "Two sidebars on the left"
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:182
+#: public/includes/class-cherry-wc-options.php:218
+#: public/includes/class-cherry-wc-options.php:254
+msgid "Two sidebars on the right"
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:186
+#: public/includes/class-cherry-wc-options.php:222
+#: public/includes/class-cherry-wc-options.php:258
+msgid "No sidebar"
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:193
+msgid "Product categories and tags layout"
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:229
+msgid "Single page layout"
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:266
+msgid "Shop"
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:273
+msgid "Layout"
+msgstr ""
+
+#: public/includes/class-cherry-wc-shortcodes.php:77
+msgid "Shop Categories"
+msgstr ""
+
+#: public/includes/class-cherry-wc-shortcodes.php:84
+msgid "Show only parent"
+msgstr ""
+
+#: public/includes/class-cherry-wc-shortcodes.php:85
+#: public/includes/class-cherry-wc-shortcodes.php:132
+msgid "Show only 1st level categories"
+msgstr ""
+
+#: public/includes/class-cherry-wc-shortcodes.php:93
+msgid "Categories number"
+msgstr ""
+
+#: public/includes/class-cherry-wc-shortcodes.php:94
+msgid "Specify number of categories that you want to show. Enter -1 to get all"
+msgstr ""
+
+#: public/includes/class-cherry-wc-shortcodes.php:99
+msgid "None"
+msgstr "Жодного"
+
+#: public/includes/class-cherry-wc-shortcodes.php:100
+msgid "Category ID"
+msgstr ""
+
+#: public/includes/class-cherry-wc-shortcodes.php:101
+#: public/includes/class-cherry-wc-shortcodes.php:211
+msgid "Products count"
+msgstr ""
+
+#: public/includes/class-cherry-wc-shortcodes.php:102
+msgid "Category name"
+msgstr ""
+
+#: public/includes/class-cherry-wc-shortcodes.php:103
+msgid "Category slug"
+msgstr ""
+
+#: public/includes/class-cherry-wc-shortcodes.php:106
+msgid "Order by"
+msgstr "Упорядкувати за"
+
+#: public/includes/class-cherry-wc-shortcodes.php:107
+msgid "Order categories by"
+msgstr ""
+
+#: public/includes/class-cherry-wc-shortcodes.php:112
+msgid "Descending"
+msgstr "Спадний"
+
+#: public/includes/class-cherry-wc-shortcodes.php:113
+msgid "Ascending"
+msgstr "Висхідний"
+
+#: public/includes/class-cherry-wc-shortcodes.php:116
+msgid "Order"
+msgstr "Порядок"
+
+#: public/includes/class-cherry-wc-shortcodes.php:117
+msgid "Categories order"
+msgstr ""
+
+#: public/includes/class-cherry-wc-shortcodes.php:125
+msgid "Columns number"
+msgstr ""
+
+#: public/includes/class-cherry-wc-shortcodes.php:126
+msgid "Specify number of columns to show"
+msgstr ""
+
+#: public/includes/class-cherry-wc-shortcodes.php:131
+msgid "Hide empty categories"
+msgstr ""
+
+#: public/includes/class-cherry-wc-shortcodes.php:136
+msgid "Categories from"
+msgstr ""
+
+#: public/includes/class-cherry-wc-shortcodes.php:137
+msgid "Show direct children of selected category post (enter category ID)"
+msgstr ""
+
+#: public/includes/class-cherry-wc-shortcodes.php:141
+msgid "Categories ID's"
+msgstr ""
+
+#: public/includes/class-cherry-wc-shortcodes.php:142
+msgid "Enter comma separated ID's of the categories that you want to show"
+msgstr ""
+
+#: public/includes/class-cherry-wc-shortcodes.php:150
+msgid "Template"
+msgstr "Шаблон"
+
+#: public/includes/class-cherry-wc-shortcodes.php:151
+msgid "Shortcode template"
+msgstr "Шаблон шорткоду"
+
+#: public/includes/class-cherry-wc-shortcodes.php:154
+msgid "Show product categories list"
+msgstr ""
+
+#: public/includes/class-cherry-wc-shortcodes.php:193
+msgid "Featured image"
+msgstr ""
+
+#: public/includes/class-cherry-wc-shortcodes.php:199
+msgid "Name"
+msgstr ""
+
+#: public/includes/class-cherry-wc-shortcodes.php:205
+msgid "Description"
+msgstr "Опис"
+
+#: public/includes/class-cherry-wc-shortcodes.php:217
+msgid "Category permalink"
+msgstr ""
+
+#: public/includes/class-cherry-wc-templater.php:88
+msgid "Template file not found"
+msgstr ""
+
+#: templates/cart/cart-content.php:40
+msgid "Remove this item"
+msgstr ""
+
+#: templates/cart/cart-content.php:69
+msgid "No products in the cart."
+msgstr ""
+
+#: templates/cart/cart-content.php:77
+msgid "Subtotal"
+msgstr ""
+
+#: templates/cart/cart-content.php:82
+msgid "View Cart"
+msgstr ""
+
+#: templates/cart/cart-content.php:83
+msgid "Checkout"
+msgstr ""
+
+#: templates/product-gallery/image.php:66 templates/quick-view/image.php:33
+msgid "Placeholder"
+msgstr ""
+
+#: templates/quick-view/rating.php:28
+#, php-format
+msgid "Rated %s out of 5"
+msgstr ""
+
+#: templates/quick-view/rating.php:30
+#, php-format
+msgid "out of %s5%s"
+msgstr ""
+
+#: templates/quick-view/rating.php:31
+#, php-format
+msgid "based on %s customer rating"
+msgid_plural "based on %s customer ratings"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: templates/quick-view/read-more.php:22
+msgid "Read More"
+msgstr "Детальніше"
+
+#~ msgid "Choose file"
+#~ msgstr "Оберіть файл"
+
+#~ msgid "Insert"
+#~ msgstr "Вставити"
+
+#~ msgid "Select images"
+#~ msgstr "Виберіть зображення"
+
+#~ msgid "Add selected images"
+#~ msgstr "Додати вибрані зображення"
+
+#~ msgid "Please enter a name for new preset"
+#~ msgstr "Будь ласка, введіть назву нового шаблону"
+
+#~ msgid "New preset"
+#~ msgstr "Новий шаблон"
+
+#~ msgid "Last used settings"
+#~ msgstr "Останні використовувані налаштування"
+
+#~ msgid "All"
+#~ msgstr "Всі"
+
+#~ msgid "Grid"
+#~ msgstr "Сітка"
+
+#~ msgid "Typography"
+#~ msgstr "Оформлення"
+
+#~ msgid "Content"
+#~ msgstr "Вміст"
+
+#~ msgid "Media"
+#~ msgstr "Медіа"
+
+#~ msgid "Components"
+#~ msgstr "Компоненти"
+
+#~ msgid "Other"
+#~ msgstr "Інше"
+
+#~ msgid "Solid"
+#~ msgstr "Суцільний"
+
+#~ msgid "Dotted"
+#~ msgstr "Крапкований"
+
+#~ msgid "Dashed"
+#~ msgstr "Пунктир"
+
+#~ msgid "Double"
+#~ msgstr "Подвійний"
+
+#~ msgid "Groove"
+#~ msgstr "Радіальний"
+
+#~ msgid "Ridge"
+#~ msgstr "По краю"
+
+#~ msgid "Row"
+#~ msgstr "Ряд"
+
+#~ msgid "Fixed Width"
+#~ msgstr "Фіксована ширина"
+
+#~ msgid "Full Width"
+#~ msgstr "На всю ширину"
+
+#~ msgid "Type"
+#~ msgstr "Тип"
+
+#~ msgid "Type width"
+#~ msgstr "Тип ширини"
+
+#~ msgid "Class"
+#~ msgstr "Клас"
+
+#~ msgid "Extra CSS class"
+#~ msgstr "Користувацький клас CSS"
+
+#~ msgid "Anchor"
+#~ msgstr "Якір"
+
+#~ msgid "This option defines menu item marker."
+#~ msgstr "Цей параметр визначає позначку пункта меню."
+
+#~ msgid ""
+#~ "[%prefix_col size_md=\"4\"]Column content[/%prefix_col]\n"
+#~ "[%prefix_col size_md=\"4\"]Column content[/%prefix_col]\n"
+#~ "[%prefix_col size_md=\"4\"]Column content[/%prefix_col]"
+#~ msgstr ""
+#~ "[%prefix_col size_md=\"4\"]Вміст стовпця[/%prefix_col]\n"
+#~ "[%prefix_col size_md=\"4\"]Вміст стовпця[/%prefix_col]\n"
+#~ "[%prefix_col size_md=\"4\"]Вміст стовпця[/%prefix_col]"
+
+#~ msgid "Row for flexible columns"
+#~ msgstr "Ряд стовпців змінної ширини"
+
+#~ msgid "Row Inner"
+#~ msgstr "Внутрішній ряд"
+
+#~ msgid ""
+#~ "[%prefix_col_inner size_md=\"4\"]Column content[/%prefix_col_inner]\n"
+#~ "[%prefix_col_inner size_md=\"4\"]Column content[/%prefix_col_inner]\n"
+#~ "[%prefix_col_inner size_md=\"4\"]Column content[/%prefix_col_inner]"
+#~ msgstr ""
+#~ "[%prefix_col_inner size_md=\"4\"]Вміст стовпця[/%prefix_col_inner]\n"
+#~ "[%prefix_col_inner size_md=\"4\"]Вміст стовпця[/%prefix_col_inner]\n"
+#~ "[%prefix_col_inner size_md=\"4\"]Вміст стовпця[/%prefix_col_inner]"
+
+#~ msgid "Column"
+#~ msgstr "Стовпець"
+
+#~ msgid "Size"
+#~ msgstr "Розмір"
+
+#~ msgid "Select column width."
+#~ msgstr "Оберіть ширину стовпця"
+
+#~ msgid "Offset"
+#~ msgstr "Зміщення"
+
+#~ msgid "Select column offset."
+#~ msgstr "Оберіть зміщення стовпця"
+
+#~ msgid "Pull"
+#~ msgstr "Відступ зліва"
+
+#~ msgid "Select column pull."
+#~ msgstr "Оберіть відступ до стовпця зліва"
+
+#~ msgid "Push"
+#~ msgstr "Відступ справа"
+
+#~ msgid "Select column push."
+#~ msgstr "Оберіть відступ до стовпця справа"
+
+#~ msgid "No"
+#~ msgstr "Ні"
+
+#~ msgid "Yes"
+#~ msgstr "Так"
+
+#~ msgid "Collapse column paddings"
+#~ msgstr "Об'єднати внутрішні відступи стовпців"
+
+#~ msgid "Column content"
+#~ msgstr "Вміст стовпця"
+
+#~ msgid "Flexible and responsive columns"
+#~ msgstr "Стовпці змінної ширини"
+
+#~ msgid "Column Inner"
+#~ msgstr "Внутрішня область стовпця"
+
+#~ msgid "Spacer"
+#~ msgstr "Пропуск"
+
+#~ msgid "Spacer height"
+#~ msgstr "Висота пропуску"
+
+#~ msgid "Vertical spacer between blocks"
+#~ msgstr "Вертикальний відступ між блоками"
+
+#~ msgid "Clear"
+#~ msgstr "Порожній ряд"
+
+#~ msgid "Clearing block"
+#~ msgstr "Порожній блок"
+
+#~ msgid "Icon"
+#~ msgstr "Іконка"
+
+#~ msgid "You can upload custom icon for this button or pick a built-in icon"
+#~ msgstr ""
+#~ "Тут можна завантажити власну іконку для кнопки або вибрати одну з уже "
+#~ "доступних."
+
+#~ msgid "Icon size"
+#~ msgstr "Розмір іконки"
+
+#~ msgid "Font size in px (only for font icons)"
+#~ msgstr "Розмір шрифту в пікселях (лише для шрифтових іконок)"
+
+#~ msgid "Icon Color"
+#~ msgstr "Колір іконки"
+
+#~ msgid "Font icon color"
+#~ msgstr "Колір шрифтової іконки"
+
+#~ msgid "Insert custom icon"
+#~ msgstr "Вставити власну іконку"
+
+#~ msgid "Box"
+#~ msgstr "Контейнер"
+
+#~ msgid "Primary"
+#~ msgstr "Головний"
+
+#~ msgid "Secondary"
+#~ msgstr "Другорядний"
+
+#~ msgid "Gray"
+#~ msgstr "Сірий"
+
+#~ msgid "Primary border"
+#~ msgstr "Головна межа"
+
+#~ msgid "Secondary border"
+#~ msgstr "Другорядна межа"
+
+#~ msgid "Gray border"
+#~ msgstr "Сіра межа"
+
+#~ msgid "Box styling preset"
+#~ msgstr "Шаблон оформлення контейнера"
+
+#~ msgid "Select box styling preset"
+#~ msgstr "Оберіть шаблон оформлення контейнера"
+
+#~ msgid "Background Color"
+#~ msgstr "Колір тла"
+
+#~ msgid "Select box background color"
+#~ msgstr "Оберіть колір тла контейнера"
+
+#~ msgid "Background Image"
+#~ msgstr "Зображення тла"
+
+#~ msgid "Upload box background image"
+#~ msgstr "Оберіть зображення тла контейнера"
+
+#~ msgid "Top Left"
+#~ msgstr "Угорі зліва"
+
+#~ msgid "Top Center"
+#~ msgstr "Угорі посередині"
+
+#~ msgid "Top Right"
+#~ msgstr "Угорі справа"
+
+#~ msgid "Middle Left"
+#~ msgstr "Посередині зліва"
+
+#~ msgid "Middle Center"
+#~ msgstr "Посередині"
+
+#~ msgid "Middle Right"
+#~ msgstr "Посередині справа"
+
+#~ msgid "Bottom Left"
+#~ msgstr "Внизу зліва"
+
+#~ msgid "Bottom Center"
+#~ msgstr "Внизу посередині"
+
+#~ msgid "Bottom Right"
+#~ msgstr "Внизу справа"
+
+#~ msgid "Background image position"
+#~ msgstr "Розташування фонового зображення"
+
+#~ msgid "Select background image position"
+#~ msgstr "Виберіть розташування фонового зображення"
+
+#~ msgid "No Repeat"
+#~ msgstr "Не повторювати"
+
+#~ msgid "Repeat All"
+#~ msgstr "Повторювати усе"
+
+#~ msgid "Repeat Horizontally"
+#~ msgstr "Повторювати горизонтально"
+
+#~ msgid "Repeat Vertically"
+#~ msgstr "Повторювати вертикально"
+
+#~ msgid "Background image repeat"
+#~ msgstr "Повторення фонового зображення"
+
+#~ msgid "Select background image repeat"
+#~ msgstr "Виберіть повторення фонового зображення"
+
+#~ msgid "Scroll normally"
+#~ msgstr "Звичайне прокручування"
+
+#~ msgid "Fixed in place"
+#~ msgstr "Закріплено у позиції"
+
+#~ msgid "Background image attachment"
+#~ msgstr "Закріплення фонового зображення"
+
+#~ msgid "Select background image attachment"
+#~ msgstr "Виберіть закріплення фонового зображення"
+
+#~ msgid "Fill"
+#~ msgstr "Заповнювати"
+
+#~ msgid "Fill a parent container?"
+#~ msgstr "Заповнювати батьківський контейнер?"
+
+#~ msgid "Your content goes here"
+#~ msgstr "Тут буде відображатися ваш текст"
+
+#~ msgid "Box Inner"
+#~ msgstr "Внутрішня область"
+
+#~ msgid "No preset"
+#~ msgstr "Немає шаблону"
+
+#~ msgid "Banner"
+#~ msgstr "Банер"
+
+#~ msgid "Banner Image"
+#~ msgstr "Зображення банера"
+
+#~ msgid "Banner Title"
+#~ msgstr "Заголовок банера"
+
+#~ msgid "Enter banner title"
+#~ msgstr "Введіть заголовок банера"
+
+#~ msgid "Banner URL"
+#~ msgstr "URL банера"
+
+#~ msgid "Banner link URL"
+#~ msgstr "URL посилання банера"
+
+#~ msgid "Text color"
+#~ msgstr "Колір тексту"
+
+#~ msgid "Banner text color"
+#~ msgstr "Колір тексту банера"
+
+#~ msgid "Background color"
+#~ msgstr "Колір тла"
+
+#~ msgid "Banner background color"
+#~ msgstr "Колір тла банера"
+
+#~ msgid "Banner content goes here"
+#~ msgstr "Тут буде відображатися текст банера"
+
+#~ msgid "Horizontal Rule"
+#~ msgstr "Горизонтальна лінія"
+
+#~ msgid "Line height"
+#~ msgstr "Висота рядка"
+
+#~ msgid "Horizontal rule height"
+#~ msgstr "Висота горизонтальної лінії"
+
+#~ msgid "Line color"
+#~ msgstr "Колір лінії"
+
+#~ msgid "Horizontal rule color"
+#~ msgstr "Колір горизонтальної лінії"
+
+#~ msgid "Indent before"
+#~ msgstr "Відступ перед"
+
+#~ msgid "Indent before horizontal rule"
+#~ msgstr "Відступ перед горизонтальною лінією"
+
+#~ msgid "Indent after"
+#~ msgstr "Відступ після"
+
+#~ msgid "Indent after horizontal rule"
+#~ msgstr "Відступ після горизонтальної лінії"
+
+#~ msgid "Title Box"
+#~ msgstr "Заголовок коробки"
+
+#~ msgid "Title"
+#~ msgstr "Заголовок"
+
+#~ msgid "Title text"
+#~ msgstr "Текст заголовка"
+
+#~ msgid "Subtitle"
+#~ msgstr "Підзаголовок"
+
+#~ msgid "Subtitle text"
+#~ msgstr "Текст підзаголовка"
+
+#~ msgid "Title Color"
+#~ msgstr "Колір заголовка"
+
+#~ msgid "Title text color"
+#~ msgstr "Колір тексту заголовка"
+
+#~ msgid "Subtitle Color"
+#~ msgstr "Колір Підзаголовка"
+
+#~ msgid "Subtitle text color"
+#~ msgstr "Колір тексту підзаголовка"
+
+#~ msgid "Title box"
+#~ msgstr "Заголовок коробки"
+
+#~ msgid "Dropcap"
+#~ msgstr "Буквиця"
+
+#~ msgid "Text size"
+#~ msgstr "Розмір тексту"
+
+#~ msgid "Text size in px"
+#~ msgstr "Розмір тексту в пікселях"
+
+#~ msgid "Canvas size"
+#~ msgstr "Розмір полотна"
+
+#~ msgid "Canvas size in px"
+#~ msgstr "Розмір полотна у пікселях"
+
+#~ msgid "Text Color"
+#~ msgstr "Колір тексту"
+
+#~ msgid "Dropcap text color"
+#~ msgstr "Колір тексту буквиці"
+
+#~ msgid "Dropcap background color"
+#~ msgstr "Колір тла буквиці"
+
+#~ msgid "Left"
+#~ msgstr "Зліва"
+
+#~ msgid "Right"
+#~ msgstr "Справа"
+
+#~ msgid "Center"
+#~ msgstr "Посередині"
+
+#~ msgid "Align"
+#~ msgstr "Вирівнювання"
+
+#~ msgid "Dropcap alignment"
+#~ msgstr "Вирівнювання буквиці"
+
+#~ msgid "Border radius"
+#~ msgstr "Радіус кривини краю"
+
+#~ msgid "Border radius size in px"
+#~ msgstr "Радіус кривини краю в пікселях"
+
+#~ msgid "Border"
+#~ msgstr "Край"
+
+#~ msgid "Setup dropcap border"
+#~ msgstr "Встановіть край буквиці"
+
+#~ msgid "A"
+#~ msgstr "А"
+
+#~ msgid "Dropcap box"
+#~ msgstr "Область буквиці"
+
+#~ msgid "Button"
+#~ msgstr "Кнопка"
+
+#~ msgid "Read more"
+#~ msgstr "Детальніше"
+
+#~ msgid "Text"
+#~ msgstr "Текст"
+
+#~ msgid "Button text"
+#~ msgstr "Підпис кнопки"
+
+#~ msgid "Link"
+#~ msgstr "Посилання "
+
+#~ msgid "Button link"
+#~ msgstr "Посилання кнопки"
+
+#~ msgid "Primary-light"
+#~ msgstr "Основний світлий"
+
+#~ msgid "Default"
+#~ msgstr "За замовчуванням"
+
+#~ msgid "Success"
+#~ msgstr "Успіх"
+
+#~ msgid "Info"
+#~ msgstr "Інформація"
+
+#~ msgid "Warning"
+#~ msgstr "Застереження"
+
+#~ msgid "Danger"
+#~ msgstr "Небезпека"
+
+#~ msgid "Style"
+#~ msgstr "Стиль"
+
+#~ msgid "Button style preset"
+#~ msgstr "Шаблон стилю кнопки"
+
+#~ msgid "Extra Small"
+#~ msgstr "Дуже малий"
+
+#~ msgid "Small"
+#~ msgstr "Малий"
+
+#~ msgid "Medium"
+#~ msgstr "Середній"
+
+#~ msgid "Large"
+#~ msgstr "Великий"
+
+#~ msgid "Extra Large"
+#~ msgstr "Дуже великий"
+
+#~ msgid "Button size preset"
+#~ msgstr "Шаблон розміру кнопки"
+
+#~ msgid "Inline"
+#~ msgstr "В рядок"
+
+#~ msgid "Wide"
+#~ msgstr "Широкий"
+
+#~ msgid "Display"
+#~ msgstr "Відображати"
+
+#~ msgid "Button display type"
+#~ msgstr "Тип відображення кнопки"
+
+#~ msgid "Button border radius"
+#~ msgstr "Радіус кривини краю кнопки"
+
+#~ msgid "Centered"
+#~ msgstr "Відцентрований"
+
+#~ msgid "Is button centered on the page"
+#~ msgstr "Чи центрувати кнопку на сторінці"
+
+#~ msgid "Fluid"
+#~ msgstr "Рухомий"
+
+#~ msgid "Is button fluid"
+#~ msgstr "Визначає, чи кнопка рухома"
+
+#~ msgid "Fluid Position"
+#~ msgstr "Рухома позиція"
+
+#~ msgid "Button fluid position"
+#~ msgstr "Рухома позиція кнопки"
+
+#~ msgid "Top"
+#~ msgstr "Угорі"
+
+#~ msgid "Bottom"
+#~ msgstr "Внизу"
+
+#~ msgid "Icon Position"
+#~ msgstr "Розташування іконки"
+
+#~ msgid "Button icon position"
+#~ msgstr "Розташування іконки кнопки"
+
+#~ msgid "Small description under button text."
+#~ msgstr "Стислий опис під підписом кнопки"
+
+#~ msgid "Background"
+#~ msgstr "Тло"
+
+#~ msgid "Button background color"
+#~ msgstr "Колір тла кнопки"
+
+#~ msgid "Button text color"
+#~ msgstr "Колір тексту кнопки"
+
+#~ msgid "Min width"
+#~ msgstr "Мінімальна ширина"
+
+#~ msgid "Button minimal width"
+#~ msgstr "Найменша ширина кнопки"
+
+#~ msgid "Same tab"
+#~ msgstr "У тій же вкладці"
+
+#~ msgid "New tab"
+#~ msgstr "У новій вкладці"
+
+#~ msgid "Target"
+#~ msgstr "Призначення (target)"
+
+#~ msgid "Button link target"
+#~ msgstr "Призначення посилання кнопки"
+
+#~ msgid "Rel attribute"
+#~ msgstr "Атрибут rel"
+
+#~ msgid "Here you can add value for the rel attribute."
+#~ msgstr "Тут можна вказати значення атрибута rel."
+
+#~ msgid "Fade"
+#~ msgstr "Поступово виділяти"
+
+#~ msgid "Hover animation"
+#~ msgstr "Анімація при наведенні вказівника миші"
+
+#~ msgid "Button hover aniamtion type"
+#~ msgstr "Ефект анімації при наведенні вказівника миші"
+
+#~ msgid "Styled button"
+#~ msgstr "Стилізована кнопка"
+
+#~ msgid "List"
+#~ msgstr "Список"
+
+#~ msgid "List Item"
+#~ msgstr "Елемент списку"
+
+#~ msgid "Swiper carousel"
+#~ msgstr "Карусель Swiper"
+
+#~ msgid "Customizable post carousel"
+#~ msgstr "Карусель публікацій з користувацькими налаштуваннями"
+
+#~ msgid "Posts per page"
+#~ msgstr "Кількість публікацій на сторінці"
+
+#~ msgid ""
+#~ "Specify number of posts that you want to show. Enter -1 to get all posts"
+#~ msgstr ""
+#~ "Вкажіть кількість публікацій, що відображатиметься на сторінці. Для "
+#~ "відображення всіх публікацій використовуйте значення \"-1\""
+
+#~ msgid "Post types"
+#~ msgstr "Типи публікацій"
+
+#~ msgid "Select post types. Hold Ctrl key to select multiple post types"
+#~ msgstr ""
+#~ "Оберіть тип публікацій. Утримуйте натиснутою кнопку Ctrl для вибору "
+#~ "кількох типів водночас."
+
+#~ msgid "Taxonomy"
+#~ msgstr "Таксономія"
+
+#~ msgid "Select taxonomy to show posts from"
+#~ msgstr "Оберіть таксономію публікацій, що будуть відображатись"
+
+#~ msgid "Terms"
+#~ msgstr "Вимоги"
+
+#~ msgid "Select terms to show posts from"
+#~ msgstr "Виберіть вимоги, за виконання яких публікації відображатимуться."
+
+#~ msgid "Taxonomy term operator"
+#~ msgstr "Оператор вимог таксономії"
+
+#~ msgid ""
+#~ "IN - posts that have any of selected categories terms<br/>NOT IN - posts "
+#~ "that  do not have any of selected terms<br/>AND - posts that have all "
+#~ "selected terms"
+#~ msgstr ""
+#~ "IN - публікації, що відповідають будь-яким з обраних вимог щодо "
+#~ "категорії<br/>NOT IN - публікації, що не відповідають жодній з вказаних "
+#~ "вимог<br/> AND - публікації, що відповідають усім заданим вимогам"
+
+#~ msgid "Authors"
+#~ msgstr "Автори"
+
+#~ msgid "Enter here comma-separated list of author's IDs. Example: 1,7,18"
+#~ msgstr "Введіть список ID авторів, виділяючи їх комами. Приклад: 1,7,18."
+
+#~ msgid "Specify offset to start posts loop not from first post"
+#~ msgstr "Зазначте зміщення, коли публікації не відображаються від початку."
+
+#~ msgid "Posts order"
+#~ msgstr "Порядок публікацій"
+
+#~ msgid "Post ID"
+#~ msgstr "ID публікації"
+
+#~ msgid "Post author"
+#~ msgstr "Автор публікації"
+
+#~ msgid "Post title"
+#~ msgstr "Заголовок публікації"
+
+#~ msgid "Post slug"
+#~ msgstr "Скорочення (slug) публікації"
+
+#~ msgid "Date"
+#~ msgstr "Дата"
+
+#~ msgid "Last modified date"
+#~ msgstr "Дата внесення останніх змін"
+
+#~ msgid "Post parent"
+#~ msgstr "Батьківська публікація"
+
+#~ msgid "Random"
+#~ msgstr "Випадковий"
+
+#~ msgid "Comments number"
+#~ msgstr "Кількість коментарів"
+
+#~ msgid "Menu order"
+#~ msgstr "Порядок меню"
+
+#~ msgid "Order posts by"
+#~ msgstr "Упорядкувати публікації за"
+
+#~ msgid "Show children of entered post (enter post ID)"
+#~ msgstr ""
+#~ "Відображати дочірні елементи вибраної публікації (введіть ID публікації)"
+
+#~ msgid "Published"
+#~ msgstr "Опубліковано"
+
+#~ msgid "Pending"
+#~ msgstr "Очікує підтвердження"
+
+#~ msgid "Draft"
+#~ msgstr "Чернетка"
+
+#~ msgid "Auto-draft"
+#~ msgstr "Автоматично створена чернетка"
+
+#~ msgid "Future post"
+#~ msgstr "Відкладена публікація"
+
+#~ msgid "Private post"
+#~ msgstr "Приватна публікація"
+
+#~ msgid "Inherit"
+#~ msgstr "Успадковувати"
+
+#~ msgid "Trashed"
+#~ msgstr "Видалений"
+
+#~ msgid "Any"
+#~ msgstr "Будь-який"
+
+#~ msgid "Post status"
+#~ msgstr "Статус публікації"
+
+#~ msgid "Show only posts with selected status"
+#~ msgstr "Відображати публікації з визначеним статусом"
+
+#~ msgid "Ignore sticky"
+#~ msgstr "Ігнорувати закріплені"
+
+#~ msgid "Select Yes to ignore posts that are sticked"
+#~ msgstr "Виберіть \"Так\", щоб пропустити закріплені публікації"
+
+#~ msgid "Linked title"
+#~ msgstr "Заголовок-посилання"
+
+#~ msgid "Linked title description"
+#~ msgstr "Опис заголовку-посилання"
+
+#~ msgid "Linked featured image"
+#~ msgstr "Головне зображення з посиланням"
+
+#~ msgid "Linked featured image description"
+#~ msgstr "Опис головного зображення з посиланням"
+
+#~ msgid "Part of content"
+#~ msgstr "Частина вмісту"
+
+#~ msgid "Full content"
+#~ msgstr "Увесь вміст"
+
+#~ msgid "Post content"
+#~ msgstr "Вміст публікації"
+
+#~ msgid "Content Length"
+#~ msgstr "Довжина вмісту"
+
+#~ msgid "Insert the number of words you want to show in the post content."
+#~ msgstr ""
+#~ "Введіть максимальну кількість слів для вмісту публікації, що "
+#~ "відображатиметься."
+
+#~ msgid "read more"
+#~ msgstr "переглянути детальніше"
+
+#~ msgid "Button text description"
+#~ msgstr "Стислий опис підпису кнопки"
+
+#~ msgid "Using cropped image"
+#~ msgstr "Використовувати обрізані зображення"
+
+#~ msgid "Slider Loop Mode"
+#~ msgstr "Режим циклу слайдера"
+
+#~ msgid "Cropping image width"
+#~ msgstr "Ширина обрізаного зображення"
+
+#~ msgid "Width value(px)"
+#~ msgstr "Значення ширини (у пікселях)"
+
+#~ msgid "Cropping image height"
+#~ msgstr "Висота обрізаного зображення"
+
+#~ msgid "Height value(px)"
+#~ msgstr "Значення висоти (у пікселях)"
+
+#~ msgid "Number of slides per view"
+#~ msgstr "Кількість слайдів, що відображаються"
+
+#~ msgid "Specify number of slides per view"
+#~ msgstr "Вкажіть бажану кількість слайдів, що відображатимуться водночас."
+
+#~ msgid "Number slides per group"
+#~ msgstr "Кількість слайдів у групі"
+
+#~ msgid ""
+#~ "Set numbers of slides to define and enable group sliding. Useful to use "
+#~ "with slidesPerView > 1"
+#~ msgstr ""
+#~ "Вкажіть кількість слайдів, для яких визначатиметься і застосовуватиметься "
+#~ "групування. Стане у нагоді, якщо кількість водночас відображуваних "
+#~ "слайдів > 1"
+
+#~ msgid "Multi Row Slides Layout"
+#~ msgstr "Макет багаторядного слайдера"
+
+#~ msgid "Space Between Slides"
+#~ msgstr "Відступ між слайдами"
+
+#~ msgid "Width of the space between slides(px)"
+#~ msgstr "Ширина відступу між слайдами (у пікселях)"
+
+#~ msgid "Duration of transition"
+#~ msgstr "Тривалість переходу"
+
+#~ msgid "Duration of transition between slides (ms)"
+#~ msgstr "Тривалість переходу між слайдами (у мілісекундах)"
+
+#~ msgid "Slider Infinite Loop"
+#~ msgstr "Безперервний цикл слайдера"
+
+#~ msgid "Free Mode sliding"
+#~ msgstr "Довільний режим слайдера"
+
+#~ msgid "No fixed positions for slides"
+#~ msgstr "Не закріплювати позицію слайдів"
+
+#~ msgid "Grab Cursor"
+#~ msgstr "Захопити вказівник миші"
+
+#~ msgid "Using Grab Cursor for slider"
+#~ msgstr "Використовувати захоплення вказівника миші"
+
+#~ msgid "Mousewheel Control"
+#~ msgstr "Керування коліщатком миші"
+
+#~ msgid "Mousewheel control mode"
+#~ msgstr "Режим керування коліщатком миші"
+
+#~ msgid "Centered Slides"
+#~ msgstr "Відцентровані слайди"
+
+#~ msgid "Centered slides mode"
+#~ msgstr "Режим відцентрованих слайдів"
+
+#~ msgid "Slide"
+#~ msgstr "Гортання"
+
+#~ msgid "Cube"
+#~ msgstr "Куб"
+
+#~ msgid "Coverflow"
+#~ msgstr "Заповнювати і переходити"
+
+#~ msgid "Effect Layout"
+#~ msgstr "Макет ефекту"
+
+#~ msgid "Could be \"slide\", \"fade\", \"cube\" or \"coverflow\" effect"
+#~ msgstr ""
+#~ "Можна застосувати такі ефекти, як \"гортання\", \"куб\" або ж "
+#~ "\"заповнювати і переходити\""
+
+#~ msgid "Slider pagination"
+#~ msgstr "Нумерація слайдів"
+
+#~ msgid "Displaying slider pagination"
+#~ msgstr "Відображати нумерацію слайдів"
+
+#~ msgid "Slider navigation"
+#~ msgstr "Навігація між слайдами"
+
+#~ msgid "Displaying slider navigation"
+#~ msgstr "Відображати навігацію між слайдами"
+
+#~ msgid "Inner"
+#~ msgstr "Всередині"
+
+#~ msgid "Outer"
+#~ msgstr "Зовні"
+
+#~ msgid "Slider navigation position"
+#~ msgstr "Розташування навігації слайдера"
+
+#~ msgid "Choose slider navigation position"
+#~ msgstr "Оберіть розташування навігації слайдера"
+
+#~ msgid "Posts"
+#~ msgstr "Публікації "
+
+#~ msgid "Post ID's"
+#~ msgstr "ID публікацій"
+
+#~ msgid "Enter comma separated ID's of the posts that you want to show"
+#~ msgstr ""
+#~ "Введіть ID публікацій, що будуть відображатися, відділяючи їх комами"
+
+#~ msgid "Open featured image in a lightbox?"
+#~ msgstr "Відкривати головне зображення в лайтбоксі?"
+
+#~ msgid "Featured image size"
+#~ msgstr "Розміри Головного зображення"
+
+#~ msgid "Select size for a Featured image"
+#~ msgstr "Оберіть розміри головного зображення"
+
+#~ msgid "Column class"
+#~ msgstr "Клас стовпця"
+
+#~ msgid "Column class for each item."
+#~ msgstr "Клас стовпця кожного елемента"
+
+#~ msgid "Tabs"
+#~ msgstr "Вкладки"
+
+#~ msgid "Simple"
+#~ msgstr "Простий"
+
+#~ msgid "Choose style for these tabs"
+#~ msgstr "Оберіть стилі вкладок"
+
+#~ msgid "Active tab"
+#~ msgstr "Активна вкладка"
+
+#~ msgid "Select which tab is open by default"
+#~ msgstr "Виберіть, яка вкладка відкриватиметься за замовчуванням"
+
+#~ msgid "Vertical"
+#~ msgstr "Вертикально"
+
+#~ msgid "Show tabs vertically"
+#~ msgstr "Відображати вкладки вертикально"
+
+#~ msgid ""
+#~ "[%prefix_tab title=\"Title 1\"]Content 1[/%prefix_tab]\n"
+#~ "[%prefix_tab title=\"Title 2\"]Content 2[/%prefix_tab]\n"
+#~ "[%prefix_tab title=\"Title 3\"]Content 3[/%prefix_tab]"
+#~ msgstr ""
+#~ "[%prefix_tab title=\"Заголовок 1\"]Вміст 1[/%prefix_tab]\n"
+#~ "[%prefix_tab title=\"Заголовок 2\"]Вміст 2[/%prefix_tab]\n"
+#~ "[%prefix_tab title=\"Заголовок 3\"]Вміст 3[/%prefix_tab]"
+
+#~ msgid "Tabs container"
+#~ msgstr "Контейнер вкладок"
+
+#~ msgid "Tab"
+#~ msgstr "Вкладка"
+
+#~ msgid "Tab name"
+#~ msgstr "Назва вкладки"
+
+#~ msgid "Enter tab name"
+#~ msgstr "Вкажіть назву вкладки"
+
+#~ msgid "Disabled"
+#~ msgstr "Вимкнено"
+
+#~ msgid "Is this tab disabled"
+#~ msgstr "Цю вкладку висмнено"
+
+#~ msgid ""
+#~ "You can use unique anchor for this tab to access it with hash in page "
+#~ "url. For example: type here <b%value>Hello</b> and then use url like "
+#~ "http://example.com/page-url#Hello. This tab will be activated and "
+#~ "scrolled in"
+#~ msgstr ""
+#~ "Для надання безпосереднього доступу до цієї вкладки з допомогою # у "
+#~ "посиланні сторінки можна використати унікальний якір. Наприклад, напишіть "
+#~ "тут <b%value>Hello</b> , а потім перейдіть за посиланням виду http://"
+#~ "example.com/page-url#Hello. Сторінка прокрутиться донизу і автоматично "
+#~ "відкриється саме ця вкладка"
+
+#~ msgid "URL"
+#~ msgstr "Посилання "
+
+#~ msgid ""
+#~ "You can link this tab to any webpage. Enter here d URL to switch this tab "
+#~ "into link"
+#~ msgstr ""
+#~ "Для цієї вкладки можна вказати посилання будь-якої веб-сторінки. Вкажіть "
+#~ "тут d веб-адресу, щоб вкладка стала посиланням"
+
+#~ msgid "Open link in the same window/tab"
+#~ msgstr "Відкривати посилання у тому ж вікні/вкладці"
+
+#~ msgid "Open link in a new window/tab"
+#~ msgstr "Відкривати посилання в новому вікні/вкладці"
+
+#~ msgid "Link target"
+#~ msgstr "Призначення посилання"
+
+#~ msgid "Choose how to open the custom tab link"
+#~ msgstr "Виберіть, як саме відкриватиметься посилання вкладки"
+
+#~ msgid "Tab content"
+#~ msgstr "Вміст вкладки"
+
+#~ msgid "Single tab"
+#~ msgstr "Одна вкладка"
+
+#~ msgid "Spoiler"
+#~ msgstr "Прихований текст"
+
+#~ msgid "Spoiler title"
+#~ msgstr "Заголовок прихованого тексту"
+
+#~ msgid "Text in spoiler title"
+#~ msgstr "Заголовок прихованого тексту"
+
+#~ msgid "Open"
+#~ msgstr "Відкрити"
+
+#~ msgid "Is spoiler content visible by default"
+#~ msgstr "Відображати прихований текст за замовчуванням"
+
+#~ msgid "Choose style for this spoiler"
+#~ msgstr "Оберіть оформлення цього прихованого тексту"
+
+#~ msgid ""
+#~ "You can use unique anchor for this spoiler to access it with hash in page "
+#~ "url. For example: type here <b%value>Hello</b> and then use url like "
+#~ "http://example.com/page-url#Hello. This spoiler will be opened and "
+#~ "scrolled in"
+#~ msgstr ""
+#~ "Цьому прихованому тексту можна присвоїти унікальний якір, тоді до нього "
+#~ "можна буде повернутись, додавши № в адресу сайту. Наприклад, напишіть тут "
+#~ "<b%value>Hello</b> та відкрийте посилання типу http://example.com/page-"
+#~ "url#Hello. Сторінка прокрутиться до потрібного місця та відкриється саме "
+#~ "цей прихований текст."
+
+#~ msgid "Hidden content"
+#~ msgstr "Прихований вміст"
+
+#~ msgid "Spoiler with hidden content"
+#~ msgstr "Вміст прихованого тексту"
+
+#~ msgid "Accordion"
+#~ msgstr "Акордеон"
+
+#~ msgid ""
+#~ "[%prefix_spoiler title=\"Spoiler Title\"]Content[/%prefix_spoiler]\n"
+#~ "[%prefix_spoiler title=\"Spoiler Title\"]Content[/%prefix_spoiler]\n"
+#~ "[%prefix_spoiler title=\"Spoiler Title\"]Content[/%prefix_spoiler]"
+#~ msgstr ""
+#~ "[%prefix_spoiler title=\"Заголовок прихованого тексту\"]Вміст[/"
+#~ "%prefix_spoiler]\n"
+#~ "[%prefix_spoiler title=\"Заголовок прихованого тексту\"]Вміст[/"
+#~ "%prefix_spoiler]\n"
+#~ "[%prefix_spoiler title=\"Заголовок прихованого тексту\"]Вміст[/"
+#~ "%prefix_spoiler]"
+
+#~ msgid "Accordion with spoilers"
+#~ msgstr "Акордеон прихованих текстів"
+
+#~ msgid "Google map"
+#~ msgstr "Карта Google"
+
+#~ msgid "Address"
+#~ msgstr "Адреса"
+
+#~ msgid "The display options for the Pan control."
+#~ msgstr "Відображати параметри контролю переміщення."
+
+#~ msgid "Latitude  geographical coordinates"
+#~ msgstr "Широта географічних координат"
+
+#~ msgid ""
+#~ "Latitude ranges between -90 and 90 degrees, inclusive. Values above or "
+#~ "below this range will be clamped to the range [-90, 90]. This means that "
+#~ "if the value specified is less than -90, it will be set to -90. And if "
+#~ "the value is greater than 90, it will be set to 90."
+#~ msgstr ""
+#~ "Широта змінюється від -90 до 90 градусів включно. Значення вище або нижче "
+#~ "цього діапазону будуть перетворені в діапазон [-90, 90]. Наприклад, якщо "
+#~ "вказане значення менше -90, то воно буде встановлено як -90. І, якщо "
+#~ "значення більше 90, то воно буде встановлено як 90."
+
+#~ msgid "Longitude geographical coordinates"
+#~ msgstr "Довгота географічних координат"
+
+#~ msgid ""
+#~ "Longitude ranges between -180 and 180 degrees, inclusive. Values above or "
+#~ "below this range will be wrapped so that they fall within the range. For "
+#~ "example, a value of -190 will be converted to 170. A value of 190 will be "
+#~ "converted to -170. This reflects the fact that longitudes wrap around the "
+#~ "globe."
+#~ msgstr ""
+#~ "Широта змінюється від -180 до 180 градусів включно. Значення вище або "
+#~ "нижче цього діапазону будуть перетворені для потрапляння в діапазон. "
+#~ "Наприклад, значення -190 буде встановлено як 170. А значення 190 буде "
+#~ "встановлено як -170. Це відображає той факт, що довгота обгортає навколо "
+#~ "земну кулю."
+
+#~ msgid "Map zoom level"
+#~ msgstr "Рівень масштабування карти"
+
+#~ msgid "The initial Map zoom level. Required."
+#~ msgstr "Початковий рівень масштабування карти. Необхідне значення."
+
+#~ msgid "Scroll wheel"
+#~ msgstr "Прокручування коліщатком."
+
+#~ msgid ""
+#~ "If false, disables scrollwheel zooming on the map. The scrollwheel is "
+#~ "enabled by default."
+#~ msgstr ""
+#~ "За замовчуванням активоване. При виставленні значення false, "
+#~ "масштабування карти коліщатком вимикається."
+
+#~ msgid "Map Style"
+#~ msgstr "Оформлення карти"
+
+#~ msgid ""
+#~ "Styles to apply to each of the default map types. Note that for Satellite/"
+#~ "Hybrid and Terrain modes, these styles will only apply to labels and "
+#~ "geometry."
+#~ msgstr ""
+#~ "Стилі, що будуть застосовані до початкових типів карти. Майте на увазі, "
+#~ "що для режиму Супутник/Гібридний перегляд та Земля, стилі будуть "
+#~ "застосовані тільки до міток і геометричних елементів."
+
+#~ msgid "Map height"
+#~ msgstr "Висота карти"
+
+#~ msgid "Map height value(px)"
+#~ msgstr "Значення висоти карти (у пікселях)"
+
+#~ msgid "Pan control"
+#~ msgstr "Контроль переміщення"
+
+#~ msgid "Zoom control"
+#~ msgstr "Керування масштабуванням"
+
+#~ msgid "The enabled/disabled state of the Zoom control."
+#~ msgstr "Увімкнути/вимкнути режим керування масштабуванням"
+
+#~ msgid "Draggable map"
+#~ msgstr "Карта, яку можна перетягувати"
+
+#~ msgid ""
+#~ "If false, prevents the map from being dragged. Dragging is enabled by "
+#~ "default."
+#~ msgstr ""
+#~ "За замовчуванням увімкнено. При виставленні параметра false, карту не "
+#~ "можна буде перетягувати."
+
+#~ msgid "Marker source"
+#~ msgstr "Зображення маркера"
+
+#~ msgid "Google Map"
+#~ msgstr "Карта Google"
+
+#~ msgid "Parallax image"
+#~ msgstr "Паралакс зображення"
+
+#~ msgid "Upload parallax image url source"
+#~ msgstr "Вкажіть шлях/завантажте паралакс-зображення"
+
+#~ msgid "Parallax speed"
+#~ msgstr "Швидкість паралаксу"
+
+#~ msgid "Parallax speed value (s)"
+#~ msgstr "Швидкість паралаксу (сек)"
+
+#~ msgid "Parallax invert"
+#~ msgstr "Інвертувати паралакс"
+
+#~ msgid "Parallax invert direction move"
+#~ msgstr "Напрям руху інвертування паралаксу"
+
+#~ msgid "Parallax container min-height"
+#~ msgstr "Мінімальна висота контейнера паралаксу"
+
+#~ msgid "container min-height value (px)"
+#~ msgstr "Значення мінімальної висоти контейнера паралаксу (у пікселях)"
+
+#~ msgid "Enter custom class"
+#~ msgstr "Вкажіть користувацький клас CSS"
+
+#~ msgid "Parallax block"
+#~ msgstr "Блок паралаксу"
+
+#~ msgid "Parallax html video"
+#~ msgstr "Html відео "
+
+#~ msgid "Poster"
+#~ msgstr "Постер"
+
+#~ msgid "Poster image url"
+#~ msgstr "Шлях до зображення постера"
+
+#~ msgid "mp4 file"
+#~ msgstr "файл у форматі mp4"
+
+#~ msgid "URL to mp4 video-file"
+#~ msgstr "Шлях до відео у форматі mp4"
+
+#~ msgid "webm file"
+#~ msgstr "файл у форматі webm"
+
+#~ msgid "URL to webm video-file"
+#~ msgstr "Шлях до відео у форматі webm"
+
+#~ msgid "ogv file"
+#~ msgstr "файл у форматі ogv"
+
+#~ msgid "URL to ogv video-file"
+#~ msgstr "Шлях до відео у форматі ogv"
+
+#~ msgid "Counter"
+#~ msgstr "Лічильник"
+
+#~ msgid "Value"
+#~ msgstr "Значення"
+
+#~ msgid "Value for counter"
+#~ msgstr "Значення лічильника"
+
+#~ msgid "Counter delay"
+#~ msgstr "Затримка лічильника"
+
+#~ msgid "Counter delay (ms)"
+#~ msgstr "Затримка лічильника (у мілісекундах)"
+
+#~ msgid "Speed time"
+#~ msgstr "Тривалість переходу"
+
+#~ msgid "Speed time (ms)"
+#~ msgstr "Тривалість переходу (у мілісекундах)"
+
+#~ msgid "Before content"
+#~ msgstr "Вміст до"
+
+#~ msgid "Enter before custom content"
+#~ msgstr "Введіть користувацький вміст, що буде відображатися до"
+
+#~ msgid "After content"
+#~ msgstr "Вміст після"
+
+#~ msgid "Enter after custom content"
+#~ msgstr "Введіть користувацький вміст, що буде відображатися після"
+
+#~ msgid "Lazy Load Effect"
+#~ msgstr "Ефект повільної появи (Lazy Load)"
+
+#~ msgid "Not changed"
+#~ msgstr "Без змін"
+
+#~ msgid "Start Position"
+#~ msgstr "Початкове розташування"
+
+#~ msgid "Element position at the animation start."
+#~ msgstr "Розташування елемента на початку анімації."
+
+#~ msgid "Out rotation"
+#~ msgstr "Зовнішнє обертання"
+
+#~ msgid "Initial element angle (min - -360&#176; max 360&#176;)"
+#~ msgstr "Початковий кут повороту елемента (від - -360&#176; до 360&#176;)"
+
+#~ msgid "Flip X"
+#~ msgstr "Відобразити горизонтально"
+
+#~ msgid ""
+#~ "Initial element angle Flip X (X-axis rotation min - -360&#176; max "
+#~ "360&#176;)"
+#~ msgstr ""
+#~ "Початкове горизонтальне відображення кута повороту елемента (від повороту "
+#~ "-360&#176; до 360&#176; по осі Х)"
+
+#~ msgid "Flip Y"
+#~ msgstr "Відобразити вертикально"
+
+#~ msgid ""
+#~ "Initial element angle Flip Y (Y-axis rotation min - -360&#176; max "
+#~ "360&#176;)"
+#~ msgstr ""
+#~ "Початкове вертикальне відображення кута повороту елемента (від повороту "
+#~ "-360&#176; до 360&#176; по осі Y)"
+
+#~ msgid "Pivot"
+#~ msgstr "Точка обертання"
+
+#~ msgid "Element rotation point."
+#~ msgstr "Точка обертання елемента."
+
+#~ msgid "Scale"
+#~ msgstr "Масштаб"
+
+#~ msgid "Element scale value (min - 0; max 10;)"
+#~ msgstr "Значення масштабування елемента (від 0 до 10)"
+
+#~ msgid "Opacity"
+#~ msgstr "Прозорість"
+
+#~ msgid "Element opacity value (min - 0; max 1;)"
+#~ msgstr "Значення прозорості елемента (від 0 до 1)"
+
+#~ msgid "Ease None"
+#~ msgstr "Без послаблення"
+
+#~ msgid "Ease In Cubic"
+#~ msgstr "Кубічне послаблення всередину"
+
+#~ msgid "Ease Out Cubic"
+#~ msgstr "Кубічне послаблення назовні"
+
+#~ msgid "Ease In Out Cubic"
+#~ msgstr "Кубічне послаблення назовні та всередину"
+
+#~ msgid "Ease In Quart"
+#~ msgstr "Квадратичне послаблення всередину"
+
+#~ msgid "Ease Out Quart"
+#~ msgstr "Квадратичне послаблення назовні"
+
+#~ msgid "Ease In Out Quart"
+#~ msgstr "Квадратичне послаблення назовні та всередину"
+
+#~ msgid "Ease In Expo"
+#~ msgstr "Експо послаблення всередину"
+
+#~ msgid "Ease Out Expo"
+#~ msgstr "Експо послаблення назовні"
+
+#~ msgid "Ease In Out Expo"
+#~ msgstr "Експо послаблення назовні та всередину"
+
+#~ msgid "Ease In Back"
+#~ msgstr "Послаблення всередину назад"
+
+#~ msgid "Ease Out Back"
+#~ msgstr "Послаблення назовні назад"
+
+#~ msgid "Ease In Out Back"
+#~ msgstr "Послаблення назовні та всередину назад"
+
+#~ msgid "Easing"
+#~ msgstr "Послаблення"
+
+#~ msgid "Animation easing."
+#~ msgstr "Послаблення анімації."
+
+#~ msgid "Animation Speed"
+#~ msgstr "Швидкість анімації"
+
+#~ msgid "Animation speed in seconds.(Example: 0.2 or 1)"
+#~ msgstr "Швидкість анімації в секундах (наприклад, 0.1 або 1)"
+
+#~ msgid "Animation Delay"
+#~ msgstr "Затримка анімації"
+
+#~ msgid "Animation Delay in seconds"
+#~ msgstr "Затримка анімації в секундах"
+
+#~ msgid "Element custom class"
+#~ msgstr "Користувацький клас CSS елемента"
+
+#~ msgid "This shortcode adds show animations on any page element."
+#~ msgstr ""
+#~ "З допомогою цього шорткода пова будь-якого елемента сторінки стане "
+#~ "анімованою."
+
+#~ msgid "Video Preview"
+#~ msgstr "Попередній перегляд відео"
+
+#~ msgid "Hide control buttons"
+#~ msgstr "Приховати кнопки керування"
+
+#~ msgid "Show control buttons"
+#~ msgstr "Відображати кнопки керування"
+
+#~ msgid "Show control button on mouse hover"
+#~ msgstr "Відображати кнопки керування при наведенні вказівника миші"
+
+#~ msgid "Video Autoplay"
+#~ msgstr "Автоматичне відтворення відео"
+
+#~ msgid "Play video on mouse hover"
+#~ msgstr "Відтворювати відео при наведенні вказівника миші"
+
+#~ msgid "Element custom class. You can use \"full-width\" class for video"
+#~ msgstr ""
+#~ "Користувацький клас елемента. Для відео можна вживати клас \"full-width\""
+
+#~ msgid "Image"
+#~ msgstr "Зображення"
+
+#~ msgid "Banner image URL"
+#~ msgstr "Шлях до зображення банера"
+
+#~ msgid "Banner title"
+#~ msgstr "Заголовок банера"
+
+#~ msgid "Banner default text color"
+#~ msgstr "Стандартний колір тексту банера"
+
+#~ msgid "Banner content"
+#~ msgstr "Текст банера"
+
+#~ msgid "Custom CSS class"
+#~ msgstr "Користувацький клас CSS"
+
+#~ msgid "Select a page:"
+#~ msgstr "Оберіть сторінку"
+
+#~ msgid "Landing page"
+#~ msgstr "Початкова сторінка"
+
+#~ msgid "Please select landing page. (Page with anchor navigation menu.)"
+#~ msgstr ""
+#~ "Будь ласка, виберіть початкову сторінку. (Сторінка з якірним навігаційним "
+#~ "меню)."
+
+#~ msgid "Media manager"
+#~ msgstr "Менеджер медіа"
+
+#~ msgid "Icon picker"
+#~ msgstr "Засіб вибору іконки"
+
+#~ msgid "Filter icons"
+#~ msgstr "Фільтрувати іконки"
+
+#~ msgid "Please wait"
+#~ msgstr "Будь ласка, зачекайте"
+
+#~ msgid "Untitled gallery"
+#~ msgstr "Галерея без назви"
+
+#~ msgid "Galleries not found"
+#~ msgstr "Немає галерей"
+
+#~ msgid "Manage galleries"
+#~ msgstr "Керувати галереями"
+
+#~ msgid "Reload galleries"
+#~ msgstr "Перезавантажити галереї"
+
+#~ msgid "Horizontal offset"
+#~ msgstr "Горизонтальне зміщення"
+
+#~ msgid "Vertical offset"
+#~ msgstr "Вертикальне зміщення"
+
+#~ msgid "Blur"
+#~ msgstr "Розмиття"
+
+#~ msgid "Color"
+#~ msgstr "Колір"
+
+#~ msgid "Border width"
+#~ msgstr "Ширина краю"
+
+#~ msgid "Border style"
+#~ msgstr "Стиль краю"
+
+#~ msgid "Border color"
+#~ msgstr "Колір краю"
+
+#~ msgid "Media library"
+#~ msgstr "Бібліотека медіафайлів"
+
+#~ msgid "Recent posts"
+#~ msgstr "Нещодавні публікації"
+
+#~ msgid "Category"
+#~ msgstr "Категорія"
+
+#~ msgid "Select images source"
+#~ msgstr "Виберіть зображення"
+
+#~ msgid "Select taxonomy"
+#~ msgstr "Оберіть таксономію"
+
+#~ msgid "Add images"
+#~ msgstr "Додайте зображення"
+
+#~ msgid ""
+#~ "Click the button above and select images.<br>You can select multimple "
+#~ "images with Ctrl (Cmd) key"
+#~ msgstr ""
+#~ "Натисніть кнопку вгорі та виберіть зображення. <br>Кілька зображень можна "
+#~ "вибрати, затиснувши клавішу Ctrl (Cmd)"
+
+#~ msgid ""
+#~ "Select categories to retrieve posts from.<br>You can select multiple "
+#~ "categories with Ctrl (Cmd) key"
+#~ msgstr ""
+#~ "Оберіть категорії відображуваних публікацій.<br>Кілька категорій можна "
+#~ "вибрати, затиснувши клавішу Ctrl (Cmd)"
+
+#~ msgid ""
+#~ "Select taxonomy and it's terms.<br>You can select multiple terms with "
+#~ "Ctrl (Cmd) key"
+#~ msgstr ""
+#~ "Оберіть таксономію та її вимоги. <br>Кілька таксономій можна вибрати, "
+#~ "затиснувши клавішу Ctrl (Cmd)"
+
+#~ msgid "Extra small devices (Phones)"
+#~ msgstr "Дуже малі пристрої (Телефони)"
+
+#~ msgid "Small devices (Tablets)"
+#~ msgstr "Невеликі пристрої (Планшети)"
+
+#~ msgid "Medium devices (Desktops)"
+#~ msgstr "Пристрої середнього розміру (ПК)"
+
+#~ msgid "Large devices (Desktops)"
+#~ msgstr "Великі пристрої (ПК)"
+
+#~ msgid "Insert shortcode"
+#~ msgstr "Вставити шорткод"
+
+#~ msgid "Search for shortcodes"
+#~ msgstr "Шукати шорткоди"
+
+#~ msgid "Filter by type"
+#~ msgstr "Фільтрування за типом"
+
+#~ msgid "Shortcode not specified"
+#~ msgstr "Шорткод не зазначено"
+
+#~ msgid "Live preview"
+#~ msgstr "Попередній перегляд"
+
+#~ msgid "Click to return to the shortcodes list"
+#~ msgstr "Натисніть для повернення до списку шорткодів"
+
+#~ msgid "All shortcodes"
+#~ msgstr "Всі шорткоди"
+
+#~ msgid "Examples of use"
+#~ msgstr "Приклади застосування"
+
+#~ msgid "Click to set this value"
+#~ msgstr "Натисніть, щоб встановити таке значення"
+
+#~ msgid "Preview"
+#~ msgstr "Попередній перегляд"
+
+#~ msgid "Access denied"
+#~ msgstr "У доступі відмовлено"
+
+#~ msgid "Presets"
+#~ msgstr "Шаблони"
+
+#~ msgid "Save current settings as preset"
+#~ msgstr "Зберегти поточні налаштування, як шаблон"
+
+#~ msgid "Presets not found"
+#~ msgstr "Немає шаблонів"
+
+#~ msgid "Template file (*.tmpl) not found"
+#~ msgstr "Немає файла шаблону (*.tmpl)"
+
+#~ msgid "Posts not found"
+#~ msgstr "Публікацій немає"
+
+#~ msgid "Tab title"
+#~ msgstr "Заголовок вкладки"
+
+#~ msgid "Plugin Settings"
+#~ msgstr "Налаштування плагіна."
+
+#~ msgid "Use selected file"
+#~ msgstr "Використати обраний файл"
+
+#~ msgid "Save changes"
+#~ msgstr "Зберегти зміни"
+
+#~ msgid "Saving"
+#~ msgstr "Зберігаємо"
+
+#~ msgid "Saved"
+#~ msgstr "Збережено"
+
+#~ msgid ""
+#~ "This action will delete all your settings. Are you sure? This action "
+#~ "cannot be undone!"
+#~ msgstr ""
+#~ "Зараз усі ваші налаштування буде видалено. Ви впевнені, що хочете це "
+#~ "зробити? Цю дію відмінити не вдасться!"
+
+#~ msgid "Restore default settings"
+#~ msgstr "Відновити стандартні налаштування"
+
+#~ msgid "Text field"
+#~ msgstr "Текстове поле (рядок)"
+
+#~ msgid "Textarea field"
+#~ msgstr "Текстове поле (область)"
+
+#~ msgid "Checkbox"
+#~ msgstr "Прапорець"
+
+#~ msgid "Label"
+#~ msgstr "Підпис"
+
+#~ msgid "Color picker"
+#~ msgstr "Інструмент вибору кольору"
+
+#~ msgid "Pick a color"
+#~ msgstr "Оберіть колір"
+
+#~ msgid ""
+#~ "For full functionality of this page it is reccomended to enable "
+#~ "javascript."
+#~ msgstr "Для повноцінної роботи сторінки радимо увімкнути javascript."
+
+#~ msgid "Settings saved successfully"
+#~ msgstr "Параметри успішно збережено"
+
+#~ msgid "Settings reseted successfully"
+#~ msgstr "Параметри успішно скинуто"
+
+#~ msgid "option type %s is not callable"
+#~ msgstr "Пераметр типу %s не підтримується"
+
+#~ msgid "Special widget with Cherry Shortcodes."
+#~ msgstr "Спеціальний віджет з шорткодами Cherry."
+
+#~ msgid "Cherry Shortcodes"
+#~ msgstr "Шорткоди Cherry"
+
+#~ msgid "Title:"
+#~ msgstr "Заголовок:"
+
+#~ msgid "Upload banner image"
+#~ msgstr "Завантажте зображення банера"
+
+#~ msgid "Choose to display a part or d content"
+#~ msgstr ""
+#~ "Виберіть, скільки вмісту публікації відображати - частково чи повністю."
+
+#~ msgid "Upload marker source"
+#~ msgstr "Вкажіть шлях/завантажте зображення маркера"
+
+#~ msgid "Custom class"
+#~ msgstr "Користувацький клас"
+
+#~ msgid "URL or File."
+#~ msgstr "Посилання або файл"
+
+#~ msgid ""
+#~ "To use video from YouTube or Vimeo input video URL. You can also upload "
+#~ "video file from media library."
+#~ msgstr ""
+#~ "Введіть посилання відео для використання відео з YouTube або Vimeo. Ви "
+#~ "також можете завантажити відеофайл з медіа-бібліотеки."
+
+#~ msgid "Poster."
+#~ msgstr "Постер"
+
+#~ msgid "Poster image url."
+#~ msgstr "Шлях до зображення постера"
+
+#~ msgid "Controls."
+#~ msgstr "Керування."
+
+#~ msgid "Show content on mouse hover."
+#~ msgstr "Відтворювати вміст при наведенні вказівника миші"
+
+#~ msgid "Muted."
+#~ msgstr "Вимкнути звук."
+
+#~ msgid "Loop."
+#~ msgstr "Повторювати відтворення."
+
+#~ msgid "Preload."
+#~ msgstr "Попереднє завантаження."
+
+#~ msgid "Posted on"
+#~ msgstr "Опубліковано"
+
+#~ msgid "by"
+#~ msgstr "  "
