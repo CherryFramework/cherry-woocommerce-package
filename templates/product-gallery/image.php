@@ -88,6 +88,14 @@ $layout_class = apply_filters( 'cherry_wc_product_gallery_layout', 'fullwidth' )
 			<?php echo $controls; ?>
 		</div>
 	<?php } else {
-		cherry_wc_placeholder();
+		echo apply_filters(
+			'woocommerce_single_product_image_html',
+			sprintf(
+				'<img src="%s" alt="%s" />',
+				wc_placeholder_img_src(),
+				__( 'Placeholder', 'woocommerce' )
+			),
+			$post->ID
+		);
 	} ?>
 </div>

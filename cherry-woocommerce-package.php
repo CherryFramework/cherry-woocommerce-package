@@ -78,6 +78,9 @@ if ( ! class_exists( 'Cherry_Woocommerce_Package' ) ) {
 				return false;
 			}
 
+			// Internationalize the text strings used.
+			add_action( 'plugins_loaded', array( $this, 'lang' ), 2 );
+
 			$this->load_core();
 
 		}
@@ -93,6 +96,18 @@ if ( ! class_exists( 'Cherry_Woocommerce_Package' ) ) {
 			$this->load_admin();
 			$this->load_public();
 
+		}
+
+		/**
+		 * Loads the translation files.
+		 *
+		 * @since 1.0.0
+		 */
+		public function lang() {
+			load_plugin_textdomain(
+				'cherry-woocommerce-package',
+				false, dirname( plugin_basename( __FILE__ ) ) . '/languages'
+			);
 		}
 
 		/**
