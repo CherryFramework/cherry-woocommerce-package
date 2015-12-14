@@ -151,6 +151,10 @@ if ( ! class_exists( 'Cherry_WC_Options' ) ) {
 				),
 			);
 
+			$sidebars        = $this->get_sidebars();
+			$frontend_hooks  = Cherry_WC_Frontend_Hooks::get_instance();
+			$default_sidebar = $frontend_hooks->shop_sidebar_id;
+
 			$shop_layout = array(
 				'shop-loop-layout' => array(
 					'type'        => 'radio',
@@ -260,6 +264,39 @@ if ( ! class_exists( 'Cherry_WC_Options' ) ) {
 						),
 					),
 				),
+				'shop-loop-sidebar' => array(
+					'type'    => 'select',
+					'title'   => __( 'Main sidebar for shop page', 'cherry-woocommerce-package' ),
+					'label'   => '',
+					'hint'    => array(
+						'type'    => 'text',
+						'content' => __( 'Select main sidebar to show on shop page', 'cherry-woocommerce-package' ),
+					),
+					'value'   => $default_sidebar,
+					'options' => $sidebars,
+				),
+				'shop-category-sidebar' => array(
+					'type'    => 'select',
+					'title'   => __( 'Main sidebar for shop category and tags pages', 'cherry-woocommerce-package' ),
+					'label'   => '',
+					'hint'    => array(
+						'type'    => 'text',
+						'content' => __( 'Select main sidebar to show it on category and tags pages', 'cherry-woocommerce-package' ),
+					),
+					'value'   => $default_sidebar,
+					'options' => $sidebars,
+				),
+				'shop-single-sidebar' => array(
+					'type'    => 'select',
+					'title'   => __( 'Main sidebar for single product page', 'cherry-woocommerce-package' ),
+					'label'   => '',
+					'hint'    => array(
+						'type'    => 'text',
+						'content' => __( 'Select main sidebar to show it on single product page', 'cherry-woocommerce-package' ),
+					),
+					'value'   => $default_sidebar,
+					'options' => $sidebars,
+				),
 			);
 
 			$sections['shop-section'] = array(
@@ -297,6 +334,30 @@ if ( ! class_exists( 'Cherry_WC_Options' ) ) {
 			}
 
 			return cherry_get_option( $option, $default );
+
+		}
+
+		/**
+		 * Get registered sidebars list to use it in options
+		 *
+		 * @since  1.0.0
+		 * @return array
+		 */
+		public function get_sidebars() {
+
+			global $wp_registered_sidebars;
+
+			$sidebars = array();
+
+			if ( ! $wp_registered_sidebars ) {
+				return $sidebars;
+			}
+
+			foreach ( $wp_registered_sidebars as $sidebar ) {
+				$sidebars[ $sidebar['id'] ] = $sidebar['name'];
+			}
+
+			return $sidebars;
 
 		}
 

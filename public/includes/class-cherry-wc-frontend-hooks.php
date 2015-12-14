@@ -174,7 +174,41 @@ if ( ! class_exists( 'Cherry_WC_Frontend_Hooks' ) ) {
 				return $sidebar;
 			}
 
-			return $this->shop_sidebar_id;
+			$sidebar = $this->shop_sidebar_id;
+
+			if ( is_shop() ) {
+				$sidebar = $this->get_page_specific_sidebar( $sidebar, 'loop' );
+			}
+
+			if ( is_product_taxonomy() ) {
+				$sidebar = $this->get_page_specific_sidebar( $sidebar, 'category' );
+			}
+
+			if ( is_product() ) {
+				$sidebar = $this->get_page_specific_sidebar( $sidebar, 'single' );
+			}
+
+			return $sidebar;
+
+		}
+
+		/**
+		 * Get page specific sidebar from options by page group name
+		 *
+		 * @since  1.0.0
+		 * @param  string $default default sidebar name if value from options is not provided.
+		 * @param  string $page    page group to get for. only 'loop', 'category' and 'single' allowed.
+		 * @return string
+		 */
+		public function get_page_specific_sidebar( $default = null, $page = 'loop' ) {
+
+			$sidebar = cherry_wc_options()->get_option( 'shop-' . $page . '-sidebar', $default );
+
+			if ( ! $sidebar ) {
+				return $default;
+			}
+
+			return $sidebar;
 
 		}
 
