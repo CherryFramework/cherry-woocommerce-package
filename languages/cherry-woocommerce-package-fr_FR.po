@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cherry-shortcodes\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-11-10 16:53+0200\n"
-"PO-Revision-Date: 2015-11-10 16:53+0200\n"
+"POT-Creation-Date: 2015-12-14 12:25+0200\n"
+"PO-Revision-Date: 2015-12-14 12:25+0200\n"
 "Last-Translator: J.L.Dokter <jldokter@gmail.com>\n"
 "Language-Team: Cherry Team <support@cherryframework.com>\n"
 "Language: fr_FR\n"
@@ -11,253 +11,290 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Poedit 1.8.6\n"
+"X-Generator: Poedit 1.7.6\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: _e;__;_n:1,2;_n_noop:1,2;_x:1,2c;_nx:1,2,4c;"
 "_nx_noop:1,2,3c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;"
 "esc_html_x:1,2c\n"
 "X-Textdomain-Support: yes\n"
 "X-Poedit-Basepath: ..\n"
+"X-Poedit-Bookmarks: -1,-1,58,-1,-1,-1,-1,-1,-1,-1\n"
 "X-Poedit-SearchPath-0: .\n"
+
+#: admin/includes/class-cherry-wc-admin-hooks.php:58
+msgid "WooCommerce documentation"
+msgstr ""
 
 #: init/statics/cherry-account-dropdown-static.php:40
 msgid "Shop Account Dropdown"
-msgstr ""
+msgstr "Menu déroulant de compte de boutique"
 
 #: init/statics/cherry-cart-dropdown-static.php:46
 msgid "Shop Cart Dropdown"
-msgstr ""
+msgstr "Menu déroulant de panier"
 
 #: modules/class-cherry-wc-account-dropdown.php:47
 #: modules/class-cherry-wc-account-dropdown.php:48
 #: public/includes/class-cherry-wc-options.php:99
 #: public/includes/class-cherry-wc-options.php:109
 msgid "My Account"
-msgstr ""
+msgstr "Mon compte"
 
 #: modules/class-cherry-wc-account-dropdown.php:51
 #: public/includes/class-cherry-wc-options.php:140
 msgid "Log In/Register"
-msgstr ""
+msgstr "Connexion/s'inscrire"
 
 #: modules/class-cherry-wc-account-dropdown.php:52
 #: public/includes/class-cherry-wc-options.php:150
 msgid "Logout"
-msgstr ""
+msgstr "Se déconnecter"
 
 #: modules/class-cherry-wc-account-dropdown.php:146
 msgid "Orders"
-msgstr ""
+msgstr "Commandes"
 
 #: modules/class-cherry-wc-account-dropdown.php:153
 #: modules/class-cherry-wc-yith-addons.php:272
 msgid "Compare"
-msgstr ""
+msgstr "Comparer"
 
 #: modules/class-cherry-wc-account-dropdown.php:168
 msgid "Wishlist"
-msgstr ""
+msgstr "Liste de voeux"
 
 #: modules/class-cherry-wc-cart-dropdown.php:44
 msgid "Shopping cart"
-msgstr ""
+msgstr "Panier d'achat"
 
 #: modules/class-cherry-wc-product-sharing.php:47
 msgid "Share this"
-msgstr ""
+msgstr "Partager"
 
-#: modules/class-cherry-wc-product-video-tab.php:85
+#: modules/class-cherry-wc-product-video-tab.php:87
 msgid "Video"
-msgstr ""
+msgstr "Vidéo"
 
-#: modules/class-cherry-wc-product-video-tab.php:140
+#: modules/class-cherry-wc-product-video-tab.php:142
 msgid "Product video"
-msgstr ""
-
-#: modules/class-cherry-wc-product-video-tab.php:168
-msgid "YouTube video link"
-msgstr ""
+msgstr "Vidéo du produit"
 
 #: modules/class-cherry-wc-product-video-tab.php:170
+msgid "YouTube video link"
+msgstr "Lien video YouTube"
+
+#: modules/class-cherry-wc-product-video-tab.php:172
 msgid "Paste YouTube video URL"
-msgstr ""
+msgstr "Entrez l'URL de la vidéo YouTube"
 
 #: modules/class-cherry-wc-quick-view.php:141
 msgid "Quick view"
-msgstr ""
+msgstr "Aperçu rapide"
 
 #: public/includes/class-cherry-wc-assets.php:132
 msgid "Loading..."
-msgstr ""
+msgstr "Chargement…"
 
 #: public/includes/class-cherry-wc-frontend-hooks.php:154
 msgid "Shop Sidebar"
-msgstr ""
+msgstr "Barre latérale de la Boutique"
 
 #: public/includes/class-cherry-wc-frontend-hooks.php:155
 msgid "Main Shop Sidebar"
-msgstr ""
+msgstr "Barre latérale principale"
 
 #: public/includes/class-cherry-wc-options.php:53
 msgid "Select menu"
-msgstr ""
+msgstr "Sélectionnez le menu"
 
 #: public/includes/class-cherry-wc-options.php:63
 msgid "Products per page"
-msgstr ""
+msgstr "Produits par page"
 
 #: public/includes/class-cherry-wc-options.php:65
 msgid "Set a number of products per shop page."
-msgstr ""
+msgstr "Indiquer le nombre de produits sur la page de boutique"
 
 #: public/includes/class-cherry-wc-options.php:73
 msgid "Products per category page"
-msgstr ""
+msgstr "Produits par page de la catégorie"
 
 #: public/includes/class-cherry-wc-options.php:75
 msgid "Set a number of products per category page."
-msgstr ""
+msgstr "Indiquer le nombre de produits sur la page de la catégorie."
 
 #: public/includes/class-cherry-wc-options.php:83
 msgid "Show account dropdown"
-msgstr ""
+msgstr "Afficher le menu déroulant de compte de boutique"
 
 #: public/includes/class-cherry-wc-options.php:87
 msgid "Show/hide account dropdown static content"
-msgstr ""
+msgstr "Afficher/masque le contenu statique du menu déroulant de compte "
 
 #: public/includes/class-cherry-wc-options.php:93
 msgid "Guests account menu label"
-msgstr ""
+msgstr "Label de menu de compte d'invité"
 
 #: public/includes/class-cherry-wc-options.php:97
 msgid "Set label for account drop down for not logged in users"
 msgstr ""
+"Indiquer le label de menu de compte pour les utilisateurs qui ne sont pas "
+"connectés"
 
 #: public/includes/class-cherry-wc-options.php:103
 msgid "Members account menu label"
-msgstr ""
+msgstr "Label de menu de compte"
 
 #: public/includes/class-cherry-wc-options.php:107
 msgid "Set label for account drop down for logged in users"
-msgstr ""
+msgstr "Indiquer le label de menu de compte pour les utilisateurs connectés"
 
 #: public/includes/class-cherry-wc-options.php:113
 msgid "Menu to show in account dropdown"
-msgstr ""
+msgstr "Menu déroulant de compte"
 
 #: public/includes/class-cherry-wc-options.php:117
 msgid "Select navigation menu to show it in account dropdown"
-msgstr ""
+msgstr "Sélectionnez le menu à afficher comme le menu déroulant de compte"
 
 #: public/includes/class-cherry-wc-options.php:124
 msgid "Login/out links in account menu"
-msgstr ""
+msgstr "Liens Connexion/Déconnexion dans le menu de compte"
 
 #: public/includes/class-cherry-wc-options.php:128
 msgid "Show/hide authentication links in account dropdown"
-msgstr ""
+msgstr "Afficher/masque les liens d'authentification"
 
 #: public/includes/class-cherry-wc-options.php:134
 msgid "Log in link label"
-msgstr ""
+msgstr "Label de bouton Se connecter"
 
 #: public/includes/class-cherry-wc-options.php:138
 msgid "Set label for log in/register link in account drop down"
 msgstr ""
+"Indiquer le label des liens Se connecter/S'inscrire dans le menu déroulant "
+"de compte"
 
 #: public/includes/class-cherry-wc-options.php:144
 msgid "Logout link label"
-msgstr ""
+msgstr "Label de bouton Déconnexion"
 
 #: public/includes/class-cherry-wc-options.php:148
 msgid "Set label for log out link in account drop down"
-msgstr ""
+msgstr "Indiquer le label de lien Déconnexion dans le menu déroulant de compte"
 
-#: public/includes/class-cherry-wc-options.php:157
+#: public/includes/class-cherry-wc-options.php:161
 msgid "Main shop page layout"
-msgstr ""
+msgstr "Mise en page de la page d'accueil de la boutique"
 
-#: public/includes/class-cherry-wc-options.php:160
-#: public/includes/class-cherry-wc-options.php:196
-#: public/includes/class-cherry-wc-options.php:232
+#: public/includes/class-cherry-wc-options.php:164
+#: public/includes/class-cherry-wc-options.php:200
+#: public/includes/class-cherry-wc-options.php:236
 msgid ""
 "You can choose if you want to display sidebars and how you want to display "
 "them."
 msgstr ""
-
-#: public/includes/class-cherry-wc-options.php:166
-#: public/includes/class-cherry-wc-options.php:202
-#: public/includes/class-cherry-wc-options.php:238
-msgid "Left sidebar"
-msgstr ""
+"Vous pouvez choisir si vous voulez afficher des barres latérales et la façon "
+"dont vous souhaitez les afficher."
 
 #: public/includes/class-cherry-wc-options.php:170
 #: public/includes/class-cherry-wc-options.php:206
 #: public/includes/class-cherry-wc-options.php:242
-msgid "Right sidebar"
-msgstr ""
+msgid "Left sidebar"
+msgstr "Barre latérale gauche"
 
 #: public/includes/class-cherry-wc-options.php:174
 #: public/includes/class-cherry-wc-options.php:210
 #: public/includes/class-cherry-wc-options.php:246
-msgid "Left and right sidebar"
-msgstr ""
+msgid "Right sidebar"
+msgstr "Barre latérale droite"
 
 #: public/includes/class-cherry-wc-options.php:178
 #: public/includes/class-cherry-wc-options.php:214
 #: public/includes/class-cherry-wc-options.php:250
-msgid "Two sidebars on the left"
-msgstr ""
+msgid "Left and right sidebar"
+msgstr "Barre latérale gauche et droite"
 
 #: public/includes/class-cherry-wc-options.php:182
 #: public/includes/class-cherry-wc-options.php:218
 #: public/includes/class-cherry-wc-options.php:254
-msgid "Two sidebars on the right"
-msgstr ""
+msgid "Two sidebars on the left"
+msgstr "Deux barres latérales sur le côté gauche"
 
 #: public/includes/class-cherry-wc-options.php:186
 #: public/includes/class-cherry-wc-options.php:222
 #: public/includes/class-cherry-wc-options.php:258
+msgid "Two sidebars on the right"
+msgstr "Deux barres latérales sur le côté droit"
+
+#: public/includes/class-cherry-wc-options.php:190
+#: public/includes/class-cherry-wc-options.php:226
+#: public/includes/class-cherry-wc-options.php:262
 msgid "No sidebar"
-msgstr ""
+msgstr "Sans barre latérale"
 
-#: public/includes/class-cherry-wc-options.php:193
+#: public/includes/class-cherry-wc-options.php:197
 msgid "Product categories and tags layout"
-msgstr ""
+msgstr "Mise en page de la page de catégorie et des mots-clés de produits"
 
-#: public/includes/class-cherry-wc-options.php:229
+#: public/includes/class-cherry-wc-options.php:233
 msgid "Single page layout"
-msgstr ""
+msgstr "Mise en page de la page d'un seul produit"
 
-#: public/includes/class-cherry-wc-options.php:266
-msgid "Shop"
+#: public/includes/class-cherry-wc-options.php:269
+msgid "Main sidebar for shop page"
 msgstr ""
 
 #: public/includes/class-cherry-wc-options.php:273
-msgid "Layout"
+msgid "Select main sidebar to show on shop page"
 msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:280
+msgid "Main sidebar for shop category and tags pages"
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:284
+msgid "Select main sidebar to show it on category and tags pages"
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:291
+msgid "Main sidebar for single product page"
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:295
+msgid "Select main sidebar to show it on single product page"
+msgstr ""
+
+#: public/includes/class-cherry-wc-options.php:303
+msgid "Shop"
+msgstr "Boutique"
+
+#: public/includes/class-cherry-wc-options.php:310
+msgid "Layout"
+msgstr "Mise en page"
 
 #: public/includes/class-cherry-wc-shortcodes.php:77
 msgid "Shop Categories"
-msgstr ""
+msgstr "Catégories de la Boutique"
 
 #: public/includes/class-cherry-wc-shortcodes.php:84
 msgid "Show only parent"
-msgstr ""
+msgstr "Afficher seulement des parents"
 
 #: public/includes/class-cherry-wc-shortcodes.php:85
 #: public/includes/class-cherry-wc-shortcodes.php:132
 msgid "Show only 1st level categories"
-msgstr ""
+msgstr "Afficher seulement les catégories de 1er niveau"
 
 #: public/includes/class-cherry-wc-shortcodes.php:93
 msgid "Categories number"
-msgstr ""
+msgstr "Nombre de catégories"
 
 #: public/includes/class-cherry-wc-shortcodes.php:94
 msgid "Specify number of categories that you want to show. Enter -1 to get all"
 msgstr ""
+"Précisez le nombre d'articles à afficher. Saisissez -1 pour obtenir tous les "
+"articles"
 
 #: public/includes/class-cherry-wc-shortcodes.php:99
 msgid "None"
@@ -265,20 +302,20 @@ msgstr "Aucun"
 
 #: public/includes/class-cherry-wc-shortcodes.php:100
 msgid "Category ID"
-msgstr ""
+msgstr "ID de catégorie"
 
 #: public/includes/class-cherry-wc-shortcodes.php:101
 #: public/includes/class-cherry-wc-shortcodes.php:211
 msgid "Products count"
-msgstr ""
+msgstr "Nombre de produits"
 
 #: public/includes/class-cherry-wc-shortcodes.php:102
 msgid "Category name"
-msgstr ""
+msgstr "Nom de la catégorie"
 
 #: public/includes/class-cherry-wc-shortcodes.php:103
 msgid "Category slug"
-msgstr ""
+msgstr "Idéntifiant de la catégorie"
 
 #: public/includes/class-cherry-wc-shortcodes.php:106
 msgid "Order by"
@@ -286,7 +323,7 @@ msgstr "Trier par"
 
 #: public/includes/class-cherry-wc-shortcodes.php:107
 msgid "Order categories by"
-msgstr ""
+msgstr "Trier les catégories par"
 
 #: public/includes/class-cherry-wc-shortcodes.php:112
 msgid "Descending"
@@ -302,35 +339,39 @@ msgstr "Ordre"
 
 #: public/includes/class-cherry-wc-shortcodes.php:117
 msgid "Categories order"
-msgstr ""
+msgstr "Ordre de catégories"
 
 #: public/includes/class-cherry-wc-shortcodes.php:125
 msgid "Columns number"
-msgstr ""
+msgstr "Nombre de colonnes"
 
 #: public/includes/class-cherry-wc-shortcodes.php:126
 msgid "Specify number of columns to show"
-msgstr ""
+msgstr "Précisez le nombre de colonnes à afficher"
 
 #: public/includes/class-cherry-wc-shortcodes.php:131
 msgid "Hide empty categories"
-msgstr ""
+msgstr "Masquer les catégories vides"
 
 #: public/includes/class-cherry-wc-shortcodes.php:136
 msgid "Categories from"
-msgstr ""
+msgstr "Catégories de"
 
 #: public/includes/class-cherry-wc-shortcodes.php:137
 msgid "Show direct children of selected category post (enter category ID)"
 msgstr ""
+"Afficher les enfants directs de la catégorie sélectionnée (entrez ID de la "
+"catégorie)"
 
 #: public/includes/class-cherry-wc-shortcodes.php:141
 msgid "Categories ID's"
-msgstr ""
+msgstr "Catégories ID"
 
 #: public/includes/class-cherry-wc-shortcodes.php:142
 msgid "Enter comma separated ID's of the categories that you want to show"
 msgstr ""
+"Entrez des identifiants des catégories à afficher en les séparant par des "
+"virgules"
 
 #: public/includes/class-cherry-wc-shortcodes.php:150
 msgid "Template"
@@ -342,15 +383,15 @@ msgstr "Modèle de shortcode"
 
 #: public/includes/class-cherry-wc-shortcodes.php:154
 msgid "Show product categories list"
-msgstr ""
+msgstr "Afficher la liste des catégories de produits"
 
 #: public/includes/class-cherry-wc-shortcodes.php:193
 msgid "Featured image"
-msgstr ""
+msgstr "Image à la une"
 
 #: public/includes/class-cherry-wc-shortcodes.php:199
 msgid "Name"
-msgstr ""
+msgstr "Nom"
 
 #: public/includes/class-cherry-wc-shortcodes.php:205
 msgid "Description"
@@ -358,52 +399,53 @@ msgstr "Description"
 
 #: public/includes/class-cherry-wc-shortcodes.php:217
 msgid "Category permalink"
-msgstr ""
+msgstr "Permalien de la catégorie"
 
 #: public/includes/class-cherry-wc-templater.php:88
 msgid "Template file not found"
-msgstr ""
+msgstr "Fichier de modèle n'est pas trouvé"
 
 #: templates/cart/cart-content.php:40
 msgid "Remove this item"
-msgstr ""
+msgstr "Enlever cet élément"
 
 #: templates/cart/cart-content.php:69
 msgid "No products in the cart."
-msgstr ""
+msgstr "Aucun produit dans le panier."
 
 #: templates/cart/cart-content.php:77
 msgid "Subtotal"
-msgstr ""
+msgstr "Total partiel"
 
 #: templates/cart/cart-content.php:82
 msgid "View Cart"
-msgstr ""
+msgstr "Voir le panier"
 
 #: templates/cart/cart-content.php:83
 msgid "Checkout"
-msgstr ""
+msgstr "Checkout"
 
-#: templates/product-gallery/image.php:66 templates/quick-view/image.php:33
+#: templates/product-gallery/image.php:66
+#: templates/product-gallery/image.php:96 templates/quick-view/image.php:33
 msgid "Placeholder"
-msgstr ""
+msgstr "Étiquette"
 
 #: templates/quick-view/rating.php:28
 #, php-format
 msgid "Rated %s out of 5"
-msgstr ""
+msgstr "Évalué %s sur 5"
 
 #: templates/quick-view/rating.php:30
 #, php-format
 msgid "out of %s5%s"
-msgstr ""
+msgstr "sur %s5%s"
 
 #: templates/quick-view/rating.php:31
 #, php-format
 msgid "based on %s customer rating"
 msgid_plural "based on %s customer ratings"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "basé sur %s la note des clients"
+msgstr[1] "basé sur %s les évaluations de clients"
 
 #: templates/quick-view/read-more.php:22
 msgid "Read More"
