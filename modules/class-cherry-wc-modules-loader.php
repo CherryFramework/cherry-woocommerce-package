@@ -58,7 +58,7 @@ if ( ! class_exists( 'Cherry_WC_Modules_Loader' ) ) {
 				'video-tab' => array(
 					'load_on' => 'init',
 					'file'    => cherry_wc_package()->plugin_dir( 'modules/class-cherry-wc-product-video-tab.php' ),
-					'class'   => 'Cherry_WC_Product_Video',
+					'class'   => 'Cherry_WC_Package_Product_Video',
 					'ajax'    => false,
 				),
 				'yith-addons' => array(

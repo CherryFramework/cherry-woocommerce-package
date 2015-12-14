@@ -11,12 +11,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
 
-if ( ! class_exists( 'Cherry_WC_Product_Video' ) ) {
+if ( ! class_exists( 'Cherry_WC_Package_Product_Video' ) ) {
 
 	/**
 	 * Add product video tab
 	 */
-	class Cherry_WC_Product_Video {
+	class Cherry_WC_Package_Product_Video {
 
 		/**
 		 * A reference to an instance of this class.
