@@ -153,7 +153,7 @@ jQuery( document ).ready(function( $ ) {
 	// Quick view
 	$( document ).on( 'click', '.cherry-quick-view', function( event ) {
 
-		var productId, item, currentPopup;
+		var productId, item, currentPopup, href;
 
 		event.preventDefault();
 		event.stopPropagation();
@@ -161,7 +161,8 @@ jQuery( document ).ready(function( $ ) {
 
 		productId = $( this ).data( 'product' ),
 		item = $( this ).parents( 'li.product' ),
-		currentPopup = 'cherry-quick-view-popup-' + productId;
+		currentPopup = 'cherry-quick-view-popup-' + productId,
+		href = window.location.href;
 
 		function sendAjaxRequest() {
 			jQuery.ajax({
@@ -171,7 +172,8 @@ jQuery( document ).ready(function( $ ) {
 				data: {
 					action: 'cherry_wc_quick_view',
 					_wpnonce: window.CherryWoocommerce.nonce,
-					product: productId
+					product: productId,
+					href: href
 				},
 				success: function( response ) {
 					$( '#' + currentPopup ).find( '.cherry-quick-view-popup-content' ).html( $.parseHTML( response ) );

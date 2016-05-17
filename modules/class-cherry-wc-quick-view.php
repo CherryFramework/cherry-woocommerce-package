@@ -169,6 +169,8 @@ if ( ! class_exists( 'Cherry_WC_Quick_View' ) ) {
 				die( 'Product not found' );
 			}
 
+			add_filter( 'woocommerce_product_add_to_cart_url', array( $this, 'cherry_wc_product_add_to_cart_url' ), 10, 2 );
+
 			global $product, $woocommerce, $post;
 
 			$product_factory = new WC_Product_Factory();
@@ -184,6 +186,20 @@ if ( ! class_exists( 'Cherry_WC_Quick_View' ) ) {
 
 			die();
 
+		}
+
+		public function cherry_wc_product_add_to_cart_url( $url, $product ) {
+			$type = $product->product_type;
+			$href = isset( $_REQUEST['href'] ) ? $_REQUEST['href'] : false;
+			if ( 'simple' == $type ) {
+				$url = $product->is_purchasable() && $product->is_in_stock() ? remove_query_arg( 'added-to-cart', add_query_arg( 'add-to-cart', $product->id, $href ) ) : get_permalink( $product->id );
+			} else if ( 'variation' == $type ) {
+				$variation_data = array_map( 'urlencode', $this->variation_data );
+				$url            = $this->is_purchasable() && $this->is_in_stock() ? remove_query_arg( 'added-to-cart', add_query_arg( array_merge( array( 'variation_id' => $this->variation_id, 'add-to-cart' => $this->id ), $variation_data, $href ) ) ) : get_permalink( $this->id );
+			} else if ( 'external' == $type ) {
+				$url = $product->get_product_url();
+			}
+			return $url;
 		}
 
 		/**
