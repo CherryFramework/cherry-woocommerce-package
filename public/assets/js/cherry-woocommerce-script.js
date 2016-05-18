@@ -238,7 +238,8 @@ jQuery( document ).ready(function( $ ) {
 		_this.addClass( 'active' ).siblings().removeClass( 'active' );
 		_parent.find( '.product-large-image img' ).attr( 'src', _largeImg );
 		_parent.find( '.product-large-image img' ).attr( 'data-zoom-image', _origImg );
-		zoomInit();
+		var ez = $( '.product-large-image img' ).data('elevateZoom');
+		ez.swaptheimage(_largeImg, _origImg);
 	});
 
 	zoomInit();
