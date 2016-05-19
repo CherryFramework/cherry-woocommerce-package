@@ -5,7 +5,7 @@
  * @author      Cherry Team
  * @category    Core
  * @package     cherry-woocommerce-package/templates
- * @version     1.0.0
+ * @version     1.0.3
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -18,6 +18,6 @@ if ( 'simple' !== $product->product_type ) {
 	return;
 }
 ?>
-<a class="button alt" href="<?php esc_url( get_permalink( $post->ID ) ); ?>">
+<a class="button alt" href="<?php echo esc_url( get_permalink( $post->ID ) ); ?>">
 	<?php _e( 'Read More', 'cherry-woocommerce-package' ); ?>
 </a>

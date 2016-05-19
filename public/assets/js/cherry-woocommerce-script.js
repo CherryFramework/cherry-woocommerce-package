@@ -90,30 +90,12 @@
 				add    = $( '.qty-controls-add', $this ),
 				remove = $( '.qty-controls-remove', $this ),
 				input  = $( '.qty', $this ),
-				min    = input.attr( 'min' ),
-				max    = input.attr( 'max' ),
-				step   = input.attr( 'step' ),
+				min    = input.attr( 'min' ).length ? parseInt( input.attr( 'min' ) ) : 1,
+				max    = input.attr( 'max' ).length ? parseInt( input.attr( 'max' ) ) : false,
+				step   = input.attr( 'step' ).length ? parseInt( input.attr( 'step' ) ) : 1,
 				current;
 
-			if ( undefined === step ) {
-				step = 1;
-			} else {
-				step = parseInt( step, 10 );
-			}
-
-			if ( undefined === min ) {
-				min = 1;
-			} else {
-				min = parseInt( min, 10 );
-			}
-
-			if ( undefined === max ) {
-				max = false;
-			} else {
-				max = parseInt( max, 10 );
-			}
-
-			$this.on( 'click', add.selector, function( event ) {
+			add.on( 'click', function( event ) {
 
 				event.preventDefault();
 				current = parseInt( input.val(), 10 );
@@ -124,7 +106,7 @@
 
 			});
 
-			$this.on( 'click', remove.selector, function( event ) {
+			remove.on( 'click', function( event ) {
 
 				event.preventDefault();
 				current = parseInt( input.val(), 10 );
