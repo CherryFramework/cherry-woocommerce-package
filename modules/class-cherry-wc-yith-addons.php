@@ -346,7 +346,7 @@ if ( ! class_exists( 'Cherry_WC_YITH_Addons' ) ) {
 
 			printf(
 				'<link id="google-fonts-css" media="all" type="text/css" href="%s" rel="stylesheet">',
-				$fonts_controller->get_fonts_url()
+				$fonts_controller->build_fonts_url()
 			);
 
 		}
