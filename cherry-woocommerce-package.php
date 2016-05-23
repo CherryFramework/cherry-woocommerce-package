@@ -3,7 +3,7 @@
  * Plugin Name: Cherry WooCommerce package
  * Plugin URI:  http://www.cherryframework.com/
  * Description: Extends Cherryframework for WooCommerce
- * Version:     1.0.5
+ * Version:     1.0.6
  * Author:      Cherry Team
  * Author URI:  http://www.cherryframework.com/
  * Text Domain: cherry-woocommerce-package
